@@ -23,14 +23,32 @@ A powerful, all-in-one tool for managing plugins, skins, firmware images, and pa
 - **No Dependencies** — Uses only standard system tools, no external packages required
 - **Package Validation** — Built-in validation to verify package integrity before installation
 
-### Supported Receivers
+### Supported Receivers (Hardware)
 
 | Brand | Models |
 |-------|--------|
 | Dreambox | DM800, DM8000, DM900, DM920, DM520, DM500HD |
 | VU+ | Duo, Duo2, Duo4K, Solo, Solo2, Solo4K, Ultimo, Ultimo4K |
 | GigaBlue | All Enigma2-based models |
-| Other | Any receiver running Enigma2 (OpenATV, OpenPLi, DreamOS, etc.) |
+| Other | Any receiver running Enigma2 |
+
+### Supported Operating Systems
+
+| OS | Versions |
+|----|----------|
+| DreamOS | OE 2.2, OE 2.5, OE 2.6 |
+| OE2.0 | Open Embedded |
+
+### Supported Images
+
+| Image | Description |
+|-------|-------------|
+| CVS | Clean base version (no modifications) |
+| AIO | All-In-One |
+| Custom | Images based on CVS and AIO |
+| OpenATV | Open source |
+| OpenPLi | Open source |
+| Other | Any Enigma2 image |
 
 ### Supported Package Formats
 
@@ -287,14 +305,32 @@ MIT License
 - **بێ پێویستی بە پاڵپشتی** — تەنها ئامرازە ستانداردەکانی سیستەم بەکاردەهێنێت
 - **پشکنینی پاکێج** — پشکنینی ناوخۆیی بۆ دڵنیابوون لە دروستی پاکێج پێش دامەزراندن
 
-### وەرگر(رێسیڤێر)ە پاڵپشتیکراوەکان
+### وەرگر(رێسیڤێر)ە پاڵپشتیکراوەکان (هێڵەکان)
 
 | براند | مۆدێلەکان |
 |-------|-----------|
 | Dreambox | DM800, DM8000, DM900, DM920, DM520, DM500HD |
 | VU+ | Duo, Duo2, Duo4K, Solo, Solo2, Solo4K, Ultimo, Ultimo4K |
 | GigaBlue | هەموو مۆدێلەکانی بنەمای Enigma2 |
-| ئیتر | هەر وەرگرێک بە سیستەمی کارپێکردنی Enigma2 (OpenATV, OpenPLi, DreamOS و هتد) |
+| ئیتر | هەر وەرگرێک بە سیستەمی کارپێکردنی Enigma2 |
+
+### سیستەمەکانی کارپێکردنی پاڵپشتیکراوەکان
+
+| سیستەم | نوێنەرەکان |
+|--------|------------|
+| DreamOS | OE 2.2, OE 2.5, OE 2.6 |
+| OE2.0 | Open Embedded |
+
+### وێنەکانی پاڵپشتیکراوەکان
+
+| وێنە | وەسف |
+|------|------|
+| CVS | وێنەی سەرەتایی پاڕاستراو (بێ دەستکاری) |
+| AIO | All-In-One |
+| نێوانە | وێنەکانی سەربنەمای CVS و AIO |
+| OpenATV | مەڵتی-کەیی |
+| OpenPLi | مەڵتی-کەیی |
+| ئیتر | هەر وێنەیەکی Enigma2 |
 
 ### فۆرماتە پاڵپشتیکراوەکانی پاکێج
 
@@ -514,14 +550,32 @@ MIT License
 - **بدون وابستگی** — فقط از ابزارهای استاندارد سیستم استفاده می‌کند
 - **اعتبارسنجی پکیج** — اعتبارسنجی داخلی برای بررسی صحت پکیج قبل از نصب
 
-### گیرنده‌های پشتیبانی شده
+### گیرنده‌های پشتیبانی شده (سخت‌افزار)
 
 | برند | مدل‌ها |
 |------|--------|
 | Dreambox | DM800, DM8000, DM900, DM920, DM520, DM500HD |
 | VU+ | Duo, Duo2, Duo4K, Solo, Solo2, Solo4K, Ultimo, Ultimo4K |
 | GigaBlue | تمام مدل‌های مبتنی بر Enigma2 |
-| سایر | هر گیرنده‌ای با سیستم‌عامل Enigma2 (OpenATV, OpenPLi, DreamOS و غیره) |
+| سایر | هر گیرنده‌ای با سیستم‌عامل Enigma2 |
+
+### سیستم‌عامل‌های پشتیبانی شده
+
+| سیستم‌عامل | نسخه‌ها |
+|-----------|---------|
+| DreamOS | OE 2.2, OE 2.5, OE 2.6 |
+| OE2.0 | Open Embedded |
+
+### ایمیج‌های پشتیبانی شده
+
+| ایمیج | توضیح |
+|-------|-------|
+| CVS | نسخه پایه خام و رسمی (بدون دستکاری) |
+| AIO | All-In-One |
+| سایر | ایمیج‌هایی بر پایه CVS و AIO |
+| OpenATV | متن‌باز |
+| OpenPLi | متن‌باز |
+| سایر | هر ایمیج Enigma2 |
 
 ### فرمت‌های پکیج پشتیبانی شده
 
@@ -736,14 +790,32 @@ chmod +x KiaE2PackageManager
 - **بدون تبعيات** — يستخدم فقط أدوات النظام الأساسية
 - **التحقق من الحزم** — تحقق مدمج للتحقق من سلامة الحزم قبل التثبيت
 
-### أجهزة الاستقبال المدعومة
+### أجهزة الاستقبال المدعومة ( العتاد)
 
 | العلامات التجارية | الطرازات |
 |-----------------|----------|
 | Dreambox | DM800, DM8000, DM900, DM920, DM520, DM500HD |
 | VU+ | Duo, Duo2, Duo4K, Solo, Solo2, Solo4K, Ultimo, Ultimo4K |
 | GigaBlue | جميع الطرازات المبنية على Enigma2 |
-| أخرى | أي جهاز استقبال يعمل بنظام Enigma2 (OpenATV, OpenPLi, DreamOS) |
+| أخرى | أي جهاز استقبال يعمل بنظام Enigma2 |
+
+### أنظمة التشغيل المدعومة
+
+| نظام التشغيل | الإصدارات |
+|-------------|-----------|
+| DreamOS | OE 2.2, OE 2.5, OE 2.6 |
+| OE2.0 | Open Embedded |
+
+### الصور المدعومة
+
+| الصورة | الوصف |
+|--------|-------|
+| CVS | النسخة الأساسية النقية (بدون تعديلات) |
+| AIO | All-In-One |
+| مخصص | صور مبنية على CVS و AIO |
+| OpenATV | مفتوح المصدر |
+| OpenPLi | مفتوح المصدر |
+| أخرى | أي صورة Enigma2 |
 
 ### تنسيقات الحزم المدعومة
 
