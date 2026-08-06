@@ -94,7 +94,7 @@ Connection Type: SSH
 Login with:
 ```
 Username: root
-Password: (your receiver password, usually empty or "dream" or "password")
+Password: (your receiver password, usually empty or "dreambox" or "password")
 ```
 
 Then run these commands:
@@ -329,7 +329,7 @@ Connection Type: SSH
 چوونەوە بکە بە:
 ```
 Username: root
-Password: (وشەی نهێنی رێسیڤێرەکە، زۆربەی کات بەتاڵ یان "dream" یان "password")
+Password: (وشەی نهێنی رێسیڤێرەکە، زۆربەی کات بەتاڵ یان "dreambox" یان "password")
 ```
 
 پاشان ئەم فەرمانانە جێبەجێ بکە:
@@ -516,7 +516,7 @@ Connection Type: SSH
 ورود با:
 ```
 Username: root
-Password: (رمز عبور گیرنده، معمولاً خالی یا "dream" یا "password")
+Password: (رمز عبور گیرنده، معمولاً خالی یا "dreambox" یا "password")
 ```
 
 سپس دستورات زیر را اجرا کنید:
@@ -709,7 +709,7 @@ Connection Type: SSH
 تسجيل الدخول بـ:
 ```
 Username: root
-Password: (كلمة مرور جهاز الاستقبال، عادةً فارغة أو "dream" أو "password")
+Password: (كلمة مرور جهاز الاستقبال، عادةً فارغة أو "dreambox" أو "password")
 ```
 
 ثم نفذ الأوامر التالية:
