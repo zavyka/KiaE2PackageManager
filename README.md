@@ -350,7 +350,7 @@ MIT License
 
 | ڕێگا | بۆ کێیە؟ | چی پێویستە؟ |
 |------|---------|-------------|
-| **ڕێگای ١** | هەموو کەس | تەنها دەستگەیشتن بە SSH بۆ وەرگر(رێسیڤێر) |
+| **ڕێگای ١** | هەموو کەس | تەنها دەستگەیشتن بە <span dir="ltr">SSH</span> بۆ وەرگر(رێسیڤێر) |
 | **ڕێگای ٢** | بەکارهێنەرانی پێشکەوتوو | کۆمپیوتەر + <span dir="ltr">Terminal</span> |
 | **ڕێگای ٣** | بەکارهێنەرانی سەرەتایی | کۆمپیوتەر + نەرمەواڵی گرافیکی (<span dir="ltr">FileZilla</span>/<span dir="ltr">WinSCP</span>) |
 
@@ -497,11 +497,11 @@ chmod +x KiaE2PackageManager
 
 | کێشە | چارەسەر |
 |------|---------|
-| "Python not found" | <span dir="ltr">Python</span> دابمەزرێنە: `opkg install python` |
-| "Permission denied" | ئەم فەرمانە جێبەجێ بکە: `chmod +x KiaE2PackageManager` |
+| "Python not found" | <span dir="ltr">Python</span> دابمەزرێنە: `<span dir="ltr">opkg install python</span>` |
+| "Permission denied" | ئەم فەرمانە جێبەجێ بکە: `<span dir="ltr">chmod +x KiaE2PackageManager</span>` |
 | هەڵە لە دروستکردنی پاکێج | پێکهاتەی بوخچەی پرۆژەکە بپشکنە |
-| هەڵە لە پشکنینی پاکێج | دڵنیابە کە پاکێجەکە `control.tar` و `data.tar` لەخۆدەگرێت |
-| ناتوانرێت بە SSH پەیوەندی بکرێت | دڵنیابە کە ڕاژەکاری SSH لەسەر وەرگر(رێسیڤێر) چالاکە (دامەزراندن: `opkg install openssh`) |
+| هەڵە لە پشکنینی پاکێج | دڵنیابە کە پاکێجەکە `<span dir="ltr">control.tar</span>` و `<span dir="ltr">data.tar</span>` لەخۆدەگرێت |
+| ناتوانرێت بە <span dir="ltr">SSH</span> پەیوەندی بکرێت | دڵنیابە کە ڕاژەکاری <span dir="ltr">SSH</span> لەسەر وەرگر(رێسیڤێر) چالاکە (دامەزراندن: `<span dir="ltr">opkg install openssh</span>`) |
 
 ### زانیارییەکانی پەرەپێدەر
 
@@ -737,11 +737,11 @@ chmod +x KiaE2PackageManager
 
 | مشکل | راه‌حل |
 |------|--------|
-| "Python not found" | پایتون را نصب کنید: `opkg install python` |
-| "Permission denied" | دستور `chmod +x KiaE2PackageManager` را اجرا کنید |
+| "Python not found" | پایتون را نصب کنید: `<span dir="ltr">opkg install python</span>` |
+| "Permission denied" | دستور `<span dir="ltr">chmod +x KiaE2PackageManager</span>` را اجرا کنید |
 | خطا در ساخت پکیج | ساختار پوشه پروژه را بررسی کنید |
-| خطا در اعتبارسنجی | مطمئن شوید پکیج شامل `control.tar` و `data.tar` است |
-| عدم اتصال SSH | مطمئن شوید سرور SSH روی گیرنده فعال است (نصب: `opkg install openssh`) |
+| خطا در اعتبارسنجی | مطمئن شوید پکیج شامل `<span dir="ltr">control.tar</span>` و `<span dir="ltr">data.tar</span>` است |
+| عدم اتصال <span dir="ltr">SSH</span> | مطمئن شوید سرور <span dir="ltr">SSH</span> روی گیرنده فعال است (نصب: `<span dir="ltr">opkg install openssh</span>`) |
 
 ### اطلاعات توسعه‌دهنده
 
@@ -971,11 +971,11 @@ chmod +x KiaE2PackageManager
 
 | المشكلة | الحل |
 |---------|------|
-| "Python not found" | ثبّت Python: `opkg install python` |
-| "Permission denied" | نفّذ `chmod +x KiaE2PackageManager` |
+| "Python not found" | ثبّت <span dir="ltr">Python</span>: `<span dir="ltr">opkg install python</span>` |
+| "Permission denied" | نفّذ `<span dir="ltr">chmod +x KiaE2PackageManager</span>` |
 | فشل بناء الحزمة | تحقق من بنية مجلد المشروع |
-| فشل التحقق | تأكد من وجود `control.tar` و `data.tar` |
-| فشل الاتصال بـ SSH | تأكد من تشغيل خادم SSH على جهاز الاستقبال (التثبيت: `opkg install openssh`) |
+| فشل التحقق | تأكد من وجود `<span dir="ltr">control.tar</span>` و `<span dir="ltr">data.tar</span>` |
+| فشل الاتصال بـ <span dir="ltr">SSH</span> | تأكد من تشغيل خادم <span dir="ltr">SSH</span> على جهاز الاستقبال (التثبيت: `<span dir="ltr">opkg install openssh</span>`) |
 
 ### معلومات المطور
 
