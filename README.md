@@ -309,40 +309,40 @@ MIT License
 
 | براند | مۆدێلەکان |
 |-------|-----------|
-| Dreambox | DM800, DM8000, DM900, DM920, DM520, DM500HD |
-| VU+ | Duo, Duo2, Duo4K, Solo, Solo2, Solo4K, Ultimo, Ultimo4K |
-| GigaBlue | هەموو مۆدێلەکانی بنەمای <span dir="ltr">Enigma2</span> |
+| <span dir="ltr">Dreambox</span> | <span dir="ltr">DM800, DM8000, DM900, DM920, DM520, DM500HD</span> |
+| <span dir="ltr">VU+</span> | <span dir="ltr">Duo, Duo2, Duo4K, Solo, Solo2, Solo4K, Ultimo, Ultimo4K</span> |
+| <span dir="ltr">GigaBlue</span> | هەموو مۆدێلەکانی بنەمای <span dir="ltr">Enigma2</span> |
 | ئیتر | هەر وەرگرێک بە سیستەمی کارپێکردنی <span dir="ltr">Enigma2</span> |
 
 ### سیستەمەکانی کارپێکردنی پاڵپشتیکراوەکان
 
 | سیستەم | نوێنەرەکان |
 |--------|------------|
-| DreamOS | OE 2.2, OE 2.5, OE 2.6 |
-| OE2.0 | Open Embedded |
+| <span dir="ltr">DreamOS</span> | <span dir="ltr">OE 2.2, OE 2.5, OE 2.6</span> |
+| <span dir="ltr">OE2.0</span> | <span dir="ltr">Open Embedded</span> |
 
 ### وێنەکانی پاڵپشتیکراوەکان
 
 | وێنە | وەسف |
 |------|------|
-| CVS | وێنەی سەرەتایی پاڕاستراو (بێ دەستکاری) |
-| AIO | All-In-One |
-| نێوانە | وێنەکانی سەربنەمای CVS و AIO |
-| OpenATV | مەڵتی-کەیی |
-| OpenPLi | مەڵتی-کەیی |
+| <span dir="ltr">CVS</span> | وێنەی سەرەتایی پاڕاستراو (بێ دەستکاری) |
+| <span dir="ltr">AIO</span> | <span dir="ltr">All-In-One</span> |
+| نێوانە | وێنەکانی سەربنەمای <span dir="ltr">CVS</span> و <span dir="ltr">AIO</span> |
+| <span dir="ltr">OpenATV</span> | مەڵتی-کەیی |
+| <span dir="ltr">OpenPLi</span> | مەڵتی-کەیی |
 | ئیتر | هەر وێنەیەکی <span dir="ltr">Enigma2</span> |
 
 ### فۆرماتە پاڵپشتیکراوەکانی پاکێج
 
 | فۆرمات | وەسف | بەکارهێنان |
 |--------|------|-----------|
-| `.deb` | پاکێجی Debian | وەرگر(رێسیڤێر)ەکانی Dreambox / DreamOS |
-| `.ipk` | پاکێجی IPK | وەرگر(رێسیڤێر)ەکانی OpenATV / OpenPLi / OE2.0 |
-| `.tar.xz` | ئەرشیفی گوشراوی tar | فیرموێر/نەرمەواڵە گشتییەکان |
-| `.tar.gz` | tar گوشراو بە gzip | فیرموێر/نەرمەواڵە گشتییەکان |
-| `.tar.bz2` | tar گوشراو بە bzip2 | فیرموێر/نەرمەواڵە گشتییەکان |
-| `.nfi` | وێنەی فیرموێری NFI | نوێکردنەوەی فیرموێری Dreambox |
-| `.zip` | ئەرشیفی ZIP | گوشینی فایلە گشتییەکان |
+| <span dir="ltr">`.deb`</span> | پاکێجی <span dir="ltr">Debian</span> | وەرگر(رێسیڤێر)ەکانی <span dir="ltr">Dreambox</span> / <span dir="ltr">DreamOS</span> |
+| <span dir="ltr">`.ipk`</span> | پاکێجی <span dir="ltr">IPK</span> | وەرگر(رێسیڤێر)ەکانی <span dir="ltr">OpenATV</span> / <span dir="ltr">OpenPLi</span> / <span dir="ltr">OE2.0</span> |
+| <span dir="ltr">`.tar.xz`</span> | ئەرشیفی گوشراوی <span dir="ltr">tar</span> | فیرموێر/نەرمەواڵە گشتییەکان |
+| <span dir="ltr">`.tar.gz`</span> | <span dir="ltr">tar</span> گوشراو بە <span dir="ltr">gzip</span> | فیرموێر/نەرمەواڵە گشتییەکان |
+| <span dir="ltr">`.tar.bz2`</span> | <span dir="ltr">tar</span> گوشراو بە <span dir="ltr">bzip2</span> | فیرموێر/نەرمەواڵە گشتییەکان |
+| <span dir="ltr">`.nfi`</span> | وێنەی فیرموێری <span dir="ltr">NFI</span> | نوێکردنەوەی فیرموێری <span dir="ltr">Dreambox</span> |
+| <span dir="ltr">`.zip`</span> | ئەرشیفی <span dir="ltr">ZIP</span> | گوشینی فایلە گشتییەکان |
 
 ### دامەزراندن و بەکارهێنان
 
@@ -404,7 +404,7 @@ chmod +x /tmp/KiaE2PackageManager
 | **<span dir="ltr">FileZilla</span>** | FTP | پەیوەستبوون بە `<receiver_ip>:21` → چوون بۆ `/tmp/` → ڕاکێشان و دانانی فایل |
 | **<span dir="ltr">WinSCP</span>** | SCP/SFTP | پەیوەستبوون بە `<receiver_ip>` (پۆرتی 22) → چوون بۆ `/tmp/` → ڕاکێشان و دانانی فایل |
 | **<span dir="ltr">Putty (PSCP)</span>** | SCP | جێبەجێکردنی فەرمان: `pscp KiaE2PackageManager root@<receiver_ip>:/tmp/` |
-| **Total Commander** | FTP/SCP | بەکارهێنانی پێوەکراوی FTP یان SCP → چوون بۆ `/tmp/` → بارکردنی فایل |
+| **<span dir="ltr">Total Commander</span>** | <span dir="ltr">FTP/SCP</span> | بەکارهێنانی پێوەکراوی <span dir="ltr">FTP</span> یان <span dir="ltr">SCP</span> → چوون بۆ `/tmp/` → بارکردنی فایل |
 
 **هەنگاوی ٢: پەیوەستبوون بە SSH و جێبەجێکردن**
 
@@ -554,40 +554,40 @@ MIT License
 
 | برند | مدل‌ها |
 |------|--------|
-| Dreambox | DM800, DM8000, DM900, DM920, DM520, DM500HD |
-| VU+ | Duo, Duo2, Duo4K, Solo, Solo2, Solo4K, Ultimo, Ultimo4K |
-| GigaBlue | تمام مدل‌های مبتنی بر <span dir="ltr">Enigma2</span> |
+| <span dir="ltr">Dreambox</span> | <span dir="ltr">DM800, DM8000, DM900, DM920, DM520, DM500HD</span> |
+| <span dir="ltr">VU+</span> | <span dir="ltr">Duo, Duo2, Duo4K, Solo, Solo2, Solo4K, Ultimo, Ultimo4K</span> |
+| <span dir="ltr">GigaBlue</span> | تمام مدل‌های مبتنی بر <span dir="ltr">Enigma2</span> |
 | سایر | هر گیرنده‌ای با سیستم‌عامل <span dir="ltr">Enigma2</span> |
 
 ### سیستم‌عامل‌های پشتیبانی شده
 
 | سیستم‌عامل | نسخه‌ها |
 |-----------|---------|
-| DreamOS | OE 2.2, OE 2.5, OE 2.6 |
-| OE2.0 | Open Embedded |
+| <span dir="ltr">DreamOS</span> | <span dir="ltr">OE 2.2, OE 2.5, OE 2.6</span> |
+| <span dir="ltr">OE2.0</span> | <span dir="ltr">Open Embedded</span> |
 
 ### ایمیج‌های پشتیبانی شده
 
 | ایمیج | توضیح |
 |-------|-------|
-| CVS | نسخه پایه خام و رسمی (بدون دستکاری) |
-| AIO | All-In-One |
-| سایر | ایمیج‌هایی بر پایه CVS و AIO |
-| OpenATV | متن‌باز |
-| OpenPLi | متن‌باز |
+| <span dir="ltr">CVS</span> | نسخه پایه خام و رسمی (بدون دستکاری) |
+| <span dir="ltr">AIO</span> | <span dir="ltr">All-In-One</span> |
+| سایر | ایمیج‌هایی بر پایه <span dir="ltr">CVS</span> و <span dir="ltr">AIO</span> |
+| <span dir="ltr">OpenATV</span> | متن‌باز |
+| <span dir="ltr">OpenPLi</span> | متن‌باز |
 | سایر | هر ایمیج <span dir="ltr">Enigma2</span> |
 
 ### فرمت‌های پکیج پشتیبانی شده
 
 | فرمت | توضیح | کاربرد |
 |------|-------|--------|
-| `.deb` | پکیج دبیان | گیرنده‌های Dreambox / DreamOS |
-| `.ipk` | پکیج IPK | گیرنده‌های OpenATV / OpenPLi / OE2.0 |
-| `.tar.xz` | آرشیو فشرده tar | فریمور/نرم‌افزار عمومی |
-| `.tar.gz` | tar فشرده با gzip | فریمور/نرم‌افزار عمومی |
-| `.tar.bz2` | tar فشرده با bzip2 | فریمور/نرم‌افزار عمومی |
-| `.nfi` | تصویر فریمور NFI | بروزرسانی فریمور Dreambox |
-| `.zip` | آرشیو ZIP | فشرده‌سازی فایل عمومی |
+| <span dir="ltr">`.deb`</span> | پکیج <span dir="ltr">Debian</span> | گیرنده‌های <span dir="ltr">Dreambox</span> / <span dir="ltr">DreamOS</span> |
+| <span dir="ltr">`.ipk`</span> | پکیج <span dir="ltr">IPK</span> | گیرنده‌های <span dir="ltr">OpenATV</span> / <span dir="ltr">OpenPLi</span> / <span dir="ltr">OE2.0</span> |
+| <span dir="ltr">`.tar.xz`</span> | آرشیو فشرده <span dir="ltr">tar</span> | فریمور/نرم‌افزار عمومی |
+| <span dir="ltr">`.tar.gz`</span> | <span dir="ltr">tar</span> فشرده با <span dir="ltr">gzip</span> | فریمور/نرم‌افزار عمومی |
+| <span dir="ltr">`.tar.bz2`</span> | <span dir="ltr">tar</span> فشرده با <span dir="ltr">bzip2</span> | فریمور/نرم‌افزار عمومی |
+| <span dir="ltr">`.nfi`</span> | تصویر فریمور <span dir="ltr">NFI</span> | بروزرسانی فریمور <span dir="ltr">Dreambox</span> |
+| <span dir="ltr">`.zip`</span> | آرشیو <span dir="ltr">ZIP</span> | فشرده‌سازی فایل عمومی |
 
 ### نصب و استفاده
 
@@ -651,7 +651,7 @@ chmod +x /tmp/KiaE2PackageManager
 | **<span dir="ltr">FileZilla</span>** | FTP | اتصال به `<receiver_ip>:21` → رفتن به `/tmp/` → کشیدن و رها کردن فایل |
 | **<span dir="ltr">WinSCP</span>** | SCP/SFTP | اتصال به `<receiver_ip>` (پورت 22) → رفتن به `/tmp/` → کشیدن و رها کردن فایل |
 | **<span dir="ltr">Putty (PSCP)</span>** | SCP | اجرای دستور: `pscp KiaE2PackageManager root@<receiver_ip>:/tmp/` |
-| **Total Commander** | FTP/SCP | استفاده از افزونه FTP یا SCP → رفتن به `/tmp/` → آپلود فایل |
+| **<span dir="ltr">Total Commander</span>** | <span dir="ltr">FTP/SCP</span> | استفاده از افزونه <span dir="ltr">FTP</span> یا <span dir="ltr">SCP</span> → رفتن به `/tmp/` → آپلود فایل |
 
 **مرحله ۲: اتصال از طریق SSH و اجرا**
 
@@ -794,40 +794,40 @@ chmod +x KiaE2PackageManager
 
 | العلامات التجارية | الطرازات |
 |-----------------|----------|
-| Dreambox | DM800, DM8000, DM900, DM920, DM520, DM500HD |
-| VU+ | Duo, Duo2, Duo4K, Solo, Solo2, Solo4K, Ultimo, Ultimo4K |
-| GigaBlue | جميع الطرازات المبنية على Enigma2 |
-| أخرى | أي جهاز استقبال يعمل بنظام Enigma2 |
+| <span dir="ltr">Dreambox</span> | <span dir="ltr">DM800, DM8000, DM900, DM920, DM520, DM500HD</span> |
+| <span dir="ltr">VU+</span> | <span dir="ltr">Duo, Duo2, Duo4K, Solo, Solo2, Solo4K, Ultimo, Ultimo4K</span> |
+| <span dir="ltr">GigaBlue</span> | جميع الطرازات المبنية على <span dir="ltr">Enigma2</span> |
+| أخرى | أي جهاز استقبال يعمل بنظام <span dir="ltr">Enigma2</span> |
 
 ### أنظمة التشغيل المدعومة
 
 | نظام التشغيل | الإصدارات |
 |-------------|-----------|
-| DreamOS | OE 2.2, OE 2.5, OE 2.6 |
-| OE2.0 | Open Embedded |
+| <span dir="ltr">DreamOS</span> | <span dir="ltr">OE 2.2, OE 2.5, OE 2.6</span> |
+| <span dir="ltr">OE2.0</span> | <span dir="ltr">Open Embedded</span> |
 
 ### الصور المدعومة
 
 | الصورة | الوصف |
 |--------|-------|
-| CVS | النسخة الأساسية النقية (بدون تعديلات) |
-| AIO | All-In-One |
-| مخصص | صور مبنية على CVS و AIO |
-| OpenATV | مفتوح المصدر |
-| OpenPLi | مفتوح المصدر |
-| أخرى | أي صورة Enigma2 |
+| <span dir="ltr">CVS</span> | النسخة الأساسية النقية (بدون تعديلات) |
+| <span dir="ltr">AIO</span> | <span dir="ltr">All-In-One</span> |
+| مخصص | صور مبنية على <span dir="ltr">CVS</span> و <span dir="ltr">AIO</span> |
+| <span dir="ltr">OpenATV</span> | مفتوح المصدر |
+| <span dir="ltr">OpenPLi</span> | مفتوح المصدر |
+| أخرى | أي صورة <span dir="ltr">Enigma2</span> |
 
 ### تنسيقات الحزم المدعومة
 
 | التنسيق | الوصف | الاستخدام |
 |---------|-------|----------|
-| `.deb` | حزمة ديبيان | أجهزة Dreambox / DreamOS |
-| `.ipk` | حزمة IPK | أجهزة OpenATV / OpenPLi / OE2.0 |
-| `.tar.xz` | أرشيف tar مضغوط | البرامج الثابتة العامة |
-| `.tar.gz` | tar مضغوط بـ gzip | البرامج الثابتة العامة |
-| `.tar.bz2` | tar مضغوط بـ bzip2 | البرامج الثابتة العامة |
-| `.nfi` | صورة برنامج ثابت NFI | تحديثات برنامج Dreambox |
-| `.zip` | أرشيف ZIP | ضغط الملفات العامة |
+| <span dir="ltr">`.deb`</span> | حزمة <span dir="ltr">Debian</span> | أجهزة <span dir="ltr">Dreambox</span> / <span dir="ltr">DreamOS</span> |
+| <span dir="ltr">`.ipk`</span> | حزمة <span dir="ltr">IPK</span> | أجهزة <span dir="ltr">OpenATV</span> / <span dir="ltr">OpenPLi</span> / <span dir="ltr">OE2.0</span> |
+| <span dir="ltr">`.tar.xz`</span> | أرشيف <span dir="ltr">tar</span> مضغوط | البرامج الثابتة العامة |
+| <span dir="ltr">`.tar.gz`</span> | <span dir="ltr">tar</span> مضغوط بـ <span dir="ltr">gzip</span> | البرامج الثابتة العامة |
+| <span dir="ltr">`.tar.bz2`</span> | <span dir="ltr">tar</span> مضغوط بـ <span dir="ltr">bzip2</span> | البرامج الثابتة العامة |
+| <span dir="ltr">`.nfi`</span> | صورة برنامج ثابت <span dir="ltr">NFI</span> | تحديثات برنامج <span dir="ltr">Dreambox</span> |
+| <span dir="ltr">`.zip`</span> | أرشيف <span dir="ltr">ZIP</span> | ضغط الملفات العامة |
 
 ### التثبيت والاستخدام
 
