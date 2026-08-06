@@ -519,8 +519,8 @@ chmod +x KiaE2PackageManager
   - [Telegram](https://t.me/Rayan_Ku)
   - [Facebook](https://www.facebook.com/)
   - [X (Twitter)](https://x.com/)
-  - مەڵبەندەکانی Enigma2
-  - گرووپەکانی وەرگر(رێسیڤێر)ی مانگاوە
+  - مەڵبەند و ماڵپەڕەکانی Enigma2
+  - گرووپەکانی وەرگری مانگی دەستکرد (ڕێسیڤێر)
   - هەر پلاتفۆرمێکی تریش
 - 🐛 **کێشەکان ڕاپۆرت بکە** ئەگەر هەر باگێکت دۆزییەوە، لە [Issues](https://github.com/zavyka/KiaE2PackageManager/issues) ڕایبگەیەنە.
 
