@@ -4,11 +4,11 @@
 
 A powerful, all-in-one tool for managing plugins, skins, firmware images, and packages on Enigma2-based satellite receivers (Dreambox, VU+, GigaBlue, OpenATV, OpenPLi, DreamOS, and more).
 
-[English](#english) | [فارسی](#فارسی) | [کوردی سورانی](#کوردی-سورانی) | [العربية](#العربية)
+🇺🇸 [English](#english) | 🇮🇷 [فارسی](#فارسی) | 🇮🇷 [کوردی سورانی](#کوردی-سورانی) | 🇸🇦 [العربية](#العربية)
 
 ---
 
-## English
+## 🇺🇸 English
 
 ### Features
 
@@ -42,9 +42,9 @@ A powerful, all-in-one tool for managing plugins, skins, firmware images, and pa
 | `.tar.bz2` | Bzip2 compressed tar | General firmware/software |
 | `.zip` | ZIP archive | General file compression |
 
-### Installation
+### Installation & Usage
 
-#### On Receiver (Direct Download)
+#### Method 1: Direct Download on Receiver
 ```bash
 # Download the tool
 wget -O /tmp/KiaE2PackageManager <YOUR_DOWNLOAD_URL>
@@ -56,11 +56,9 @@ chmod +x /tmp/KiaE2PackageManager
 /tmp/KiaE2PackageManager
 ```
 
-#### Via Telnet/SSH
+#### Method 2: Transfer from PC via SSH/Telnet
 ```bash
-# Connect to your receiver
-telnet <receiver_ip>
-# or
+# Connect to your receiver via SSH
 ssh root@<receiver_ip>
 
 # Download and run
@@ -69,6 +67,50 @@ wget -O KiaE2PackageManager <YOUR_DOWNLOAD_URL>
 chmod +x KiaE2PackageManager
 ./KiaE2PackageManager
 ```
+
+#### Method 3: Offline Transfer (Putty + FileZilla / WinSCP)
+
+**Step 1: Transfer the file to your receiver**
+
+You can use any of these tools to copy `KiaE2PackageManager` to the `/tmp/` folder on your receiver:
+
+| Tool | Protocol | Instructions |
+|------|----------|-------------|
+| **FileZilla** | FTP | Connect to `<receiver_ip>:21` → Navigate to `/tmp/` → Drag & drop the file |
+| **WinSCP** | SCP/SFTP | Connect to `<receiver_ip>` (port 22) → Navigate to `/tmp/` → Drag & drop the file |
+| **Putty (PSCP)** | SCP | Run: `pscp KiaE2PackageManager root@<receiver_ip>:/tmp/` |
+| **Total Commander** | FTP/SCP | Use FTP or SCP plugin → Navigate to `/tmp/` → Upload file |
+
+**Step 2: Connect via SSH and run**
+
+Open **Putty** (or any SSH client) and connect to your receiver:
+
+```
+Host Name: <receiver_ip>
+Port: 22
+Connection Type: SSH
+```
+
+Login with:
+```
+Username: root
+Password: (your receiver password, usually empty or "dream" or "password")
+```
+
+Then run these commands:
+
+```bash
+# Navigate to tmp folder
+cd /tmp
+
+# Make the file executable
+chmod +x KiaE2PackageManager
+
+# Run the tool
+./KiaE2PackageManager
+```
+
+> **Tip:** You can also use Putty's built-in SCP feature to transfer files directly.
 
 ### Usage Guide
 
@@ -170,6 +212,7 @@ Depends: enigma2
 | Package build fails | Check that your project folder has correct structure with `DEBIAN/control` |
 | Validation fails | Ensure your package contains `control.tar` and `data.tar` |
 | Archive extraction fails | Check if the file is corrupted or in unsupported format |
+| Cannot connect via SSH | Make sure SSH server is running on receiver (install: `opkg install openssh`) |
 
 ### Developer Information
 
@@ -184,7 +227,178 @@ MIT License
 
 ---
 
-## فارسی
+## 🇮🇷 کوردی سورانی
+
+### تایبەتمەندیەکان
+
+- **دروستکردن و دوبارە دروستکردنی پاکێج** — دروستکردنی فایلەکانی `.deb` و `.ipk` لە پڕۆژەکانی پلاگین/سکینەکانت
+- **دەرکردن و کردنەوەی پاکێج** — دەرکردنی فایلەکانی `.deb` و `.ipk` بە پاراستنی تەواوی شێواز
+- **بەڕێوەبردنی فەرمویر** — کردنەوە و داگرتنی وێنەکانی فەرمویر (`.nfi`, `.tar.xz`, `.tar.gz`, `.tar.bz2`)
+- **کردارەکانی ئارکیڤ** — دروستکردنی ئارکیڤە فشارکراوەکان بە فۆرمتە جیاوازەکان (`.zip`, `.tar`, `.tar.gz`, `.tar.xz`, `.tar.bz2`)
+- **دەسنانی خۆکار** — دەسنانی خۆکاری ئارکیتەکچۆری گیرانە (ARM, ARM64, MIPS, x86/x64)
+- **گشتی** — کار لەگەڵ Python 2.7+ و Python 3.x
+- **بێ پەیوەندی** — تەنها ئامرازەکانی ستانداردی سیستەم بەکاردێنێت
+- **پشکنینی پاکێج** — پشکنینی ناوەخۆ بۆ سەلمێنانی گونجاویی پاکێج پێش دابەشکردن
+
+### گیرانە پشتیوانیکراوەکان
+
+| براند | مۆدێلەکان |
+|-------|-----------|
+| Dreambox | DM800, DM8000, DM900, DM920, DM520, DM500HD |
+| VU+ | Duo, Duo2, Duo4K, Solo, Solo2, Solo4K, Ultimo, Ultimo4K |
+| GigaBlue | هەموو مۆدێلەکانی پشتیوانیکراوی Enigma2 |
+| هەندێک | هەر گیرانەیەک بە سیستەمی Enigma2 (OpenATV, OpenPLi, DreamOS و هتد.) |
+
+### فۆرماتەکانی پاکێجی پشتیوانیکراوەکان
+
+| فۆرمت | وەسف | بەکارهێنان |
+|-------|------|-----------|
+| `.deb` | پاکێجی دێبین | گیرانەکانی Dreambox / DreamOS |
+| `.ipk` | پاکێجی IPK | گیرانەکانی OpenATV / OpenPLi / OE2.0 |
+| `.nfi` | وێنەی فەرمویری NFI | نوێکردنەوەی فەرمویری Dreambox |
+| `.tar.xz` | ئارکیڤی tarی فشارکراو | فەرمویر/نەرمەلەوەری گشتی |
+| `.tar.gz` | tarی فشارکراو بە gzip | فەرمویر/نەرمەلەوەری گشتی |
+| `.tar.bz2` | tarی فشارکراو بە bzip2 | فەرمویر/نەرمەلەوەری گشتی |
+| `.zip` | ئارکیڤی ZIP | فشارکردنی فایلی گشتی |
+
+### دامەزراندن و بەکارهێنان
+
+#### شێوەی ١: داگرتنی ڕاستەوخۆ لەسەر گیرانە
+```bash
+# داگرتنی ئامرازەکە
+wget -O /tmp/KiaE2PackageManager <YOUR_DOWNLOAD_URL>
+
+# دانانی مۆڵەتی جێبەجێکردن
+chmod +x /tmp/KiaE2PackageManager
+
+# جێبەجێکردن
+/tmp/KiaE2PackageManager
+```
+
+#### شێوەی ٢: گواستنەوە لە PC بە SSH/Telnet
+```bash
+# پەیوەندیکردن بە گیرانەکە بە SSH
+ssh root@<receiver_ip>
+
+# داگرتن و جێبەجێکردن
+cd /tmp
+wget -O KiaE2PackageManager <YOUR_DOWNLOAD_URL>
+chmod +x KiaE2PackageManager
+./KiaE2PackageManager
+```
+
+#### شێوەی ٣: گواستنەوەی ئۆفلاین (Putty + FileZilla / WinSCP)
+
+**هەنگاوی ١: گواستنەوەی فایل بۆ گیرانەکە**
+
+دەتوانیت هەر یەکێک لەم ئامرازانە بەکاربهێنیت بۆ گواستنەوەی `KiaE2PackageManager` بۆ پوشەی `/tmp/` لە گیرانەکە:
+
+| ئامراز | پرۆتۆکۆل | ئاراستەکان |
+|--------|----------|-----------|
+| **FileZilla** | FTP | پەیوەندی بکە بە `<receiver_ip>:21` → بچۆ بۆ `/tmp/` → فایلەکە بکەوە |
+| **WinSCP** | SCP/SFTP | پەیوەندی بکە بە `<receiver_ip>` (پۆرت 22) → بچۆ بۆ `/tmp/` → فایلەکە بکەوە |
+| **Putty (PSCP)** | SCP | فەرمان جێبەجێ بکە: `pscp KiaE2PackageManager root@<receiver_ip>:/tmp/` |
+| **Total Commander** | FTP/SCP | بەکارهێنانی FTP یان SCP plugin → بچۆ بۆ `/tmp/` → فایلەکە بکەوە |
+
+**هەنگاوی ٢: پەیوەندیکردن بە SSH و جێبەجێکردن**
+
+**Putty** (یان هەر کلایێntێکی SSH) بیکەوە و پەیوەندی بکە بە گیرانەکە:
+
+```
+Host Name: <receiver_ip>
+Port: 22
+Connection Type: SSH
+```
+
+چوونەوە بکە بە:
+```
+Username: root
+Password: (وشەی نهێنی گیرانەکە، زۆربەی کات بەتاڵ یان "dream" یان "password")
+```
+
+پاشان ئەم فەرمانانە جێبەجێ بکە:
+
+```bash
+# چوونەوە بۆ پوشەی tmp
+cd /tmp
+
+# فایلەکە بکە بۆ ئەجراکردن
+chmod +x KiaE2PackageManager
+
+# ئامرازەکە جێبەجێ بکە
+./KiaE2PackageManager
+```
+
+> **ئامار:** دەتوانیت تایبەتمەندی SCPی Putty بەکاربهێنیت بۆ گواستنەوەی فایلەکان بە ڕاستەوخۆ.
+
+### رێنمای بەکارهێنان
+
+#### مینیوی سەرەکی
+
+```
+==========================================
+   KiaE2PackageManager Universal v1.2.2
+   (ئامرازی بەڕێوەبردنی پلاگینەکان، سکینەکان و وێنەکان)
+==========================================
+
+هەڵبژاردنی بەشی سەرەکی:
+  1) بەڕێوەبەری پلاگینەکان و سکینەکان (.ipk / .deb)
+  2) بەڕێوەبەری فەرمویر و وێنەکان (.nfi, .tar.xz, .tar.gz)
+  3) دەرچوون لە برنامە
+```
+
+#### هەڵبژاردنی ١: بەڕێوەبەری پلاگینەکان و سکینەکان
+
+**دروستکردنی پاکێج:**
+1. هەڵبژاردنی `1` لە مینیوی سەرەکی
+2. هەڵبژاردنی `1` (دروستکردن / دوبارە دروستکردنی پاکێج)
+3. فۆرمتی دەرەوە هەڵبژێرە
+4. پشکنین بکە و چاوەڕوانی بکە
+
+**دەرکردنی پاکێج:**
+1. هەڵبژاردنی `1` لە مینیوی سەرەکی
+2. هەڵبژاردنی `2` (کردنەوە / دەرکردنی پاکێج)
+3. فایلی پاکێج هەڵبژێرە
+4. فایلەکانی دەرکراو تۆمار دەکرێن
+
+#### هەڵبژاردنی ٢: بەڕێوەبەری فەرمویر و وێنەکان
+
+**کردنەوەی وێنەی فەرمویر:**
+1. هەڵبژاردنی `2` لە مینیوی سەرەکی
+2. هەڵبژاردنی `1` (کردنەوەی وێنە / ئارکیڤ)
+3. فایلی وێنە هەڵبژێرە
+4. ئاراستەی دەرکردن هەڵبژێرە
+
+**دروستکردنی ئارکیڤ:**
+1. هەڵبژاردنی `2` لە مینیوی سەرەکی
+2. هەڵبژاردنی `2` (پاککردنەوە / فشارکردنی پوشە)
+3. پوشەی مەوردەیت هەڵبژێرە
+4. فۆرمتی دەرەوە هەڵبژێرە
+
+### ڕاستکردنەوەی هەڵە
+
+| کێشە | چارەسەر |
+|------|---------|
+| "Python not found" | پایتۆن دابەزێنە: `opkg install python` |
+| "Permission denied" | فەرمانی `chmod +x KiaE2PackageManager` جێبەجێ بکە |
+| هەڵە لە دروستکردنی پاکێج | شێوازی پوشهی پڕۆژەکە پشکنین بکە |
+| هەڵە لە پشکنین | دڵنیا بە لەوانەی پاکێجەکەت تێدەگرێت `control.tar` و `data.tar` |
+| پەیوەندی SSH سەر نەکرا | دڵنیا بە لەوەی ڕاژەی SSH کاردەکات لەسەر گیرانە (دامەزراندن: `opkg install openssh`) |
+
+### زانیاری دەveloper
+
+- **دەveloper:** KiaKu_1982
+- **GitHub:** [github.com/zavyka](https://github.com/zavyka)
+- **Telegram:** [@Rayan_Ku](https://t.me/Rayan_Ku)
+- **Channel:** [@Enigma2_Tutorials](https://t.me/Enigma2_Tutorials)
+
+### مۆڵەت
+
+مۆڵەتی MIT
+
+---
+
+## 🇮🇷 فارسی
 
 ### ویژگی‌ها
 
@@ -218,9 +432,9 @@ MIT License
 | `.tar.bz2` | tar فشرده با bzip2 | فریمور/نرم‌افزار عمومی |
 | `.zip` | آرشیو ZIP | فشرده‌سازی فایل عمومی |
 
-### نصب
+### نصب و استفاده
 
-#### روی گیرنده (دانلود مستقیم)
+#### روش ۱: دانلود مستقیم روی گیرنده
 ```bash
 # دانلود ابزار
 wget -O /tmp/KiaE2PackageManager <YOUR_DOWNLOAD_URL>
@@ -232,11 +446,9 @@ chmod +x /tmp/KiaE2PackageManager
 /tmp/KiaE2PackageManager
 ```
 
-#### از طریق Telnet/SSH
+#### روش ۲: انتقال از کامپیوتر از طریق SSH/Telnet
 ```bash
-# اتصال به گیرنده
-telnet <receiver_ip>
-# یا
+# اتصال به گیرنده از طریق SSH
 ssh root@<receiver_ip>
 
 # دانلود و اجرا
@@ -245,6 +457,50 @@ wget -O KiaE2PackageManager <YOUR_DOWNLOAD_URL>
 chmod +x KiaE2PackageManager
 ./KiaE2PackageManager
 ```
+
+#### روش ۳: انتقال آفلاین (Putty + FileZilla / WinSCP)
+
+**مرحله ۱: انتقال فایل به گیرنده**
+
+از هر کدام از این نرم‌افزارها می‌توانید برای کپی کردن `KiaE2PackageManager` در پوشه `/tmp/` روی گیرنده استفاده کنید:
+
+| نرم‌افزار | پروتکل | راهنما |
+|----------|--------|-------|
+| **FileZilla** | FTP | اتصال به `<receiver_ip>:21` → رفتن به `/tmp/` → کشیدن و رها کردن فایل |
+| **WinSCP** | SCP/SFTP | اتصال به `<receiver_ip>` (پورت 22) → رفتن به `/tmp/` → کشیدن و رها کردن فایل |
+| **Putty (PSCP)** | SCP | اجرای دستور: `pscp KiaE2PackageManager root@<receiver_ip>:/tmp/` |
+| **Total Commander** | FTP/SCP | استفاده از افزونه FTP یا SCP → رفتن به `/tmp/` → آپلود فایل |
+
+**مرحله ۲: اتصال از طریق SSH و اجرا**
+
+**Putty** (یا هر کلاینت SSH دیگر) را باز کنید و به گیرنده متصل شوید:
+
+```
+Host Name: <receiver_ip>
+Port: 22
+Connection Type: SSH
+```
+
+ورود با:
+```
+Username: root
+Password: (رمز عبور گیرنده، معمولاً خالی یا "dream" یا "password")
+```
+
+سپس دستورات زیر را اجرا کنید:
+
+```bash
+# رفتن به پوشه tmp
+cd /tmp
+
+# دادن مجوز اجرا به فایل
+chmod +x KiaE2PackageManager
+
+# اجرای ابزار
+./KiaE2PackageManager
+```
+
+> **نکته:** همچنین می‌توانید از قابلیت SCP داخلی Putty برای انتقال مستقیم فایل‌ها استفاده کنید.
 
 ### راهنمای استفاده
 
@@ -304,6 +560,7 @@ chmod +x KiaE2PackageManager
 | "Permission denied" | دستور `chmod +x KiaE2PackageManager` را اجرا کنید |
 | خطا در ساخت پکیج | ساختار پوشه پروژه را بررسی کنید |
 | خطا در اعتبارسنجی | مطمئن شوید پکیج شامل `control.tar` و `data.tar` است |
+| عدم اتصال SSH | مطمئن شوید سرور SSH روی گیرنده فعال است (نصب: `opkg install openssh`) |
 
 ### اطلاعات توسعه‌دهنده
 
@@ -318,120 +575,7 @@ chmod +x KiaE2PackageManager
 
 ---
 
-## کوردی سورانی
-
-### تایبەتمەندیەکان
-
-- **دروستکردن و دوبارە دروستکردنی پاکێج** — دروستکردنی فایلەکانی `.deb` و `.ipk` لە پڕۆژەکانی پلاگین/سکینەکانت
-- **دەرکردن و کردنەوەی پاکێج** — دەرکردنی فایلەکانی `.deb` و `.ipk` بە پاراستنی تەواوی شێواز
-- **بەڕێوەبردنی فەرمویر** — کردنەوە و داگرتنی وێنەکانی فەرمویر (`.nfi`, `.tar.xz`, `.tar.gz`, `.tar.bz2`)
-- **کردارەکانی ئارکیڤ** — دروستکردنی ئارکیڤە فشارکراوەکان بە فۆرمتە جیاوازەکان (`.zip`, `.tar`, `.tar.gz`, `.tar.xz`, `.tar.bz2`)
-- **دەسنانی خۆکار** — دەسنانی خۆکاری ئارکیتەکچۆری گیرانە (ARM, ARM64, MIPS, x86/x64)
-- **گشتی** — کار لەگەڵ Python 2.7+ و Python 3.x
-- **بێ پەیوەندی** — تەنها ئامرازەکانی ستانداردی سیستەم بەکاردێنێت
-- **پشکنینی پاکێج** — پشکنینی ناوەخۆ بۆ سەلمێنانی گونجاویی پاکێج پێش دابەشکردن
-
-### گیرانە پشتیوانیکراوەکان
-
-| براند | مۆدێلەکان |
-|-------|-----------|
-| Dreambox | DM800, DM8000, DM900, DM920, DM520, DM500HD |
-| VU+ | Duo, Duo2, Duo4K, Solo, Solo2, Solo4K, Ultimo, Ultimo4K |
-| GigaBlue | هەموو مۆدێلەکانی پشتیوانیکراوی Enigma2 |
-| هەندێک | هەر گیرانەیەک بە سیستەمی Enigma2 (OpenATV, OpenPLi, DreamOS و هتد.) |
-
-### فۆرماتەکانی پاکێجی پشتیوانیکراوەکان
-
-| فۆرمت | وەسف | بەکارهێنان |
-|-------|------|-----------|
-| `.deb` | پاکێجی دێبین | گیرانەکانی Dreambox / DreamOS |
-| `.ipk` | پاکێجی IPK | گیرانەکانی OpenATV / OpenPLi / OE2.0 |
-| `.nfi` | وێنەی فەرمویری NFI | نوێکردنەوەی فەرمویری Dreambox |
-| `.tar.xz` | ئارکیڤی tarی فشارکراو | فەرمویر/نەرمەلەوەری گشتی |
-| `.tar.gz` | tarی فشارکراو بە gzip | فەرمویر/نەرمەلەوەری گشتی |
-| `.tar.bz2` | tarی فشارکراو بە bzip2 | فەرمویر/نەرمەلەوەری گشتی |
-| `.zip` | ئارکیڤی ZIP | فشارکردنی فایلی گشتی |
-
-### دامەزراندن
-
-#### لەسەر گیرانە (داگرتنی ڕاستەوخۆ)
-```bash
-# داگرتنی ئامرازەکە
-wget -O /tmp/KiaE2PackageManager <YOUR_DOWNLOAD_URL>
-
-# دانانی مۆڵەتی جێبەجێکردن
-chmod +x /tmp/KiaE2PackageManager
-
-# جێبەجێکردن
-/tmp/KiaE2PackageManager
-```
-
-#### لە طریقەی Telnet/SSH
-```bash
-# پەیوەندیکردن بە گیرانەکە
-telnet <receiver_ip>
-# یان
-ssh root@<receiver_ip>
-
-# داگرتن و جێبەجێکردن
-cd /tmp
-wget -O KiaE2PackageManager <YOUR_DOWNLOAD_URL>
-chmod +x KiaE2PackageManager
-./KiaE2PackageManager
-```
-
-### رێنمای بەکارهێنان
-
-#### مینیوی سەرەکی
-
-```
-==========================================
-   KiaE2PackageManager Universal v1.2.2
-   (ئامرازی بەڕێوەبردنی پلاگینەکان، سکینەکان و وێنەکان)
-==========================================
-
-هەڵبژاردنی بەشی سەرەکی:
-  1) بەڕێوەبەری پلاگینەکان و سکینەکان (.ipk / .deb)
-  2) بەڕێوەبەری فەرمویر و وێنەکان (.nfi, .tar.xz, .tar.gz)
-  3) دەرچوون لە برنامە
-```
-
-#### هەڵبژاردنی ١: بەڕێوەبەری پلاگینەکان و سکینەکان
-
-**دروستکردنی پاکێج:**
-1. هەڵبژاردنی `1` لە مینیوی سەرەکی
-2. هەڵبژاردنی `1` (دروستکردن / دوبارە دروستکردنی پاکێج)
-3. فۆرمتی دەرەوە هەڵبژێرە
-4. پشکنین بکە و چاوەڕوانی بکە
-
-**دەرکردنی پاکێج:**
-1. هەڵبژاردنی `1` لە مینیوی سەرەکی
-2. هەڵبژاردنی `2` (کردنەوە / دەرکردنی پاکێج)
-3. فایلی پاکێج هەڵبژێرە
-4. فایلەکانی دەرکراو تۆمار دەکرێن
-
-### ڕاستکردنەوەی هەڵە
-
-| کێشە | چارەسەر |
-|------|---------|
-| "Python not found" | پایتۆن دابەزێنە: `opkg install python` |
-| "Permission denied" | فەرمانی `chmod +x KiaE2PackageManager` جێبەجێ بکە |
-| هەڵە لە دروستکردنی پاکێج | شێوازی پوشهی پڕۆژەکە پشکنین بکە |
-
-### زانیاری دەveloper
-
-- **دەveloper:** KiaKu_1982
-- **GitHub:** [github.com/zavyka](https://github.com/zavyka)
-- **Telegram:** [@Rayan_Ku](https://t.me/Rayan_Ku)
-- **Channel:** [@Enigma2_Tutorials](https://t.me/Enigma2_Tutorials)
-
-### مۆڵەت
-
-مۆڵەتی MIT
-
----
-
-## العربية
+## 🇸🇦 العربية
 
 ### الميزات
 
@@ -465,9 +609,9 @@ chmod +x KiaE2PackageManager
 | `.tar.bz2` | tar مضغوط بـ bzip2 | البرامج الثابتة العامة |
 | `.zip` | أرشيف ZIP | ضغط الملفات العامة |
 
-### التثبيت
+### التثبيت والاستخدام
 
-#### على جهاز الاستقبال (تحميل مباشر)
+#### الطريقة 1: التحميل المباشر على جهاز الاستقبال
 ```bash
 # تحميل الأداة
 wget -O /tmp/KiaE2PackageManager <YOUR_DOWNLOAD_URL>
@@ -479,11 +623,9 @@ chmod +x /tmp/KiaE2PackageManager
 /tmp/KiaE2PackageManager
 ```
 
-#### عبر Telnet/SSH
+#### الطريقة 2: النقل من الكمبيوتر عبر SSH/Telnet
 ```bash
-# الاتصال بجهاز الاستقبال
-telnet <receiver_ip>
-# أو
+# الاتصال بجهاز الاستقبال عبر SSH
 ssh root@<receiver_ip>
 
 # التحميل والتشغيل
@@ -492,6 +634,50 @@ wget -O KiaE2PackageManager <YOUR_DOWNLOAD_URL>
 chmod +x KiaE2PackageManager
 ./KiaE2PackageManager
 ```
+
+#### الطريقة 3: النقل دون اتصال (Putty + FileZilla / WinSCP)
+
+**الخطوة 1: نقل الملف إلى جهاز الاستقبال**
+
+يمكنك استخدام أي من هذه الأدوات لنسخ `KiaE2PackageManager` إلى المجلد `/tmp/` على جهاز الاستقبال:
+
+| الأداة | البروتوكول | التعليمات |
+|--------|-----------|----------|
+| **FileZilla** | FTP | الاتصال بـ `<receiver_ip>:21` → الانتقال إلى `/tmp/` → سحب وإفلات الملف |
+| **WinSCP** | SCP/SFTP | الاتصال بـ `<receiver_ip>` (منفذ 22) → الانتقال إلى `/tmp/` → سحب وإفلات الملف |
+| **Putty (PSCP)** | SCP | تنفيذ الأمر: `pscp KiaE2PackageManager root@<receiver_ip>:/tmp/` |
+| **Total Commander** | FTP/SCP | استخدام إضافة FTP أو SCP → الانتقال إلى `/tmp/` → رفع الملف |
+
+**الخطوة 2: الاتصال عبر SSH والتشغيل**
+
+افتح **Putty** (أي عميل SSH آخر) واتصل بجهاز الاستقبال:
+
+```
+Host Name: <receiver_ip>
+Port: 22
+Connection Type: SSH
+```
+
+تسجيل الدخول بـ:
+```
+Username: root
+Password: (كلمة مرور جهاز الاستقبال، عادةً فارغة أو "dream" أو "password")
+```
+
+ثم نفذ الأوامر التالية:
+
+```bash
+# الانتقال إلى مجلد tmp
+cd /tmp
+
+# إعطاء صلاحية التنفيذ للملف
+chmod +x KiaE2PackageManager
+
+# تشغيل الأداة
+./KiaE2PackageManager
+```
+
+> **نصيحة:** يمكنك أيضًا استخدام ميزة SCP المدمجة في Putty لنقل الملفات مباشرة.
 
 ### دليل الاستخدام
 
@@ -545,6 +731,7 @@ chmod +x KiaE2PackageManager
 | "Permission denied" | نفّذ `chmod +x KiaE2PackageManager` |
 | فشل بناء الحزمة | تحقق من بنية مجلد المشروع |
 | فشل التحقق | تأكد من وجود `control.tar` و `data.tar` |
+| فشل الاتصال بـ SSH | تأكد من تشغيل خادم SSH على جهاز الاستقبال (التثبيت: `opkg install openssh`) |
 
 ### معلومات المطور
 
