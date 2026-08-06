@@ -4,7 +4,7 @@
 
 A powerful, all-in-one tool for managing plugins, skins, firmware images, and packages on Enigma2-based satellite receivers (Dreambox, VU+, GigaBlue, OpenATV, OpenPLi, DreamOS, and more).
 
-🇺🇸 [English](#english) | 🇮🇷 [فارسی](#فارسی) | 🇮🇷 [کوردی سورانی](#کوردی-سورانی) | 🇸🇦 [العربية](#العربية)
+🇺🇸 [English](#-english) | ☀️ [کوردی سورانی](#-کوردی-سورانی) | 🇮🇷 [فارسی](#-فارسی) | 🇸🇦 [العربية](#-العربية)
 
 ---
 
@@ -227,7 +227,7 @@ MIT License
 
 ---
 
-## 🇮🇷 کوردی سورانی
+## ☀️ کوردی سورانی
 
 ### تایبەتمەندیەکان
 
