@@ -221,6 +221,16 @@ Depends: enigma2
 - **Telegram:** [@Rayan_Ku](https://t.me/Rayan_Ku)
 - **Channel:** [@Enigma2_Tutorials](https://t.me/Enigma2_Tutorials)
 
+### 🌟 Support & Star
+
+If you found this tool helpful, please:
+
+- ⭐ **Star** the project on [GitHub](https://github.com/zavyka)
+- 📢 **Share** it in Telegram groups
+- 🐛 **Report issues** if you find any bugs at [Issues](https://github.com/zavyka/issues)
+
+By supporting this project, you help us build even better tools!
+
 ### License
 
 MIT License
@@ -235,26 +245,26 @@ MIT License
 - **دەرکردن و کردنەوەی پاکێج** — دەرکردنی فایلەکانی `.deb` و `.ipk` بە پاراستنی تەواوی شێواز
 - **بەڕێوەبردنی فەرمویر** — کردنەوە و داگرتنی وێنەکانی فەرمویر (`.nfi`, `.tar.xz`, `.tar.gz`, `.tar.bz2`)
 - **کردارەکانی ئارکیڤ** — دروستکردنی ئارکیڤە فشارکراوەکان بە فۆرمتە جیاوازەکان (`.zip`, `.tar`, `.tar.gz`, `.tar.xz`, `.tar.bz2`)
-- **دەسنانی خۆکار** — دەسنانی خۆکاری ئارکیتەکچۆری گیرانە (ARM, ARM64, MIPS, x86/x64)
+- **دەسنانی خۆکار** — دەسنانی خۆکاری ئارکیتەکچۆری رێسیڤێر (ARM, ARM64, MIPS, x86/x64)
 - **گشتی** — کار لەگەڵ Python 2.7+ و Python 3.x
 - **بێ پەیوەندی** — تەنها ئامرازەکانی ستانداردی سیستەم بەکاردێنێت
 - **پشکنینی پاکێج** — پشکنینی ناوەخۆ بۆ سەلمێنانی گونجاویی پاکێج پێش دابەشکردن
 
-### گیرانە پشتیوانیکراوەکان
+### رێسیڤێرە پشتیوانیکراوەکان
 
 | براند | مۆدێلەکان |
 |-------|-----------|
 | Dreambox | DM800, DM8000, DM900, DM920, DM520, DM500HD |
 | VU+ | Duo, Duo2, Duo4K, Solo, Solo2, Solo4K, Ultimo, Ultimo4K |
 | GigaBlue | هەموو مۆدێلەکانی پشتیوانیکراوی Enigma2 |
-| هەندێک | هەر گیرانەیەک بە سیستەمی Enigma2 (OpenATV, OpenPLi, DreamOS و هتد.) |
+| هەندێک | هەر رێسیڤێرێک بە سیستەمی Enigma2 (OpenATV, OpenPLi, DreamOS و هتد.) |
 
 ### فۆرماتەکانی پاکێجی پشتیوانیکراوەکان
 
 | فۆرمت | وەسف | بەکارهێنان |
 |-------|------|-----------|
-| `.deb` | پاکێجی دێبین | گیرانەکانی Dreambox / DreamOS |
-| `.ipk` | پاکێجی IPK | گیرانەکانی OpenATV / OpenPLi / OE2.0 |
+| `.deb` | پاکێجی دێبین | رێسیڤێرەکانی Dreambox / DreamOS |
+| `.ipk` | پاکێجی IPK | رێسیڤێرەکانی OpenATV / OpenPLi / OE2.0 |
 | `.tar.xz` | ئارکیڤی tarی فشارکراو | فەرمویر/نەرمەلەوەری گشتی |
 | `.tar.gz` | tarی فشارکراو بە gzip | فەرمویر/نەرمەلەوەری گشتی |
 | `.tar.bz2` | tarی فشارکراو بە bzip2 | فەرمویر/نەرمەلەوەری گشتی |
@@ -263,7 +273,7 @@ MIT License
 
 ### دامەزراندن و بەکارهێنان
 
-#### شێوەی ١: داگرتنی ڕاستەوخۆ لەسەر گیرانە
+#### شێوەی ١: داگرتنی ڕاستەوخۆ لەسەر رێسیڤێر
 ```bash
 # داگرتنی ئامرازەکە
 wget -O /tmp/KiaE2PackageManager <YOUR_DOWNLOAD_URL>
@@ -277,7 +287,7 @@ chmod +x /tmp/KiaE2PackageManager
 
 #### شێوەی ٢: گواستنەوە لە PC بە SSH/Telnet
 ```bash
-# پەیوەندیکردن بە گیرانەکە بە SSH
+# پەیوەندیکردن بە رێسیڤێرەکە بە SSH
 ssh root@<receiver_ip>
 
 # داگرتن و جێبەجێکردن
@@ -289,9 +299,9 @@ chmod +x KiaE2PackageManager
 
 #### شێوەی ٣: گواستنەوەی ئۆفلاین (Putty + FileZilla / WinSCP)
 
-**هەنگاوی ١: گواستنەوەی فایل بۆ گیرانەکە**
+**هەنگاوی ١: گواستنەوەی فایل بۆ رێسیڤێرەکە**
 
-دەتوانیت هەر یەکێک لەم ئامرازانە بەکاربهێنیت بۆ گواستنەوەی `KiaE2PackageManager` بۆ پوشەی `/tmp/` لە گیرانەکە:
+دەتوانیت هەر یەکێک لەم ئامرازانە بەکاربهێنیت بۆ گواستنەوەی `KiaE2PackageManager` بۆ پوشەی `/tmp/` لە رێسیڤێرەکە:
 
 | ئامراز | پرۆتۆکۆل | ئاراستەکان |
 |--------|----------|-----------|
@@ -302,7 +312,7 @@ chmod +x KiaE2PackageManager
 
 **هەنگاوی ٢: پەیوەندیکردن بە SSH و جێبەجێکردن**
 
-**Putty** (یان هەر کلایێntێکی SSH) بیکەوە و پەیوەندی بکە بە گیرانەکە:
+**Putty** (یان هەر کلایێntێکی SSH) بیکەوە و پەیوەندی بکە بە رێسیڤێرەکە:
 
 ```
 Host Name: <receiver_ip>
@@ -313,7 +323,7 @@ Connection Type: SSH
 چوونەوە بکە بە:
 ```
 Username: root
-Password: (وشەی نهێنی گیرانەکە، زۆربەی کات بەتاڵ یان "dream" یان "password")
+Password: (وشەی نهێنی رێسیڤێرەکە، زۆربەی کات بەتاڵ یان "dream" یان "password")
 ```
 
 پاشان ئەم فەرمانانە جێبەجێ بکە:
@@ -383,7 +393,7 @@ chmod +x KiaE2PackageManager
 | "Permission denied" | فەرمانی `chmod +x KiaE2PackageManager` جێبەجێ بکە |
 | هەڵە لە دروستکردنی پاکێج | شێوازی پوشهی پڕۆژەکە پشکنین بکە |
 | هەڵە لە پشکنین | دڵنیا بە لەوانەی پاکێجەکەت تێدەگرێت `control.tar` و `data.tar` |
-| پەیوەندی SSH سەر نەکرا | دڵنیا بە لەوەی ڕاژەی SSH کاردەکات لەسەر گیرانە (دامەزراندن: `opkg install openssh`) |
+| پەیوەندی SSH سەر نەکرا | دڵنیا بە لەوەی ڕاژەی SSH کاردەکات لەسەر رێسیڤێر (دامەزراندن: `opkg install openssh`) |
 
 ### زانیاری دەveloper
 
@@ -391,6 +401,16 @@ chmod +x KiaE2PackageManager
 - **GitHub:** [github.com/zavyka](https://github.com/zavyka)
 - **Telegram:** [@Rayan_Ku](https://t.me/Rayan_Ku)
 - **Channel:** [@Enigma2_Tutorials](https://t.me/Enigma2_Tutorials)
+
+### 🌟 پشتیبانی و ستارە دان
+
+ئەگەر ئەم ئامرازە بەردەست بوویت و یارمەتیت دا، تکایە:
+
+- ⭐ **ستارە بکە** بۆ پڕۆژەکە لە [GitHub](https://github.com/zavyka)
+- 📢 **هاوبەش بکە** لە گرووپەکانی تێلێگرام
+- 🐛 **هەڵەی تۆمار بکە** ئەگەر کێشەیەکت بینی لە [Issues](https://github.com/zavyka/issues)
+
+بە فرۆکردنی ئەم پڕۆژەیە، دەستێکت خۆ دەبێت بۆ گەشەی خۆشتری ئامرازەکان!
 
 ### مۆڵەت
 
@@ -569,6 +589,16 @@ chmod +x KiaE2PackageManager
 - **تلگرام:** [@Rayan_Ku](https://t.me/Rayan_Ku)
 - **کانال:** [@Enigma2_Tutorials](https://t.me/Enigma2_Tutorials)
 
+### 🌟 حمایت و ستاره دان
+
+اگر این ابزار برایتان مفید بود، لطفاً:
+
+- ⭐ **ستاره بدهید** به پروژه در [GitHub](https://github.com/zavyka)
+- 📢 **اشتراک بگذارید** در گروه‌های تلگرامی
+- 🐛 **مشکلات را گزارش کنید** اگر باگی پیدا کردید در [Issues](https://github.com/zavyka/issues)
+
+با حمایت از این پروژه، به ما کمک کنید تا ابزارهای بهتری بسازیم!
+
 ### مجوز
 
 مجوز MIT
@@ -739,6 +769,16 @@ chmod +x KiaE2PackageManager
 - **GitHub:** [github.com/zavyka](https://github.com/zavyka)
 - **Telegram:** [@Rayan_Ku](https://t.me/Rayan_Ku)
 - **القناة:** [@Enigma2_Tutorials](https://t.me/Enigma2_Tutorials)
+
+### 🌟 الدعم والتقييم
+
+إذا وجدت هذه الأداة مفيدة، يرجى:
+
+- ⭐ **تقييم** المشروع على [GitHub](https://github.com/zavyka)
+- 📢 **مشاركة** الأداة في مجموعات تيليجرام
+- 🐛 **الإبلاغ عن المشاكل** إذا وجدت أي أخطاء في [Issues](https://github.com/zavyka/issues)
+
+بدعمك لهذا المشروع، تساعدنا في بناء أدوات أفضل!
 
 ### الترخيص
 
