@@ -4,6 +4,8 @@
 
 A powerful, all-in-one tool for managing plugins, skins, firmware images, and packages on Enigma2-based satellite receivers (Dreambox, VU+, GigaBlue, OpenATV, OpenPLi, DreamOS, and more).
 
+![KiaE2PackageManager Main Menu](screenshot_main.png)
+
 🇺🇸 [English](#-english) | ☀️ [کوردی سۆرانی](#kurdish) | 🇮🇷 [فارسی](#-فارسی) | 🇸🇦 [العربية](#-العربية)
 
 ---
