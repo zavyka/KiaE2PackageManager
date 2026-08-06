@@ -46,24 +46,16 @@ A powerful, all-in-one tool for managing plugins, skins, firmware images, and pa
 
 #### Method 1: Direct Download on Receiver
 ```bash
-# Download the tool
-wget -O /tmp/KiaE2PackageManager <YOUR_DOWNLOAD_URL>
-
-# Make it executable
+wget -O /tmp/KiaE2PackageManager https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager
 chmod +x /tmp/KiaE2PackageManager
-
-# Run it
 /tmp/KiaE2PackageManager
 ```
 
 #### Method 2: Transfer from PC via SSH/Telnet
 ```bash
-# Connect to your receiver via SSH
 ssh root@<receiver_ip>
-
-# Download and run
 cd /tmp
-wget -O KiaE2PackageManager <YOUR_DOWNLOAD_URL>
+wget -O KiaE2PackageManager https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager
 chmod +x KiaE2PackageManager
 ./KiaE2PackageManager
 ```
@@ -94,19 +86,14 @@ Connection Type: SSH
 Login with:
 ```
 Username: root
-Password: (your receiver password, usually empty or "dreambox" or "password")
+Password: dreambox
 ```
 
 Then run these commands:
 
 ```bash
-# Navigate to tmp folder
 cd /tmp
-
-# Make the file executable
 chmod +x KiaE2PackageManager
-
-# Run the tool
 ./KiaE2PackageManager
 ```
 
@@ -281,24 +268,16 @@ MIT License
 
 #### شێوەی ١: داگرتنی ڕاستەوخۆ لەسەر رێسیڤێر
 ```bash
-# داگرتنی ئامرازەکە
-wget -O /tmp/KiaE2PackageManager <YOUR_DOWNLOAD_URL>
-
-# دانانی مۆڵەتی جێبەجێکردن
+wget -O /tmp/KiaE2PackageManager https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager
 chmod +x /tmp/KiaE2PackageManager
-
-# جێبەجێکردن
 /tmp/KiaE2PackageManager
 ```
 
 #### شێوەی ٢: گواستنەوە لە PC بە SSH/Telnet
 ```bash
-# پەیوەندیکردن بە رێسیڤێرەکە بە SSH
 ssh root@<receiver_ip>
-
-# داگرتن و جێبەجێکردن
 cd /tmp
-wget -O KiaE2PackageManager <YOUR_DOWNLOAD_URL>
+wget -O KiaE2PackageManager https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager
 chmod +x KiaE2PackageManager
 ./KiaE2PackageManager
 ```
@@ -329,19 +308,14 @@ Connection Type: SSH
 چوونەوە بکە بە:
 ```
 Username: root
-Password: (وشەی نهێنی رێسیڤێرەکە، زۆربەی کات بەتاڵ یان "dreambox" یان "password")
+Password: dreambox
 ```
 
 پاشان ئەم فەرمانانە جێبەجێ بکە:
 
 ```bash
-# چوونەوە بۆ پوشەی tmp
 cd /tmp
-
-# فایلەکە بکە بۆ ئەجراکردن
 chmod +x KiaE2PackageManager
-
-# ئامرازەکە جێبەجێ بکە
 ./KiaE2PackageManager
 ```
 
@@ -468,24 +442,16 @@ chmod +x KiaE2PackageManager
 
 #### روش ۱: دانلود مستقیم روی گیرنده
 ```bash
-# دانلود ابزار
-wget -O /tmp/KiaE2PackageManager <YOUR_DOWNLOAD_URL>
-
-# دادن مجوز اجرا
+wget -O /tmp/KiaE2PackageManager https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager
 chmod +x /tmp/KiaE2PackageManager
-
-# اجرا
 /tmp/KiaE2PackageManager
 ```
 
 #### روش ۲: انتقال از کامپیوتر از طریق SSH/Telnet
 ```bash
-# اتصال به گیرنده از طریق SSH
 ssh root@<receiver_ip>
-
-# دانلود و اجرا
 cd /tmp
-wget -O KiaE2PackageManager <YOUR_DOWNLOAD_URL>
+wget -O KiaE2PackageManager https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager
 chmod +x KiaE2PackageManager
 ./KiaE2PackageManager
 ```
@@ -516,19 +482,14 @@ Connection Type: SSH
 ورود با:
 ```
 Username: root
-Password: (رمز عبور گیرنده، معمولاً خالی یا "dreambox" یا "password")
+Password: dreambox
 ```
 
 سپس دستورات زیر را اجرا کنید:
 
 ```bash
-# رفتن به پوشه tmp
 cd /tmp
-
-# دادن مجوز اجرا به فایل
 chmod +x KiaE2PackageManager
-
-# اجرای ابزار
 ./KiaE2PackageManager
 ```
 
@@ -661,24 +622,16 @@ chmod +x KiaE2PackageManager
 
 #### الطريقة 1: التحميل المباشر على جهاز الاستقبال
 ```bash
-# تحميل الأداة
-wget -O /tmp/KiaE2PackageManager <YOUR_DOWNLOAD_URL>
-
-# إعطاء صلاحية التنفيذ
+wget -O /tmp/KiaE2PackageManager https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager
 chmod +x /tmp/KiaE2PackageManager
-
-# التشغيل
 /tmp/KiaE2PackageManager
 ```
 
 #### الطريقة 2: النقل من الكمبيوتر عبر SSH/Telnet
 ```bash
-# الاتصال بجهاز الاستقبال عبر SSH
 ssh root@<receiver_ip>
-
-# التحميل والتشغيل
 cd /tmp
-wget -O KiaE2PackageManager <YOUR_DOWNLOAD_URL>
+wget -O KiaE2PackageManager https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager
 chmod +x KiaE2PackageManager
 ./KiaE2PackageManager
 ```
@@ -709,19 +662,14 @@ Connection Type: SSH
 تسجيل الدخول بـ:
 ```
 Username: root
-Password: (كلمة مرور جهاز الاستقبال، عادةً فارغة أو "dreambox" أو "password")
+Password: dreambox
 ```
 
 ثم نفذ الأوامر التالية:
 
 ```bash
-# الانتقال إلى مجلد tmp
 cd /tmp
-
-# إعطاء صلاحية التنفيذ للملف
 chmod +x KiaE2PackageManager
-
-# تشغيل الأداة
 ./KiaE2PackageManager
 ```
 
