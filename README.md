@@ -226,10 +226,16 @@ Depends: enigma2
 If you found this tool helpful, please:
 
 - ⭐ **Star** the project on [GitHub](https://github.com/zavyka)
-- 📢 **Share** it in Telegram groups
-- 🐛 **Report issues** if you find any bugs at [Issues](https://github.com/zavyka/issues)
+- 📢 **Share** it on:
+  - [Telegram](https://t.me/Rayan_Ku)
+  - [Facebook](https://www.facebook.com/)
+  - [X (Twitter)](https://x.com/)
+  - Enigma2 Forums
+  - Satellite Receiver Groups
+  - Any other platform
+- 🐛 **Report issues** if you find any bugs at [Issues](https://github.com/zavyka/KiaE2PackageManager/issues)
 
-By supporting this project, you help us build even better tools!
+By sharing this tool, you help other Enigma2 users discover it!
 
 ### License
 
@@ -407,10 +413,16 @@ chmod +x KiaE2PackageManager
 ئەگەر ئەم ئامرازە بەردەست بوویت و یارمەتیت دا، تکایە:
 
 - ⭐ **ستارە بکە** بۆ پڕۆژەکە لە [GitHub](https://github.com/zavyka)
-- 📢 **هاوبەش بکە** لە گرووپەکانی تێلێگرام
-- 🐛 **هەڵەی تۆمار بکە** ئەگەر کێشەیەکت بینی لە [Issues](https://github.com/zavyka/issues)
+- 📢 **هاوبەش بکە** لە:
+  - [تێلێگرام](https://t.me/Rayan_Ku)
+  - [فەیسبووک](https://www.facebook.com/)
+  - [X (تێیتەر)](https://x.com/)
+  - فۆرووەکانی Enigma2
+  - گرووپەکانی رێسیڤێری ماهوارە
+  - هەر پلەتڤۆرماوتراکێک
+- 🐛 **هەڵەی تۆمار بکە** ئەگەر کێشەیەکت بینی لە [Issues](https://github.com/zavyka/KiaE2PackageManager/issues)
 
-بە فرۆکردنی ئەم پڕۆژەیە، دەستێکت خۆ دەبێت بۆ گەشەی خۆشتری ئامرازەکان!
+بە هاوبەشکردنی ئەم ئامرازە، یارمەتی بەکارهێنەرانی تری Enigma2 دەدەیت بۆ دۆزینەوەی ئەم ئامرازە!
 
 ### مۆڵەت
 
@@ -594,10 +606,16 @@ chmod +x KiaE2PackageManager
 اگر این ابزار برایتان مفید بود، لطفاً:
 
 - ⭐ **ستاره بدهید** به پروژه در [GitHub](https://github.com/zavyka)
-- 📢 **اشتراک بگذارید** در گروه‌های تلگرامی
-- 🐛 **مشکلات را گزارش کنید** اگر باگی پیدا کردید در [Issues](https://github.com/zavyka/issues)
+- 📢 **اشتراک بگذارید** در:
+  - [تلگرام](https://t.me/Rayan_Ku)
+  - [فیسبوک](https://www.facebook.com/)
+  - [X (توییتر)](https://x.com/)
+  - انجمن‌های Enigma2
+  - گروه‌های گیرنده ماهواره
+  - هر پلتفرم دیگری
+- 🐛 **مشکلات را گزارش کنید** اگر باگی پیدا کردید در [Issues](https://github.com/zavyka/KiaE2PackageManager/issues)
 
-با حمایت از این پروژه، به ما کمک کنید تا ابزارهای بهتری بسازیم!
+با اشتراک‌گذاری این ابزار، به کاربران دیگر Enigma2 کمک کنید تا آن را پیدا کنند!
 
 ### مجوز
 
@@ -775,10 +793,16 @@ chmod +x KiaE2PackageManager
 إذا وجدت هذه الأداة مفيدة، يرجى:
 
 - ⭐ **تقييم** المشروع على [GitHub](https://github.com/zavyka)
-- 📢 **مشاركة** الأداة في مجموعات تيليجرام
-- 🐛 **الإبلاغ عن المشاكل** إذا وجدت أي أخطاء في [Issues](https://github.com/zavyka/issues)
+- 📢 **مشاركة** الأداة على:
+  - [تيليجرام](https://t.me/Rayan_Ku)
+  - [فيسبوك](https://www.facebook.com/)
+  - [X (تويتر)](https://x.com/)
+  - منتديات Enigma2
+  - مجموعات أجهزة الاستقبال الفضائية
+  - أي منصة أخرى
+- 🐛 **الإبلاغ عن المشاكل** إذا وجدت أي أخطاء في [Issues](https://github.com/zavyka/KiaE2PackageManager/issues)
 
-بدعمك لهذا المشروع، تساعدنا في بناء أدوات أفضل!
+بمشاركة هذه الأداة، تساعد مستخدمي Enigma2 الآخرين في اكتشافها!
 
 ### الترخيص
 
