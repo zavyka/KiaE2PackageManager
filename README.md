@@ -46,23 +46,56 @@ A powerful, all-in-one tool for managing plugins, skins, firmware images, and pa
 
 ### Installation & Usage
 
-#### Method 1: Direct Download on Receiver
+There are 3 ways to install and run the tool on your receiver:
+
+| Method | For Who | What You Need |
+|--------|---------|---------------|
+| **Method 1** | Everyone | Just SSH access to your receiver |
+| **Method 2** | Advanced users | PC + Terminal/Command Prompt |
+| **Method 3** | Beginners | PC + GUI tools (FileZilla/WinSCP) |
+
+---
+
+#### Method 1: Direct Download on Receiver (Easiest)
+
+> **Best for:** Users who just want to quickly run the tool
+> **Requirements:** SSH access to your receiver (Putty, terminal, etc.)
+
+Simply connect to your receiver via SSH and run these commands. The tool will be downloaded directly from GitHub to your receiver.
+
 ```bash
 wget -O /tmp/KiaE2PackageManager https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager
 chmod +x /tmp/KiaE2PackageManager
 /tmp/KiaE2PackageManager
 ```
 
-#### Method 2: Transfer from PC via SSH/Telnet
+---
+
+#### Method 2: Transfer from PC via SCP (Command Line)
+
+> **Best for:** Advanced users comfortable with terminal/command line
+> **Requirements:** PC with terminal + SSH access to receiver
+
+First, download the file on your PC, then use the `scp` command to transfer it to your receiver:
+
 ```bash
+# Step 1: Run this on your PC (not on receiver)
+scp KiaE2PackageManager root@<receiver_ip>:/tmp/
+
+# Step 2: Connect to receiver and run
 ssh root@<receiver_ip>
-cd /tmp
-wget -O KiaE2PackageManager https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager
-chmod +x KiaE2PackageManager
-./KiaE2PackageManager
+chmod +x /tmp/KiaE2PackageManager
+/tmp/KiaE2PackageManager
 ```
 
-#### Method 3: Offline Transfer (Putty + FileZilla / WinSCP)
+---
+
+#### Method 3: Transfer with GUI Tools (No Command Line)
+
+> **Best for:** Beginners who prefer visual interfaces (mouse click)
+> **Requirements:** PC with FileZilla or WinSCP
+
+If you're not comfortable with command line, use these GUI tools to transfer the file by dragging and dropping:
 
 **Step 1: Transfer the file to your receiver**
 
@@ -277,23 +310,56 @@ MIT License
 
 ### دامەزراندن و بەکارهێنان
 
-#### شێوەی ١: داگرتنی ڕاستەوخۆ لەسەر رێسیڤێر
+سێ شێوە هەیە بۆ دامەزراندن و جێبەجێکردن:
+
+| شێوە | بۆ کێ؟ | چی دەتەوێت؟ |
+|------|--------|------------|
+| **شێوەی ١** | هەموو کەسێک | تەنها پەیوەندی SSH بۆ رێسیڤێرەکە |
+| **شێوەی ٢** | بەکارهێنەرانی پێشکەوتوو | PC + تێرمیناڵ |
+| **شێوەی ٣** | بەکارهێنەرانی سەرەتادار | PC + ئامرازەکانی گرافیکی (FileZilla/WinSCP) |
+
+---
+
+#### شێوەی ١: داگرتنی ڕاستەوخۆ لەسەر رێسیڤێر (ئاسانترین)
+
+> **باشترین بۆ:** کەسانی کە دەیانەوێت بە فرۆکی بەکاری بهێنن
+> **پێویستییەکان:** پەیوەندی SSH بۆ رێسیڤێرەکە (Putty، تێرمیناڵ، هتد.)
+
+تەنها پەیوەندی بکە بە رێسیڤێرەکە بە SSH و ئەم فەرمانە بیجێبەجێن:
+
 ```bash
 wget -O /tmp/KiaE2PackageManager https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager
 chmod +x /tmp/KiaE2PackageManager
 /tmp/KiaE2PackageManager
 ```
 
-#### شێوەی ٢: گواستنەوە لە PC بە SSH/Telnet
+---
+
+#### شێوەی ٢: گواستنەوە لە PC بە SCP (تێرمیناڵ)
+
+> **باشترین بۆ:** بەکارهێنەرانی پێشکەوتوو کە لەگەڵ تێرمیناڵ ناساوییان هەیە
+> **پێویستییەکان:** PC بە تێرمیناڵ + پەیوەندی SSH بۆ رێسیڤێر
+
+ئەوەی دەبێت بیکەیت: فایلەکە لە کامپیوتەرەکەت دابەزێنەوە، پاشان بە فەرمانی `scp` گواستنەوەی بکە:
+
 ```bash
+# هەنگاوی ١: ئەمە لە کامپیوتەرەکەت جێبەجێ بکە (نەک لەسەر رێسیڤێر)
+scp KiaE2PackageManager root@<receiver_ip>:/tmp/
+
+# هەنگاوی ٢: بچۆ بۆ رێسیڤێرەکە و جێبەجێ بکە
 ssh root@<receiver_ip>
-cd /tmp
-wget -O KiaE2PackageManager https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager
-chmod +x KiaE2PackageManager
-./KiaE2PackageManager
+chmod +x /tmp/KiaE2PackageManager
+/tmp/KiaE2PackageManager
 ```
 
-#### شێوەی ٣: گواستنەوەی ئۆفلاین (Putty + FileZilla / WinSCP)
+---
+
+#### شێوەی ٣: گواستنەوە بە ئامرازەکانی گرافیکی (بێ فەرمان)
+
+> **باشترین بۆ:** بەکارهێنەرانی سەرەتادار کە دەیانەوێت بە موس بیکەن
+> **پێویستییەکان:** PC بە FileZilla یان WinSCP
+
+ئەگەر لەگەڵ فەرمان ڕاناسیت، ئەم ئامرازانە بیکەوە فایلەکە بکەوە:
 
 **هەنگاوی ١: گواستنەوەی فایل بۆ رێسیڤێرەکە**
 
@@ -460,23 +526,56 @@ chmod +x KiaE2PackageManager
 
 ### نصب و استفاده
 
-#### روش ۱: دانلود مستقیم روی گیرنده
+۳ روش برای نصب و اجرا وجود دارد:
+
+| روش | برای چه کسی؟ | چه چیزی لازم است؟ |
+|------|-------------|-------------------|
+| **روش ۱** | هر کسی | فقط دسترسی SSH به گیرنده |
+| **روش ۲** | کاربران حرفه‌ای | کامپیوتر + ترمینال |
+| **روش ۳** | کاربران مبتدی | کامپیوتر + نرم‌افزار گرافیکی (FileZilla/WinSCP) |
+
+---
+
+#### روش ۱: دانلود مستقیم روی گیرنده (ساده‌ترین)
+
+> **بهترین برای:** کسانی که می‌خواهند سریع ابزار را اجرا کنند
+> **نیاز:** دسترسی SSH به گیرنده (Putty، ترمینال و غیره)
+
+کافی است از طریق SSH به گیرنده وصل شوید و این دستورات را اجرا کنید. ابزار مستقیماً از GitHub روی گیرنده دانلود می‌شود:
+
 ```bash
 wget -O /tmp/KiaE2PackageManager https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager
 chmod +x /tmp/KiaE2PackageManager
 /tmp/KiaE2PackageManager
 ```
 
-#### روش ۲: انتقال از کامپیوتر از طریق SSH/Telnet
+---
+
+#### روش ۲: انتقال از کامپیوتر از طریق SCP (خط فرمان)
+
+> **بهترین برای:** کاربران حرفه‌ای که با ترمینال آشنا هستند
+> **نیاز:** کامپیوتر با ترمینال + دسترسی SSH به گیرنده
+
+ابتدا فایل را روی کامپیوتر دانلود کنید، سپس با دستور `scp` به گیرنده منتقل کنید:
+
 ```bash
+# مرحله ۱: این را روی کامپیوتر خود اجرا کنید (نه روی گیرنده)
+scp KiaE2PackageManager root@<receiver_ip>:/tmp/
+
+# مرحله ۲: به گیرنده وصل شوید و اجرا کنید
 ssh root@<receiver_ip>
-cd /tmp
-wget -O KiaE2PackageManager https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager
-chmod +x KiaE2PackageManager
-./KiaE2PackageManager
+chmod +x /tmp/KiaE2PackageManager
+/tmp/KiaE2PackageManager
 ```
 
-#### روش ۳: انتقال آفلاین (Putty + FileZilla / WinSCP)
+---
+
+#### روش ۳: انتقال با نرم‌افزارهای گرافیکی (بدون خط فرمان)
+
+> **بهترین برای:** کاربران مبتدی که ترجیح می‌دهند با ماوس کار کنند
+> **نیاز:** کامپیوتر با FileZilla یا WinSCP
+
+اگر با خط فرمان آشنا نیستید، از این نرم‌افزارها برای انتقال فایل با کشیدن و رها کردن استفاده کنید:
 
 **مرحله ۱: انتقال فایل به گیرنده**
 
@@ -649,23 +748,56 @@ chmod +x KiaE2PackageManager
 
 ### التثبيت والاستخدام
 
-#### الطريقة 1: التحميل المباشر على جهاز الاستقبال
+هناك 3 طرق لتثبيت الأداة وتشغيلها على جهاز الاستقبال:
+
+| الطريقة | لمن؟ | ماذا تحتاج؟ |
+|---------|------|-------------|
+| **الطريقة 1** | الجميع | فقط اتصال SSH بجهاز الاستقبال |
+| **الطريقة 2** | المستخدمون المتقدمون | الكمبيوتر + موجه الأوامر |
+| **الطريقة 3** | المبتدئون | الكمبيوتر + أدوات واجهة المستخدم الرسومية (FileZilla/WinSCP) |
+
+---
+
+#### الطريقة 1: التحميل المباشر على جهاز الاستقبال (أسهل طريقة)
+
+> **الأفضل لـ:** الأشخاص الذين يريدون تشغيل الأداة بسرعة
+> **المطلوب:** اتصال SSH بجهاز الاستقبال (PuTTY، موجه الأوامر، إلخ)
+
+فقط اتصل بجهاز الاستقبال عبر SSH ونفّذ هذه الأوامر. سيتم تحميل الأداة مباشرة من GitHub على جهاز الاستقبال:
+
 ```bash
 wget -O /tmp/KiaE2PackageManager https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager
 chmod +x /tmp/KiaE2PackageManager
 /tmp/KiaE2PackageManager
 ```
 
-#### الطريقة 2: النقل من الكمبيوتر عبر SSH/Telnet
+---
+
+#### الطريقة 2: النقل من الكمبيوتر عبر SCP (موجه الأوامر)
+
+> **الأفضل لـ:** المستخدمون المتقدمون المعتادون على موجه الأوامر
+> **المطلوب:** الكمبيوتر مع موجه الأوامر + اتصال SSH بجهاز الاستقبال
+
+قم أولاً بتنزيل الملف على الكمبيوتر، ثم انقله إلى جهاز الاستقبال باستخدام أمر `scp`:
+
 ```bash
+# الخطوة 1: نفّذ هذا على الكمبيوتر الخاص بك (وليس على جهاز الاستقبال)
+scp KiaE2PackageManager root@<receiver_ip>:/tmp/
+
+# الخطوة 2: اتصل بجهاز الاستقبال وشغّله
 ssh root@<receiver_ip>
-cd /tmp
-wget -O KiaE2PackageManager https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager
-chmod +x KiaE2PackageManager
-./KiaE2PackageManager
+chmod +x /tmp/KiaE2PackageManager
+/tmp/KiaE2PackageManager
 ```
 
-#### الطريقة 3: النقل دون اتصال (Putty + FileZilla / WinSCP)
+---
+
+#### الطريقة 3: النقل بأدوات واجهة المستخدم الرسومية (بدون موجه الأوامر)
+
+> **الأفضل لـ:** المبتدئون الذين يفضلون استخدام الماوس
+> **المطلوب:** الكمبيوتر مع FileZilla أو WinSCP
+
+إذا لم تكن معتاداً على موجه الأوامر، استخدم هذه الأدوات الرسومية لنقل الملف بالسحب والإفلات:
 
 **الخطوة 1: نقل الملف إلى جهاز الاستقبال**
 
