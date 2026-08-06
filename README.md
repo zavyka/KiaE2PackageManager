@@ -4,7 +4,7 @@
 
 A powerful, all-in-one tool for managing plugins, skins, firmware images, and packages on Enigma2-based satellite receivers (Dreambox, VU+, GigaBlue, OpenATV, OpenPLi, DreamOS, and more).
 
-🇺🇸 [English](#-english) | ☀️ [کوردی سورانی](#-کوردی-سورانی) | 🇮🇷 [فارسی](#-فارسی) | 🇸🇦 [العربية](#-العربية)
+🇺🇸 [English](#-english) | ☀️ [کوردی سۆرانی](#-کوردی-سۆرانی) | 🇮🇷 [فارسی](#-فارسی) | 🇸🇦 [العربية](#-العربية)
 
 ---
 
@@ -36,10 +36,10 @@ A powerful, all-in-one tool for managing plugins, skins, firmware images, and pa
 |--------|-------------|-------|
 | `.deb` | Debian package | Dreambox / DreamOS receivers |
 | `.ipk` | IPK package | OpenATV / OpenPLi / OE2.0 receivers |
-| `.nfi` | NFI firmware image | Dreambox firmware updates |
 | `.tar.xz` | Compressed tar archive | General firmware/software |
 | `.tar.gz` | Gzip compressed tar | General firmware/software |
 | `.tar.bz2` | Bzip2 compressed tar | General firmware/software |
+| `.nfi` | NFI firmware image | Dreambox firmware updates |
 | `.zip` | ZIP archive | General file compression |
 
 ### Installation & Usage
@@ -227,7 +227,7 @@ MIT License
 
 ---
 
-## ☀️ کوردی سورانی
+## ☀️ کوردی سۆرانی
 
 ### تایبەتمەندیەکان
 
@@ -255,10 +255,10 @@ MIT License
 |-------|------|-----------|
 | `.deb` | پاکێجی دێبین | گیرانەکانی Dreambox / DreamOS |
 | `.ipk` | پاکێجی IPK | گیرانەکانی OpenATV / OpenPLi / OE2.0 |
-| `.nfi` | وێنەی فەرمویری NFI | نوێکردنەوەی فەرمویری Dreambox |
 | `.tar.xz` | ئارکیڤی tarی فشارکراو | فەرمویر/نەرمەلەوەری گشتی |
 | `.tar.gz` | tarی فشارکراو بە gzip | فەرمویر/نەرمەلەوەری گشتی |
 | `.tar.bz2` | tarی فشارکراو بە bzip2 | فەرمویر/نەرمەلەوەری گشتی |
+| `.nfi` | وێنەی فەرمویری NFI | نوێکردنەوەی فەرمویری Dreambox |
 | `.zip` | ئارکیڤی ZIP | فشارکردنی فایلی گشتی |
 
 ### دامەزراندن و بەکارهێنان
@@ -426,10 +426,10 @@ chmod +x KiaE2PackageManager
 |------|-------|--------|
 | `.deb` | پکیج دبیان | گیرنده‌های Dreambox / DreamOS |
 | `.ipk` | پکیج IPK | گیرنده‌های OpenATV / OpenPLi / OE2.0 |
-| `.nfi` | تصویر فریمور NFI | بروزرسانی فریمور Dreambox |
 | `.tar.xz` | آرشیو فشرده tar | فریمور/نرم‌افزار عمومی |
 | `.tar.gz` | tar فشرده با gzip | فریمور/نرم‌افزار عمومی |
 | `.tar.bz2` | tar فشرده با bzip2 | فریمور/نرم‌افزار عمومی |
+| `.nfi` | تصویر فریمور NFI | بروزرسانی فریمور Dreambox |
 | `.zip` | آرشیو ZIP | فشرده‌سازی فایل عمومی |
 
 ### نصب و استفاده
@@ -603,10 +603,10 @@ chmod +x KiaE2PackageManager
 |---------|-------|----------|
 | `.deb` | حزمة ديبيان | أجهزة Dreambox / DreamOS |
 | `.ipk` | حزمة IPK | أجهزة OpenATV / OpenPLi / OE2.0 |
-| `.nfi` | صورة برنامج ثابت NFI | تحديثات برنامج Dreambox |
 | `.tar.xz` | أرشيف tar مضغوط | البرامج الثابتة العامة |
 | `.tar.gz` | tar مضغوط بـ gzip | البرامج الثابتة العامة |
 | `.tar.bz2` | tar مضغوط بـ bzip2 | البرامج الثابتة العامة |
+| `.nfi` | صورة برنامج ثابت NFI | تحديثات برنامج Dreambox |
 | `.zip` | أرشيف ZIP | ضغط الملفات العامة |
 
 ### التثبيت والاستخدام
