@@ -136,6 +136,8 @@ Select Main Section:
 8. Wait for the build to complete
 9. Optionally run validation test
 
+> **⚠️ Important:** Before building, make sure all plugin/skin files are placed in the correct directory structure (e.g., `usr/lib/enigma2/python/Plugins/` for plugins, `usr/share/enigma2/` for skins). Incorrect file paths will cause the package to malfunction after installation.
+
 **Extracting a Package:**
 
 1. Select `1` from the main menu
@@ -354,6 +356,8 @@ chmod +x KiaE2PackageManager
 3. فۆرمتی دەرەوە هەڵبژێرە
 4. پشکنین بکە و چاوەڕوانی بکە
 
+> **⚠️ گرنگ:** پێش دروستکردنی پاکێج، دڵنیا بە لەوانەی هەموو فایلەکانی پلاگین/سکینە لە پوشە و مسیری ڕاست دانراوەتەوە (بۆ نموونە: `usr/lib/enigma2/python/Plugins/` بۆ پلاگینەکان، `usr/share/enigma2/` بۆ سکینەکان). ئەگەر مسیری فایلەکان نەبن، پاکێجەکە دوای دامەزراندن کار ناکات.
+
 **دەرکردنی پاکێج:**
 1. هەڵبژاردنی `1` لە مینیوی سەرەکی
 2. هەڵبژاردنی `2` (کردنەوە / دەرکردنی پاکێج)
@@ -538,6 +542,8 @@ chmod +x KiaE2PackageManager
    - `3` — هر دو فرمت
 4. ابزار پوشه‌های پروژه در `/tmp/` را اسکن می‌کند
 5. پوشه پروژه خود را انتخاب کنید
+
+> **⚠️ مهم:** قبل از ساخت پکیج، مطمئن شوید که تمام فایل‌های پلاگین/اسکین در مسیر درست قرار گرفته‌اند (مثلاً: `usr/lib/enigma2/python/Plugins/` برای پلاگین‌ها، `usr/share/enigma2/` برای اسکین‌ها). مسیرهای نادرست باعث عدم عملکرد صحیح پکیج بعد از نصب می‌شوند.
 6. فایل کنترل را در صورت نیاز ویرایش کنید
 7. منتظر اتمام ساخت باشید
 
@@ -721,6 +727,8 @@ chmod +x KiaE2PackageManager
 2. اختر `1` (بناء / إعادة بناء الحزمة)
 3. اختر صيغة الإخراج
 4. انتظر اكتمال البناء
+
+> **⚠️ مهم:** قبل بناء الحزمة، تأكد من أن جميع ملفات الإضافات/A skins موجودة في المسار الصحيح (على سبيل المثال: `usr/lib/enigma2/python/Plugins/` للإضافات، `usr/share/enigma2/` للأ skins). المسارات الخاطئة ستجعل الحزمة لا تعمل بعد التثبيت.
 
 **استخراج حزمة:**
 1. اختر `1` من القائمة الرئيسية
