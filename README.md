@@ -296,72 +296,72 @@ MIT License
 
 ### تایبەتمەندییەکان
 
-- **دروستکردن و دروست کردنەوەی پاکێج** — دروستکردنی فایلەکانی `deb.` و `ipk.` لە پرۆژەکانی پڵاگین/سکینی خۆتان
-- **دەرهێنان و کردنەوەی پاکێج** — دەرهێنانی فایلەکانی `deb.` و `ipk.` لەگەڵ پاراستنی تەواوی پێکهاتە
+- **دروستکردن و دروست کردنەوەی پاکێج** — دروستکردنی فایلەکانی `.deb` و `.ipk` لە پرۆژەکانی پڵاگین/سکینی خۆتان
+- **دەرهێنان و کردنەوەی پاکێج** — دەرهێنانی فایلەکانی `.deb` و `.ipk` لەگەڵ پاراستنی تەواوی پێکهاتە
 - **بەڕێوەبردنی فیرموێر** — کردنەوە و پێچانەوەی وێنەکانی فیرموێر (`.nfi`, `.tar.xz`, `.tar.gz`, `.tar.bz2`)
 - **کارکردن لەگەڵ ئەرشیف** — دروستکردنی ئەرشیفی گوشراو بە فۆڕماتە جیاوازەکان (`.zip`, `.tar`, `.tar.gz`, `.tar.xz`, `.tar.bz2`)
 - **ناسینەوەی خۆکار** — ناسینەوەی خۆکاری مێعماری وەرگر(رێسیڤێر) (ARM, ARM64, MIPS, x86/x64)
-- **سازگاری جیهانی** — کاردەکات لەسەر <span dir="ltr">Python 2.7+</span> و <span dir="ltr">Python 3.x</span>
+- **سازگاری جیهانی** — کاردەکات لەسەر  Python 2.7+  و  Python 3.x 
 - **بێ پێویستی بە پاڵپشتی** — تەنها ئامرازە ستانداردەکانی سیستەم بەکاردەهێنێت
-- **پشکنینی پاکێج** — پشکنینی ناوخۆیی بۆ دڵنیابوون لە دروستی پاکێج پێش دامەزراندن
+- **پشکنینی پاکێج** — پشکنینی ناوخۆیی بۆ دڵنیابوون لە دروستی پاکێج پێش دابەزاندن
 
 ### وەرگر(رێسیڤێر)ە پاڵپشتیکراوەکان (هێڵەکان)
 
 | براند | مۆدێلەکان |
 |-------|-----------|
-| <span dir="ltr">Dreambox</span> | <span dir="ltr">DM800, DM8000, DM900, DM920, DM520, DM500HD</span> |
-| <span dir="ltr">VU+</span> | <span dir="ltr">Duo, Duo2, Duo4K, Solo, Solo2, Solo4K, Ultimo, Ultimo4K</span> |
-| <span dir="ltr">GigaBlue</span> | هەموو مۆدێلەکانی بنەمای <span dir="ltr">Enigma2</span> |
-| ئیتر | هەر وەرگرێک بە سیستەمی کارپێکردنی <span dir="ltr">Enigma2</span> |
+|  Dreambox  |  DM800, DM8000, DM900, DM920, DM520, DM500HD  |
+|  VU+  |  Duo, Duo2, Duo4K, Solo, Solo2, Solo4K, Ultimo, Ultimo4K  |
+|  GigaBlue  | هەموو مۆدێلەکانی بنەمای  Enigma2  |
+| ئیتر | هەر وەرگرێک بە سیستەمی کارپێکردنی  Enigma2  |
 
 ### سیستەمەکانی کارپێکردنی پاڵپشتیکراوەکان
 
 | سیستەم | نوێنەرەکان |
 |--------|------------|
-| <span dir="ltr">DreamOS</span> | <span dir="ltr">OE 2.2, OE 2.5, OE 2.6</span> |
-| <span dir="ltr">OE2.0</span> | <span dir="ltr">Open Embedded</span> |
+|  DreamOS  |  OE 2.2, OE 2.5, OE 2.6  |
+|  OE2.0  |  Open Embedded  |
 
 ### وێنەکانی پاڵپشتیکراوەکان
 
 | وێنە | وەسف |
 |------|------|
-| <span dir="ltr">CVS</span> | وێنەی سەرەتایی پاڕاستراو (بێ دەستکاری) |
-| <span dir="ltr">AIO</span> | <span dir="ltr">All-In-One</span> |
-| نێوانە | وێنەکانی سەربنەمای <span dir="ltr">CVS</span> و <span dir="ltr">AIO</span> |
-| <span dir="ltr">OpenATV</span> | مەڵتی-کەیی |
-| <span dir="ltr">OpenPLi</span> | مەڵتی-کەیی |
-| ئیتر | هەر وێنەیەکی <span dir="ltr">Enigma2</span> |
+|  CVS  | وێنەی سەرەتایی پاڕاستراو (بێ دەستکاری) |
+|  AIO  |  All-In-One  |
+| نێوانە | وێنەکانی سەربنەمای  CVS  و  AIO  |
+|  OpenATV  | مەڵتی-کەیی |
+|  OpenPLi  | مەڵتی-کەیی |
+| ئیتر | هەر وێنەیەکی  Enigma2  |
 
 ### فۆرماتە پاڵپشتیکراوەکانی پاکێج
 
 | فۆرمات | وەسف | بەکارهێنان |
 |--------|------|-----------|
-| <span dir="ltr">`.deb`</span> | پاکێجی <span dir="ltr">Debian</span> | وەرگر(رێسیڤێر)ەکانی <span dir="ltr">Dreambox</span> / <span dir="ltr">DreamOS</span> |
-| <span dir="ltr">`.ipk`</span> | پاکێجی <span dir="ltr">IPK</span> | وەرگر(رێسیڤێر)ەکانی <span dir="ltr">OpenATV</span> / <span dir="ltr">OpenPLi</span> / <span dir="ltr">OE2.0</span> |
-| <span dir="ltr">`.tar.xz`</span> | ئەرشیفی گوشراوی <span dir="ltr">tar</span> | فیرموێر/نەرمەواڵە گشتییەکان |
-| <span dir="ltr">`.tar.gz`</span> | <span dir="ltr">tar</span> گوشراو بە <span dir="ltr">gzip</span> | فیرموێر/نەرمەواڵە گشتییەکان |
-| <span dir="ltr">`.tar.bz2`</span> | <span dir="ltr">tar</span> گوشراو بە <span dir="ltr">bzip2</span> | فیرموێر/نەرمەواڵە گشتییەکان |
-| <span dir="ltr">`.nfi`</span> | وێنەی فیرموێری <span dir="ltr">NFI</span> | نوێکردنەوەی فیرموێری <span dir="ltr">Dreambox</span> |
-| <span dir="ltr">`.zip`</span> | ئەرشیفی <span dir="ltr">ZIP</span> | گوشینی فایلە گشتییەکان |
+|  `.deb`  | پاکێجی  Debian  | وەرگر(رێسیڤێر)ەکانی  Dreambox  /  DreamOS  |
+|  `.ipk`  | پاکێجی  IPK  | وەرگر(رێسیڤێر)ەکانی  OpenATV  /  OpenPLi  /  OE2.0  |
+|  `.tar.xz`  | ئەرشیفی گوشراوی  tar  | فیرموێر/نەرمەواڵە گشتییەکان |
+|  `.tar.gz`  |  tar  گوشراو بە  gzip  | فیرموێر/نەرمەواڵە گشتییەکان |
+|  `.tar.bz2`  |  tar  گوشراو بە  bzip2  | فیرموێر/نەرمەواڵە گشتییەکان |
+|  `.nfi`  | وێنەی فیرموێری  NFI  | نوێکردنەوەی فیرموێری  Dreambox  |
+|  `.zip`  | ئەرشیفی  ZIP  | گوشینی فایلە گشتییەکان |
 
-### دامەزراندن و بەکارهێنان
+### دابەزاندن و بەکارهێنان
 
-٣ ڕێگا هەیە بۆ دامەزراندن و جێبەجێکردن:
+٣ ڕێگا هەیە بۆ دابەزاندن و جێبەجێکردن:
 
 | ڕێگا | بۆ کێیە؟ | چی پێویستە؟ |
 |------|---------|-------------|
-| **ڕێگای ١** | هەموو کەس | تەنها دەستگەیشتن بە <span dir="ltr">SSH</span> بۆ وەرگر(رێسیڤێر) |
-| **ڕێگای ٢** | بەکارهێنەرانی پێشکەوتوو | کۆمپیوتەر + <span dir="ltr">Terminal</span> |
-| **ڕێگای ٣** | بەکارهێنەرانی سەرەتایی | کۆمپیوتەر + نەرمەواڵی گرافیکی (<span dir="ltr">FileZilla</span>/<span dir="ltr">WinSCP</span>) |
+| **ڕێگای ١** | هەموو کەس | تەنها دەستگەیشتن بە  SSH  بۆ وەرگر(رێسیڤێر) |
+| **ڕێگای ٢** | بەکارهێنەرانی پێشکەوتوو | کۆمپیوتەر +  Terminal  |
+| **ڕێگای ٣** | بەکارهێنەرانی سەرەتایی | کۆمپیوتەر + نەرمەواڵی گرافیکی ( FileZilla / WinSCP ) |
 
 ---
 
 #### ڕێگای ١: داگرتنی ڕاستەوخۆ لەسەر وەرگر(رێسیڤێر) (ئاسانترین)
 
 > **باشترین بۆ:** ئەوانەی دەیانەوێت خێرا ئامرازەکە جێبەجێ بکەن
-> **پێویستە:** دەستگەیشتن بە SSH بۆ وەرگر(رێسیڤێر) (<span dir="ltr">Putty</span>، <span dir="ltr">Terminal</span> و هتد)
+> **پێویستە:** دەستگەیشتن بە SSH بۆ وەرگر(رێسیڤێر) ( Putty ،  Terminal  و هتد)
 
-تەنها بە SSH پەیوەندی بە وەرگر(رێسیڤێر)ەوە بکەن و ئەم فەرمانانە جێبەجێ بکەن. ئامرازەکە ڕاستەوخۆ لە <span dir="ltr">GitHub</span> بۆ وەرگر(رێسیڤێر) دادەگیرێت:
+تەنها بە SSH پەیوەندی بە وەرگر(رێسیڤێر)ەوە بکەن و ئەم فەرمانانە جێبەجێ بکەن. ئامرازەکە ڕاستەوخۆ لە  GitHub  بۆ وەرگر(رێسیڤێر) دادەگیرێت:
 
 ```bash
 wget -O /tmp/KiaE2PackageManager https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager
@@ -373,8 +373,8 @@ chmod +x /tmp/KiaE2PackageManager
 
 #### ڕێگای ٢: گواستنەوە لە کۆمپیوتەر بە SCP (هێڵی فەرمان)
 
-> **باشترین بۆ:** بەکارهێنەرانی پێشکەوتوو کە شارەزای <span dir="ltr">Terminal</span> ـن
-> **پێویستە:** کۆمپیوتەر لەگەڵ <span dir="ltr">Terminal</span> + دەستگەیشتن بە SSH بۆ وەرگر(رێسیڤێر)
+> **باشترین بۆ:** بەکارهێنەرانی پێشکەوتوو کە شارەزای  Terminal  ـن
+> **پێویستە:** کۆمپیوتەر لەگەڵ  Terminal  + دەستگەیشتن بە SSH بۆ وەرگر(رێسیڤێر)
 
 سەرەتا فایلەکە لەسەر کۆمپیوتەر دابگرن، پاشان بە فەرمانی `scp` بۆ وەرگر(رێسیڤێر) بیگوازنەوە:
 
@@ -391,9 +391,9 @@ chmod +x /tmp/KiaE2PackageManager
 #### ڕێگای ٣: گواستنەوە بە نەرمەواڵە گرافیکییەکان (بێ هێڵی فەرمان)
 
 > **باشترین بۆ:** بەکارهێنەرانی سەرەتایی کە پێیان خۆشە بە ماوس کار بکەن
-> **پێویستە:** کۆمپیوتەر لەگەڵ <span dir="ltr">FileZilla</span> یان <span dir="ltr">WinSCP</span>
+> **پێویستە:** کۆمپیوتەر لەگەڵ  FileZilla  یان  WinSCP 
 
-ئەگەر شارەزا بە هێڵی فەرمان (<span dir="ltr">Command Line</span>) نین، ئەم نەرمەواڵانە بەکاربهێنن بۆ گواستنەوەی فایل بە ڕاکێشان و دانان (<span dir="ltr">Drag & Drop</span>):
+ئەگەر شارەزا بە هێڵی فەرمان ( Command Line ) نین، ئەم نەرمەواڵانە بەکاربهێنن بۆ گواستنەوەی فایل بە ڕاکێشان و دانان ( Drag & Drop ):
 
 **هەنگاوی ١: گواستنەوەی فایل بۆ وەرگر(رێسیڤێر)**
 
@@ -401,14 +401,14 @@ chmod +x /tmp/KiaE2PackageManager
 
 | نەرمەواڵ | پرۆتۆکۆڵ | ڕێنمایی |
 |----------|-----------|---------|
-| **<span dir="ltr">FileZilla</span>** | FTP | پەیوەستبوون بە `<receiver_ip>:21` → چوون بۆ `/tmp/` → ڕاکێشان و دانانی فایل |
-| **<span dir="ltr">WinSCP</span>** | SCP/SFTP | پەیوەستبوون بە `<receiver_ip>` (پۆرتی 22) → چوون بۆ `/tmp/` → ڕاکێشان و دانانی فایل |
-| **<span dir="ltr">Putty (PSCP)</span>** | SCP | جێبەجێکردنی فەرمان: `pscp KiaE2PackageManager root@<receiver_ip>:/tmp/` |
-| **<span dir="ltr">Total Commander</span>** | <span dir="ltr">FTP/SCP</span> | بەکارهێنانی پێوەکراوی <span dir="ltr">FTP</span> یان <span dir="ltr">SCP</span> → چوون بۆ `/tmp/` → بارکردنی فایل |
+| ** FileZilla ** | FTP | پەیوەندی گرتن بە `<receiver_ip>:21` → چوون بۆ `/tmp/` → ڕاکێشان و دانانی فایل |
+| ** WinSCP ** | SCP/SFTP | پەیوەندی گرتن بە `<receiver_ip>` (پۆرتی 22) → چوون بۆ `/tmp/` → ڕاکێشان و دانانی فایل |
+| ** Putty (PSCP) ** | SCP | جێبەجێکردنی فەرمان: `pscp KiaE2PackageManager root@<receiver_ip>:/tmp/` |
+| ** Total Commander ** |  FTP/SCP  | بەکارهێنانی پێوەکراوی  FTP  یان  SCP  → چوون بۆ `/tmp/` → بارکردنی فایل |
 
-**هەنگاوی ٢: پەیوەستبوون بە SSH و جێبەجێکردن**
+**هەنگاوی ٢: پەیوەندی گرتن بە SSH و جێبەجێکردن**
 
-<span dir="ltr">Putty</span> (یان هەر <span dir="ltr">SSH Client</span> ـێکی تر) بکەرەوە و بە وەرگر(رێسیڤێر) پەیوەست ببە:
+ Putty  (یان هەر  SSH Client  ـێکی تر) بکەرەوە و بە وەرگر(رێسیڤێر) پەیوەست ببە:
 
 ```
 Host Name: <receiver_ip>
@@ -430,7 +430,7 @@ chmod +x KiaE2PackageManager
 ./KiaE2PackageManager
 ```
 
-> **تێبینی:** هەروەها دەتوانیت لە تایبەتمەندی <span dir="ltr">SCP</span> ـی ناوخۆی <span dir="ltr">Putty</span> بۆ گواستنەوەی ڕاستەوخۆی فایلەکانیش بەکاربهێنیت.
+> **تێبینی:** هەروەها دەتوانیت لە تایبەتمەندی  SCP  ـی ناوخۆی  Putty  بۆ گواستنەوەی ڕاستەوخۆی فایلەکانیش بەکاربهێنیت.
 
 ### ڕێنمایی بەکارهێنان
 
@@ -461,7 +461,7 @@ chmod +x KiaE2PackageManager
 4. ئامرازەکە بوخچەکانی پرۆژە لە `/tmp/` دەپشکنێ.
 5. بوخچەی پرۆژەکەت هەڵبژێرە.
 
-> **⚠️ گرنگ:** پێش دروستکردنی پاکێج، دڵنیابە کە هەموو فایلەکانی پڵاگین/سکین لە شوێنی دروست دانراون (بۆ نموونە: `usr/lib/enigma2/python/Plugins/` بۆ پڵاگینەکان و `usr/share/enigma2/` بۆ سکینەکان). ڕێڕەوی هەڵە دەبێتە هۆی ئەوەی پاکێجەکە دوای دامەزراندن بە دروستی کار نەکات.
+> **⚠️ گرنگ:** پێش دروستکردنی پاکێج، دڵنیابە کە هەموو فایلەکانی پڵاگین/سکین لە شوێنی دروست دانراون (بۆ نموونە: `usr/lib/enigma2/python/Plugins/` بۆ پڵاگینەکان و `usr/share/enigma2/` بۆ سکینەکان). ڕێڕەوی هەڵە دەبێتە هۆی ئەوەی پاکێجەکە دوای دابەزاندن بە دروستی کار نەکات.
 
 6. ئەگەر پێویست بوو، فایلەکەی `control` دەستکاری بکە.
 7. چاوەڕوانی تەواوبوونی دروستکردن بکە.
@@ -497,34 +497,34 @@ chmod +x KiaE2PackageManager
 
 | کێشە | چارەسەر |
 |------|---------|
-| "Python not found" | <span dir="ltr">Python</span> دابمەزرێنە: `<span dir="ltr">opkg install python</span>` |
-| "Permission denied" | ئەم فەرمانە جێبەجێ بکە: `<span dir="ltr">chmod +x KiaE2PackageManager</span>` |
+| "Python not found" | Python دابمەزرێنە: `opkg install python` |
+| "Permission denied" | ئەم فەرمانە جێبەجێ بکە: `chmod +x KiaE2PackageManager` |
 | هەڵە لە دروستکردنی پاکێج | پێکهاتەی بوخچەی پرۆژەکە بپشکنە |
-| هەڵە لە پشکنینی پاکێج | دڵنیابە کە پاکێجەکە `<span dir="ltr">control.tar</span>` و `<span dir="ltr">data.tar</span>` لەخۆدەگرێت |
-| ناتوانرێت بە <span dir="ltr">SSH</span> پەیوەندی بکرێت | دڵنیابە کە ڕاژەکاری <span dir="ltr">SSH</span> لەسەر وەرگر(رێسیڤێر) چالاکە (دامەزراندن: `<span dir="ltr">opkg install openssh</span>`) |
+| هەڵە لە پشکنینی پاکێج | دڵنیابە کە پاکێجەکە `control.tar` و `data.tar` لەخۆدەگرێت |
+| ناتوانرێت بە SSH پەیوەندی بکرێت | دڵنیابە کە ڕاژەکاری SSH لەسەر وەرگر(رێسیڤێر) چالاکە (دابەزاندن: `opkg install openssh`) |
 
 ### زانیارییەکانی پەرەپێدەر
 
 - **پەرەپێدەر:** KiaKu_1982
-- **GitHub:** <span dir="ltr">[github.com/zavyka](https://github.com/zavyka)</span>
-- **Telegram:** <span dir="ltr">[@Rayan_Ku](https://t.me/Rayan_Ku)</span>
-- **کەناڵ:** <span dir="ltr">[@Enigma2_Tutorials](https://t.me/Enigma2_Tutorials)</span>
+- **GitHub:**  [github.com/zavyka](https://github.com/zavyka) 
+- **Telegram:**  [@Rayan_Ku](https://t.me/Rayan_Ku) 
+- **کەناڵ:**  [@Enigma2_Tutorials](https://t.me/Enigma2_Tutorials) 
 
 ### 🌟 پاڵپشتی و ئەستێرەدان
 
 ئەگەر ئەم ئامرازە بۆت بەسوود بوو، تکایە:
 
-- ⭐ **ئەستێرەی پێبدە** لەسەر پرۆژەکە لە <span dir="ltr">[GitHub](https://github.com/zavyka/KiaE2PackageManager)</span>
+- ⭐ **ئەستێرەی پێبدە** لەسەر پرۆژەکە لە  [GitHub](https://github.com/zavyka/KiaE2PackageManager) 
 - 📢 **هاوبەشی بکە** لە:
-  - <span dir="ltr">[Telegram](https://t.me/Rayan_Ku)</span>
-  - <span dir="ltr">[Facebook](https://www.facebook.com/)</span>
-  - <span dir="ltr">[X (Twitter)](https://x.com/)</span>
-  - مەڵبەند و ماڵپەڕەکانی <span dir="ltr">Enigma2</span>
+  -  [Telegram](https://t.me/Rayan_Ku) 
+  -  [Facebook](https://www.facebook.com/) 
+  -  [X (Twitter)](https://x.com/) 
+  - مەڵبەند و ماڵپەڕەکانی  Enigma2 
   - گرووپەکانی وەرگری مانگی دەستکرد (ڕێسیڤێر)
   - هەر پلاتفۆرمێکی تریش
-- 🐛 **کێشەکان ڕاپۆرت بکە** ئەگەر هەر باگێکت دۆزییەوە، لە <span dir="ltr">[Issues](https://github.com/zavyka/KiaE2PackageManager/issues)</span> ڕایبگەیەنە.
+- 🐛 **کێشەکان ڕاپۆرت بکە** ئەگەر هەر باگێکت دۆزییەوە، لە  [Issues](https://github.com/zavyka/KiaE2PackageManager/issues)  ڕایبگەیەنە.
 
-بە هاوبەشکردنی ئەم ئامرازە، یارمەتی بە بەکارهێنەرانی دیکەی <span dir="ltr">Enigma2</span> دەدەیت تا بتوانن بە ئاسانی بیدۆزنەوە.
+بە هاوبەشکردنی ئەم ئامرازە، یارمەتی بە بەکارهێنەرانی دیکەی  Enigma2  دەدەیت تا بتوانن بە ئاسانی بیدۆزنەوە.
 
 ### مۆڵەت
 
@@ -541,12 +541,12 @@ MIT License
 
 ### ویژگی‌ها
 
-- **ساخت و بازسازی پکیج** — ایجاد فایل‌های `deb.` و `ipk.` از پروژه‌های پلاگین/اسکین شما
-- **استخراج و بازکردن پکیج** — استخراج فایل‌های `deb.` و `ipk.` با حفظ ساختار کامل
+- **ساخت و بازسازی پکیج** — ایجاد فایل‌های `.deb` و `.ipk` از پروژه‌های پلاگین/اسکین شما
+- **استخراج و بازکردن پکیج** — استخراج فایل‌های `.deb` و `.ipk` با حفظ ساختار کامل
 - **مدیریت فریمور** — بازکردن و بسته تصاویر فریمور (`.nfi`, `.tar.xz`, `.tar.gz`, `.tar.bz2`)
 - **عملیات آرشیو** — ایجاد آرشیوهای فشرده در فرمت‌های مختلف (`.zip`, `.tar`, `.tar.gz`, `.tar.xz`, `.tar.bz2`)
 - **تشخیص خودکار** — تشخیص خودکار معماری گیرنده (ARM, ARM64, MIPS, x86/x64)
-- **سازگاری جهانی** — کار با <span dir="ltr">Python 2.7+</span> و <span dir="ltr">Python 3.x</span>
+- **سازگاری جهانی** — کار با  Python 2.7+  و  Python 3.x 
 - **بدون وابستگی** — فقط از ابزارهای استاندارد سیستم استفاده می‌کند
 - **اعتبارسنجی پکیج** — اعتبارسنجی داخلی برای بررسی صحت پکیج قبل از نصب
 
@@ -554,40 +554,40 @@ MIT License
 
 | برند | مدل‌ها |
 |------|--------|
-| <span dir="ltr">Dreambox</span> | <span dir="ltr">DM800, DM8000, DM900, DM920, DM520, DM500HD</span> |
-| <span dir="ltr">VU+</span> | <span dir="ltr">Duo, Duo2, Duo4K, Solo, Solo2, Solo4K, Ultimo, Ultimo4K</span> |
-| <span dir="ltr">GigaBlue</span> | تمام مدل‌های مبتنی بر <span dir="ltr">Enigma2</span> |
-| سایر | هر گیرنده‌ای با سیستم‌عامل <span dir="ltr">Enigma2</span> |
+|  Dreambox  |  DM800, DM8000, DM900, DM920, DM520, DM500HD  |
+|  VU+  |  Duo, Duo2, Duo4K, Solo, Solo2, Solo4K, Ultimo, Ultimo4K  |
+|  GigaBlue  | تمام مدل‌های مبتنی بر  Enigma2  |
+| سایر | هر گیرنده‌ای با سیستم‌عامل  Enigma2  |
 
 ### سیستم‌عامل‌های پشتیبانی شده
 
 | سیستم‌عامل | نسخه‌ها |
 |-----------|---------|
-| <span dir="ltr">DreamOS</span> | <span dir="ltr">OE 2.2, OE 2.5, OE 2.6</span> |
-| <span dir="ltr">OE2.0</span> | <span dir="ltr">Open Embedded</span> |
+|  DreamOS  |  OE 2.2, OE 2.5, OE 2.6  |
+|  OE2.0  |  Open Embedded  |
 
 ### ایمیج‌های پشتیبانی شده
 
 | ایمیج | توضیح |
 |-------|-------|
-| <span dir="ltr">CVS</span> | نسخه پایه خام و رسمی (بدون دستکاری) |
-| <span dir="ltr">AIO</span> | <span dir="ltr">All-In-One</span> |
-| سایر | ایمیج‌هایی بر پایه <span dir="ltr">CVS</span> و <span dir="ltr">AIO</span> |
-| <span dir="ltr">OpenATV</span> | متن‌باز |
-| <span dir="ltr">OpenPLi</span> | متن‌باز |
-| سایر | هر ایمیج <span dir="ltr">Enigma2</span> |
+|  CVS  | نسخه پایه خام و رسمی (بدون دستکاری) |
+|  AIO  |  All-In-One  |
+| سایر | ایمیج‌هایی بر پایه  CVS  و  AIO  |
+|  OpenATV  | متن‌باز |
+|  OpenPLi  | متن‌باز |
+| سایر | هر ایمیج  Enigma2  |
 
 ### فرمت‌های پکیج پشتیبانی شده
 
 | فرمت | توضیح | کاربرد |
 |------|-------|--------|
-| <span dir="ltr">`.deb`</span> | پکیج <span dir="ltr">Debian</span> | گیرنده‌های <span dir="ltr">Dreambox</span> / <span dir="ltr">DreamOS</span> |
-| <span dir="ltr">`.ipk`</span> | پکیج <span dir="ltr">IPK</span> | گیرنده‌های <span dir="ltr">OpenATV</span> / <span dir="ltr">OpenPLi</span> / <span dir="ltr">OE2.0</span> |
-| <span dir="ltr">`.tar.xz`</span> | آرشیو فشرده <span dir="ltr">tar</span> | فریمور/نرم‌افزار عمومی |
-| <span dir="ltr">`.tar.gz`</span> | <span dir="ltr">tar</span> فشرده با <span dir="ltr">gzip</span> | فریمور/نرم‌افزار عمومی |
-| <span dir="ltr">`.tar.bz2`</span> | <span dir="ltr">tar</span> فشرده با <span dir="ltr">bzip2</span> | فریمور/نرم‌افزار عمومی |
-| <span dir="ltr">`.nfi`</span> | تصویر فریمور <span dir="ltr">NFI</span> | بروزرسانی فریمور <span dir="ltr">Dreambox</span> |
-| <span dir="ltr">`.zip`</span> | آرشیو <span dir="ltr">ZIP</span> | فشرده‌سازی فایل عمومی |
+|  `.deb`  | پکیج  Debian  | گیرنده‌های  Dreambox  /  DreamOS  |
+|  `.ipk`  | پکیج  IPK  | گیرنده‌های  OpenATV  /  OpenPLi  /  OE2.0  |
+|  `.tar.xz`  | آرشیو فشرده  tar  | فریمور/نرم‌افزار عمومی |
+|  `.tar.gz`  |  tar  فشرده با  gzip  | فریمور/نرم‌افزار عمومی |
+|  `.tar.bz2`  |  tar  فشرده با  bzip2  | فریمور/نرم‌افزار عمومی |
+|  `.nfi`  | تصویر فریمور  NFI  | بروزرسانی فریمور  Dreambox  |
+|  `.zip`  | آرشیو  ZIP  | فشرده‌سازی فایل عمومی |
 
 ### نصب و استفاده
 
@@ -597,16 +597,16 @@ MIT License
 |------|-------------|-------------------|
 | **روش ۱** | هر کسی | فقط دسترسی SSH به گیرنده |
 | **روش ۲** | کاربران حرفه‌ای | کامپیوتر + ترمینال |
-| **روش ۳** | کاربران مبتدی | کامپیوتر + نرم‌افزار گرافیکی (<span dir="ltr">FileZilla</span>/<span dir="ltr">WinSCP</span>) |
+| **روش ۳** | کاربران مبتدی | کامپیوتر + نرم‌افزار گرافیکی ( FileZilla / WinSCP ) |
 
 ---
 
 #### روش ۱: دانلود مستقیم روی گیرنده (ساده‌ترین)
 
 > **بهترین برای:** کسانی که می‌خواهند سریع ابزار را اجرا کنند
-> **نیاز:** دسترسی SSH به گیرنده (<span dir="ltr">Putty</span>، ترمینال و غیره)
+> **نیاز:** دسترسی SSH به گیرنده ( Putty ، ترمینال و غیره)
 
-کافی است از طریق SSH به گیرنده وصل شوید و این دستورات را اجرا کنید. ابزار مستقیماً از <span dir="ltr">GitHub</span> روی گیرنده دانلود می‌شود:
+کافی است از طریق SSH به گیرنده وصل شوید و این دستورات را اجرا کنید. ابزار مستقیماً از  GitHub  روی گیرنده دانلود می‌شود:
 
 ```bash
 wget -O /tmp/KiaE2PackageManager https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager
@@ -638,7 +638,7 @@ chmod +x /tmp/KiaE2PackageManager
 #### روش ۳: انتقال با نرم‌افزارهای گرافیکی (بدون خط فرمان)
 
 > **بهترین برای:** کاربران مبتدی که ترجیح می‌دهند با ماوس کار کنند
-> **نیاز:** کامپیوتر با <span dir="ltr">FileZilla</span> یا <span dir="ltr">WinSCP</span>
+> **نیاز:** کامپیوتر با  FileZilla  یا  WinSCP 
 
 اگر با خط فرمان آشنا نیستید، از این نرم‌افزارها برای انتقال فایل با کشیدن و رها کردن استفاده کنید:
 
@@ -648,14 +648,14 @@ chmod +x /tmp/KiaE2PackageManager
 
 | نرم‌افزار | پروتکل | راهنما |
 |----------|--------|-------|
-| **<span dir="ltr">FileZilla</span>** | FTP | اتصال به `<receiver_ip>:21` → رفتن به `/tmp/` → کشیدن و رها کردن فایل |
-| **<span dir="ltr">WinSCP</span>** | SCP/SFTP | اتصال به `<receiver_ip>` (پورت 22) → رفتن به `/tmp/` → کشیدن و رها کردن فایل |
-| **<span dir="ltr">Putty (PSCP)</span>** | SCP | اجرای دستور: `pscp KiaE2PackageManager root@<receiver_ip>:/tmp/` |
-| **<span dir="ltr">Total Commander</span>** | <span dir="ltr">FTP/SCP</span> | استفاده از افزونه <span dir="ltr">FTP</span> یا <span dir="ltr">SCP</span> → رفتن به `/tmp/` → آپلود فایل |
+| ** FileZilla ** | FTP | اتصال به `<receiver_ip>:21` → رفتن به `/tmp/` → کشیدن و رها کردن فایل |
+| ** WinSCP ** | SCP/SFTP | اتصال به `<receiver_ip>` (پورت 22) → رفتن به `/tmp/` → کشیدن و رها کردن فایل |
+| ** Putty (PSCP) ** | SCP | اجرای دستور: `pscp KiaE2PackageManager root@<receiver_ip>:/tmp/` |
+| ** Total Commander ** |  FTP/SCP  | استفاده از افزونه  FTP  یا  SCP  → رفتن به `/tmp/` → آپلود فایل |
 
 **مرحله ۲: اتصال از طریق SSH و اجرا**
 
-<span dir="ltr">Putty</span> (یا هر کلاینت <span dir="ltr">SSH</span> دیگر) را باز کنید و به گیرنده متصل شوید:
+ Putty  (یا هر کلاینت  SSH  دیگر) را باز کنید و به گیرنده متصل شوید:
 
 ```
 Host Name: <receiver_ip>
@@ -677,7 +677,7 @@ chmod +x KiaE2PackageManager
 ./KiaE2PackageManager
 ```
 
-> **نکته:** همچنین می‌توانید از قابلیت <span dir="ltr">SCP</span> داخلی <span dir="ltr">Putty</span> برای انتقال مستقیم فایل‌ها استفاده کنید.
+> **نکته:** همچنین می‌توانید از قابلیت  SCP  داخلی  Putty  برای انتقال مستقیم فایل‌ها استفاده کنید.
 
 ### راهنمای استفاده
 
@@ -737,34 +737,34 @@ chmod +x KiaE2PackageManager
 
 | مشکل | راه‌حل |
 |------|--------|
-| "Python not found" | پایتون را نصب کنید: `<span dir="ltr">opkg install python</span>` |
-| "Permission denied" | دستور `<span dir="ltr">chmod +x KiaE2PackageManager</span>` را اجرا کنید |
+| "Python not found" | پایتون را نصب کنید: `opkg install python` |
+| "Permission denied" | دستور `chmod +x KiaE2PackageManager` را اجرا کنید |
 | خطا در ساخت پکیج | ساختار پوشه پروژه را بررسی کنید |
-| خطا در اعتبارسنجی | مطمئن شوید پکیج شامل `<span dir="ltr">control.tar</span>` و `<span dir="ltr">data.tar</span>` است |
-| عدم اتصال <span dir="ltr">SSH</span> | مطمئن شوید سرور <span dir="ltr">SSH</span> روی گیرنده فعال است (نصب: `<span dir="ltr">opkg install openssh</span>`) |
+| خطا در اعتبارسنجی | مطمئن شوید پکیج شامل `control.tar` و `data.tar` است |
+| عدم اتصال SSH | مطمئن شوید سرور SSH روی گیرنده فعال است (نصب: `opkg install openssh`) |
 
 ### اطلاعات توسعه‌دهنده
 
 - **توسعه‌دهنده:** KiaKu_1982
-- **گیت‌هاب:** <span dir="ltr">[github.com/zavyka](https://github.com/zavyka)</span>
-- **تلگرام:** <span dir="ltr">[@Rayan_Ku](https://t.me/Rayan_Ku)</span>
-- **کانال:** <span dir="ltr">[@Enigma2_Tutorials](https://t.me/Enigma2_Tutorials)</span>
+- **گیت‌هاب:**  [github.com/zavyka](https://github.com/zavyka) 
+- **تلگرام:**  [@Rayan_Ku](https://t.me/Rayan_Ku) 
+- **کانال:**  [@Enigma2_Tutorials](https://t.me/Enigma2_Tutorials) 
 
 ### 🌟 حمایت و ستاره دان
 
 اگر این ابزار برایتان مفید بود، لطفاً:
 
-- ⭐ **ستاره بدهید** به پروژه در <span dir="ltr">[GitHub](https://github.com/zavyka)</span>
+- ⭐ **ستاره بدهید** به پروژه در  [GitHub](https://github.com/zavyka) 
 - 📢 **اشتراک بگذارید** در:
-  - <span dir="ltr">[تلگرام](https://t.me/Rayan_Ku)</span>
-  - <span dir="ltr">[فیسبوک](https://www.facebook.com/)</span>
-  - <span dir="ltr">[X (توییتر)](https://x.com/)</span>
-  - انجمن‌های <span dir="ltr">Enigma2</span>
+  -  [تلگرام](https://t.me/Rayan_Ku) 
+  -  [فیسبوک](https://www.facebook.com/) 
+  -  [X (توییتر)](https://x.com/) 
+  - انجمن‌های  Enigma2 
   - گروه‌های گیرنده ماهواره
   - هر پلتفرم دیگری
 - 🐛 **مشکلات را گزارش کنید** اگر باگی پیدا کردید در [Issues](https://github.com/zavyka/KiaE2PackageManager/issues)
 
-با اشتراک‌گذاری این ابزار، به کاربران دیگر <span dir="ltr">Enigma2</span> کمک کنید تا آن را پیدا کنند!
+با اشتراک‌گذاری این ابزار، به کاربران دیگر  Enigma2  کمک کنید تا آن را پیدا کنند!
 
 ### مجوز
 
@@ -781,8 +781,8 @@ chmod +x KiaE2PackageManager
 
 ### الميزات
 
-- **بناء وإعادة بناء الحزم** — إنشاء ملفات `deb.` و `ipk.` من مشاريع الإضافات والأ skins
-- **استخراج وفك الحزم** — استخراج ملفات `deb.` و `ipk.` مع الحفظ الكامل للبنية
+- **بناء وإعادة بناء الحزم** — إنشاء ملفات `.deb` و `.ipk` من مشاريع الإضافات والأ skins
+- **استخراج وفك الحزم** — استخراج ملفات `.deb` و `.ipk` مع الحفظ الكامل للبنية
 - **إدارة البرامج الثابتة** — فك وضغط صور البرامج الثابتة (`.nfi`, `.tar.xz`, `.tar.gz`, `.tar.bz2`)
 - **عمليات الأرشيف** — إنشاء أرشيفات مضغوطة بتنسيقات متعددة (`.zip`, `.tar`, `.tar.gz`, `.tar.xz`, `.tar.bz2`)
 - **كشف تلقائي** — كشف تلقائي لهيكل المستقبل (ARM, ARM64, MIPS, x86/x64)
@@ -794,40 +794,40 @@ chmod +x KiaE2PackageManager
 
 | العلامات التجارية | الطرازات |
 |-----------------|----------|
-| <span dir="ltr">Dreambox</span> | <span dir="ltr">DM800, DM8000, DM900, DM920, DM520, DM500HD</span> |
-| <span dir="ltr">VU+</span> | <span dir="ltr">Duo, Duo2, Duo4K, Solo, Solo2, Solo4K, Ultimo, Ultimo4K</span> |
-| <span dir="ltr">GigaBlue</span> | جميع الطرازات المبنية على <span dir="ltr">Enigma2</span> |
-| أخرى | أي جهاز استقبال يعمل بنظام <span dir="ltr">Enigma2</span> |
+|  Dreambox  |  DM800, DM8000, DM900, DM920, DM520, DM500HD  |
+|  VU+  |  Duo, Duo2, Duo4K, Solo, Solo2, Solo4K, Ultimo, Ultimo4K  |
+|  GigaBlue  | جميع الطرازات المبنية على  Enigma2  |
+| أخرى | أي جهاز استقبال يعمل بنظام  Enigma2  |
 
 ### أنظمة التشغيل المدعومة
 
 | نظام التشغيل | الإصدارات |
 |-------------|-----------|
-| <span dir="ltr">DreamOS</span> | <span dir="ltr">OE 2.2, OE 2.5, OE 2.6</span> |
-| <span dir="ltr">OE2.0</span> | <span dir="ltr">Open Embedded</span> |
+|  DreamOS  |  OE 2.2, OE 2.5, OE 2.6  |
+|  OE2.0  |  Open Embedded  |
 
 ### الصور المدعومة
 
 | الصورة | الوصف |
 |--------|-------|
-| <span dir="ltr">CVS</span> | النسخة الأساسية النقية (بدون تعديلات) |
-| <span dir="ltr">AIO</span> | <span dir="ltr">All-In-One</span> |
-| مخصص | صور مبنية على <span dir="ltr">CVS</span> و <span dir="ltr">AIO</span> |
-| <span dir="ltr">OpenATV</span> | مفتوح المصدر |
-| <span dir="ltr">OpenPLi</span> | مفتوح المصدر |
-| أخرى | أي صورة <span dir="ltr">Enigma2</span> |
+|  CVS  | النسخة الأساسية النقية (بدون تعديلات) |
+|  AIO  |  All-In-One  |
+| مخصص | صور مبنية على  CVS  و  AIO  |
+|  OpenATV  | مفتوح المصدر |
+|  OpenPLi  | مفتوح المصدر |
+| أخرى | أي صورة  Enigma2  |
 
 ### تنسيقات الحزم المدعومة
 
 | التنسيق | الوصف | الاستخدام |
 |---------|-------|----------|
-| <span dir="ltr">`.deb`</span> | حزمة <span dir="ltr">Debian</span> | أجهزة <span dir="ltr">Dreambox</span> / <span dir="ltr">DreamOS</span> |
-| <span dir="ltr">`.ipk`</span> | حزمة <span dir="ltr">IPK</span> | أجهزة <span dir="ltr">OpenATV</span> / <span dir="ltr">OpenPLi</span> / <span dir="ltr">OE2.0</span> |
-| <span dir="ltr">`.tar.xz`</span> | أرشيف <span dir="ltr">tar</span> مضغوط | البرامج الثابتة العامة |
-| <span dir="ltr">`.tar.gz`</span> | <span dir="ltr">tar</span> مضغوط بـ <span dir="ltr">gzip</span> | البرامج الثابتة العامة |
-| <span dir="ltr">`.tar.bz2`</span> | <span dir="ltr">tar</span> مضغوط بـ <span dir="ltr">bzip2</span> | البرامج الثابتة العامة |
-| <span dir="ltr">`.nfi`</span> | صورة برنامج ثابت <span dir="ltr">NFI</span> | تحديثات برنامج <span dir="ltr">Dreambox</span> |
-| <span dir="ltr">`.zip`</span> | أرشيف <span dir="ltr">ZIP</span> | ضغط الملفات العامة |
+|  `.deb`  | حزمة  Debian  | أجهزة  Dreambox  /  DreamOS  |
+|  `.ipk`  | حزمة  IPK  | أجهزة  OpenATV  /  OpenPLi  /  OE2.0  |
+|  `.tar.xz`  | أرشيف  tar  مضغوط | البرامج الثابتة العامة |
+|  `.tar.gz`  |  tar  مضغوط بـ  gzip  | البرامج الثابتة العامة |
+|  `.tar.bz2`  |  tar  مضغوط بـ  bzip2  | البرامج الثابتة العامة |
+|  `.nfi`  | صورة برنامج ثابت  NFI  | تحديثات برنامج  Dreambox  |
+|  `.zip`  | أرشيف  ZIP  | ضغط الملفات العامة |
 
 ### التثبيت والاستخدام
 
@@ -837,16 +837,16 @@ chmod +x KiaE2PackageManager
 |---------|------|-------------|
 | **الطريقة 1** | الجميع | فقط اتصال SSH بجهاز الاستقبال |
 | **الطريقة 2** | المستخدمون المتقدمون | الكمبيوتر + موجه الأوامر |
-| **الطريقة 3** | المبتدئون | الكمبيوتر + أدوات واجهة المستخدم الرسومية (<span dir="ltr">FileZilla</span>/<span dir="ltr">WinSCP</span>) |
+| **الطريقة 3** | المبتدئون | الكمبيوتر + أدوات واجهة المستخدم الرسومية ( FileZilla / WinSCP ) |
 
 ---
 
 #### الطريقة 1: التحميل المباشر على جهاز الاستقبال (أسهل طريقة)
 
 > **الأفضل لـ:** الأشخاص الذين يريدون تشغيل الأداة بسرعة
-> **المطلوب:** اتصال SSH بجهاز الاستقبال (<span dir="ltr">PuTTY</span>، موجه الأوامر، إلخ)
+> **المطلوب:** اتصال SSH بجهاز الاستقبال ( PuTTY ، موجه الأوامر، إلخ)
 
-فقط اتصل بجهاز الاستقبال عبر SSH ونفّذ هذه الأوامر. سيتم تحميل الأداة مباشرة من <span dir="ltr">GitHub</span> على جهاز الاستقبال:
+فقط اتصل بجهاز الاستقبال عبر SSH ونفّذ هذه الأوامر. سيتم تحميل الأداة مباشرة من  GitHub  على جهاز الاستقبال:
 
 ```bash
 wget -O /tmp/KiaE2PackageManager https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager
@@ -878,7 +878,7 @@ chmod +x /tmp/KiaE2PackageManager
 #### الطريقة 3: النقل بأدوات واجهة المستخدم الرسومية (بدون موجه الأوامر)
 
 > **الأفضل لـ:** المبتدئون الذين يفضلون استخدام الماوس
-> **المطلوب:** الكمبيوتر مع <span dir="ltr">FileZilla</span> أو <span dir="ltr">WinSCP</span>
+> **المطلوب:** الكمبيوتر مع  FileZilla  أو  WinSCP 
 
 إذا لم تكن معتاداً على موجه الأوامر، استخدم هذه الأدوات الرسومية لنقل الملف بالسحب والإفلات:
 
@@ -888,14 +888,14 @@ chmod +x /tmp/KiaE2PackageManager
 
 | الأداة | البروتوكول | التعليمات |
 |--------|-----------|----------|
-| **<span dir="ltr">FileZilla</span>** | FTP | الاتصال بـ `<receiver_ip>:21` → الانتقال إلى `/tmp/` → سحب وإفلات الملف |
-| **<span dir="ltr">WinSCP</span>** | SCP/SFTP | الاتصال بـ `<receiver_ip>` (منفذ 22) → الانتقال إلى `/tmp/` → سحب وإفلات الملف |
-| **<span dir="ltr">Putty (PSCP)</span>** | SCP | تنفيذ الأمر: `pscp KiaE2PackageManager root@<receiver_ip>:/tmp/` |
+| ** FileZilla ** | FTP | الاتصال بـ `<receiver_ip>:21` → الانتقال إلى `/tmp/` → سحب وإفلات الملف |
+| ** WinSCP ** | SCP/SFTP | الاتصال بـ `<receiver_ip>` (منفذ 22) → الانتقال إلى `/tmp/` → سحب وإفلات الملف |
+| ** Putty (PSCP) ** | SCP | تنفيذ الأمر: `pscp KiaE2PackageManager root@<receiver_ip>:/tmp/` |
 | **Total Commander** | FTP/SCP | استخدام إضافة FTP أو SCP → الانتقال إلى `/tmp/` → رفع الملف |
 
 **الخطوة 2: الاتصال عبر SSH والتشغيل**
 
-افتح <span dir="ltr">Putty</span> (أي عميل <span dir="ltr">SSH</span> آخر) واتصل بجهاز الاستقبال:
+افتح  Putty  (أي عميل  SSH  آخر) واتصل بجهاز الاستقبال:
 
 ```
 Host Name: <receiver_ip>
@@ -917,7 +917,7 @@ chmod +x KiaE2PackageManager
 ./KiaE2PackageManager
 ```
 
-> **نصيحة:** يمكنك أيضًا استخدام ميزة <span dir="ltr">SCP</span> المدمجة في <span dir="ltr">Putty</span> لنقل الملفات مباشرة.
+> **نصيحة:** يمكنك أيضًا استخدام ميزة  SCP  المدمجة في  Putty  لنقل الملفات مباشرة.
 
 ### دليل الاستخدام
 
@@ -971,34 +971,34 @@ chmod +x KiaE2PackageManager
 
 | المشكلة | الحل |
 |---------|------|
-| "Python not found" | ثبّت <span dir="ltr">Python</span>: `<span dir="ltr">opkg install python</span>` |
-| "Permission denied" | نفّذ `<span dir="ltr">chmod +x KiaE2PackageManager</span>` |
+| "Python not found" | ثبّت Python: `opkg install python` |
+| "Permission denied" | نفّذ `chmod +x KiaE2PackageManager` |
 | فشل بناء الحزمة | تحقق من بنية مجلد المشروع |
-| فشل التحقق | تأكد من وجود `<span dir="ltr">control.tar</span>` و `<span dir="ltr">data.tar</span>` |
-| فشل الاتصال بـ <span dir="ltr">SSH</span> | تأكد من تشغيل خادم <span dir="ltr">SSH</span> على جهاز الاستقبال (التثبيت: `<span dir="ltr">opkg install openssh</span>`) |
+| فشل التحقق | تأكد من وجود `control.tar` و `data.tar` |
+| فشل الاتصال بـ SSH | تأكد من تشغيل خادم SSH على جهاز الاستقبال (التثبيت: `opkg install openssh`) |
 
 ### معلومات المطور
 
 - **المطور:** KiaKu_1982
-- **GitHub:** <span dir="ltr">[github.com/zavyka](https://github.com/zavyka)</span>
-- **Telegram:** <span dir="ltr">[@Rayan_Ku](https://t.me/Rayan_Ku)</span>
-- **القناة:** <span dir="ltr">[@Enigma2_Tutorials](https://t.me/Enigma2_Tutorials)</span>
+- **GitHub:**  [github.com/zavyka](https://github.com/zavyka) 
+- **Telegram:**  [@Rayan_Ku](https://t.me/Rayan_Ku) 
+- **القناة:**  [@Enigma2_Tutorials](https://t.me/Enigma2_Tutorials) 
 
 ### 🌟 الدعم والتقييم
 
 إذا وجدت هذه الأداة مفيدة، يرجى:
 
-- ⭐ **تقييم** المشروع على <span dir="ltr">[GitHub](https://github.com/zavyka)</span>
+- ⭐ **تقييم** المشروع على  [GitHub](https://github.com/zavyka) 
 - 📢 **مشاركة** الأداة على:
-  - <span dir="ltr">[تيليجرام](https://t.me/Rayan_Ku)</span>
-  - <span dir="ltr">[فيسبوك](https://www.facebook.com/)</span>
-  - <span dir="ltr">[X (تويتر)](https://x.com/)</span>
-  - منتديات <span dir="ltr">Enigma2</span>
+  -  [تيليجرام](https://t.me/Rayan_Ku) 
+  -  [فيسبوك](https://www.facebook.com/) 
+  -  [X (تويتر)](https://x.com/) 
+  - منتديات  Enigma2 
   - مجموعات أجهزة الاستقبال الفضائية
   - أي منصة أخرى
 - 🐛 **الإبلاغ عن المشاكل** إذا وجدت أي أخطاء في [Issues](https://github.com/zavyka/KiaE2PackageManager/issues)
 
-بمشاركة هذه الأداة، تساعد مستخدمي <span dir="ltr">Enigma2</span> الآخرين في اكتشافها!
+بمشاركة هذه الأداة، تساعد مستخدمي  Enigma2  الآخرين في اكتشافها!
 
 ### الترخيص
 
