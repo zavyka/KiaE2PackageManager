@@ -497,11 +497,11 @@ chmod +x KiaE2PackageManager
 
 | کێشە | چارەسەر |
 |------|---------|
-| "Python not found" | Python دابمەزرێنە: `opkg install python` |
+| "Python not found" | Python دابەزێنە: `opkg install python` |
 | "Permission denied" | ئەم فەرمانە جێبەجێ بکە: `chmod +x KiaE2PackageManager` |
 | هەڵە لە دروستکردنی پاکێج | پێکهاتەی بوخچەی پرۆژەکە بپشکنە |
-| هەڵە لە پشکنینی پاکێج | دڵنیابە کە پاکێجەکە `control.tar` و `data.tar` لەخۆدەگرێت |
-| ناتوانرێت بە SSH پەیوەندی بکرێت | دڵنیابە کە ڕاژەکاری SSH لەسەر وەرگر(رێسیڤێر) چالاکە (دابەزاندن: `opkg install openssh`) |
+| هەڵە لە پشکنینی پاکێج | لەخۆدەگرێت `control.tar` و `data.tar` دڵنیابە کە پاکێجەکە |
+| ناتوانرێت بە SSH پەیوەندی بکرێت | لەسەر وەرگر(رێسیڤێر) چالاکە دڵنیابە کە ڕاژەکاری SSH (دابەزاندن: `opkg install openssh`) |
 
 ### زانیارییەکانی پەرەپێدەر
 
@@ -738,10 +738,10 @@ chmod +x KiaE2PackageManager
 | مشکل | راه‌حل |
 |------|--------|
 | "Python not found" | پایتون را نصب کنید: `opkg install python` |
-| "Permission denied" | دستور `chmod +x KiaE2PackageManager` را اجرا کنید |
+| "Permission denied" | را اجرا کنید `chmod +x KiaE2PackageManager` دستور |
 | خطا در ساخت پکیج | ساختار پوشه پروژه را بررسی کنید |
-| خطا در اعتبارسنجی | مطمئن شوید پکیج شامل `control.tar` و `data.tar` است |
-| عدم اتصال SSH | مطمئن شوید سرور SSH روی گیرنده فعال است (نصب: `opkg install openssh`) |
+| خطا در اعتبارسنجی | است `control.tar` و `data.tar` مطمئن شوید پکیج شامل |
+| عدم اتصال SSH | روی گیرنده فعال است مطمئن شوید سرور SSH (نصب: `opkg install openssh`) |
 
 ### اطلاعات توسعه‌دهنده
 
