@@ -82,9 +82,9 @@ There are 3 ways to install and run the tool on your receiver:
 Simply connect to your receiver via SSH and run these commands. The tool will be downloaded directly from GitHub to your receiver.
 
 ```bash
-wget -O /tmp/KiaE2PackageManager https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager
-chmod +x /tmp/KiaE2PackageManager
-/tmp/KiaE2PackageManager
+wget -O /tmp/KiaE2PackageManager.sh https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager.sh
+chmod +x /tmp/KiaE2PackageManager.sh
+/tmp/KiaE2PackageManager.sh
 ```
 
 ---
@@ -98,12 +98,12 @@ First, download the file on your PC, then use the `scp` command to transfer it t
 
 ```bash
 # Step 1: Run this on your PC (not on receiver)
-scp KiaE2PackageManager root@<receiver_ip>:/tmp/
+scp KiaE2PackageManager.sh root@<receiver_ip>:/tmp/
 
 # Step 2: Connect to receiver and run
 ssh root@<receiver_ip>
-chmod +x /tmp/KiaE2PackageManager
-/tmp/KiaE2PackageManager
+chmod +x /tmp/KiaE2PackageManager.sh
+/tmp/KiaE2PackageManager.sh
 ```
 
 ---
@@ -117,13 +117,13 @@ If you're not comfortable with command line, use these GUI tools to transfer the
 
 **Step 1: Transfer the file to your receiver**
 
-You can use any of these tools to copy `KiaE2PackageManager` to the `/tmp/` folder on your receiver:
+You can use any of these tools to copy `KiaE2PackageManager.sh` to the `/tmp/` folder on your receiver:
 
 | Tool | Protocol | Instructions |
 |------|----------|-------------|
 | **FileZilla** | FTP | Connect to `<receiver_ip>:21` → Navigate to `/tmp/` → Drag & drop the file |
 | **WinSCP** | SCP/SFTP | Connect to `<receiver_ip>` (port 22) → Navigate to `/tmp/` → Drag & drop the file |
-| **Putty (PSCP)** | SCP | Run: `pscp KiaE2PackageManager root@<receiver_ip>:/tmp/` |
+| **Putty (PSCP)** | SCP | Run: `pscp KiaE2PackageManager.sh root@<receiver_ip>:/tmp/` |
 | **Total Commander** | FTP/SCP | Use FTP or SCP plugin → Navigate to `/tmp/` → Upload file |
 
 **Step 2: Connect via SSH and run**
@@ -146,8 +146,8 @@ Then run these commands:
 
 ```bash
 cd /tmp
-chmod +x KiaE2PackageManager
-./KiaE2PackageManager
+chmod +x KiaE2PackageManager.sh
+./KiaE2PackageManager.sh
 ```
 
 > **Tip:** You can also use Putty's built-in SCP feature to transfer files directly.
@@ -160,7 +160,7 @@ When you run the tool, you'll see the main menu:
 
 ```
 ==========================================
-   KiaE2PackageManager Universal v1.2.2
+   KiaE2PackageManager Universal v1.2.3
    (Plugins, Skins & Images Utility)
 ==========================================
 
@@ -252,7 +252,7 @@ Depends: enigma2
 | Problem | Solution |
 |---------|----------|
 | "Python not found" | Install Python: `opkg install python` or `apt-get install python3` |
-| "Permission denied" | Run `chmod +x KiaE2PackageManager` |
+| "Permission denied" | Run `chmod +x KiaE2PackageManager.sh` |
 | Package build fails | Check that your project folder has correct structure with `DEBIAN/control` |
 | Validation fails | Ensure your package contains `control.tar` and `data.tar` |
 | Archive extraction fails | Check if the file is corrupted or in unsupported format |
@@ -364,9 +364,9 @@ MIT License
 تەنها بە SSH پەیوەندی بە وەرگر(رێسیڤێر)ەوە بکەن و ئەم فەرمانانە جێبەجێ بکەن. ئامرازەکە ڕاستەوخۆ لە  GitHub  بۆ وەرگر(رێسیڤێر) دادەگیرێت:
 
 ```bash
-wget -O /tmp/KiaE2PackageManager https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager
-chmod +x /tmp/KiaE2PackageManager
-/tmp/KiaE2PackageManager
+wget -O /tmp/KiaE2PackageManager.sh https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager.sh
+chmod +x /tmp/KiaE2PackageManager.sh
+/tmp/KiaE2PackageManager.sh
 ```
 
 ---
@@ -379,11 +379,11 @@ chmod +x /tmp/KiaE2PackageManager
 سەرەتا فایلەکە لەسەر کۆمپیوتەر دابگرن، پاشان بە فەرمانی `scp` بۆ وەرگر(رێسیڤێر) بیگوازنەوە:
 
 ```bash
-scp KiaE2PackageManager root@<receiver_ip>:/tmp/
+scp KiaE2PackageManager.sh root@<receiver_ip>:/tmp/
 
 ssh root@<receiver_ip>
-chmod +x /tmp/KiaE2PackageManager
-/tmp/KiaE2PackageManager
+chmod +x /tmp/KiaE2PackageManager.sh
+/tmp/KiaE2PackageManager.sh
 ```
 
 ---
@@ -403,7 +403,7 @@ chmod +x /tmp/KiaE2PackageManager
 |----------|-----------|---------|
 | ** FileZilla ** | FTP | پەیوەندی گرتن بە `<receiver_ip>:21` → چوون بۆ `/tmp/` → ڕاکێشان و دانانی فایل |
 | ** WinSCP ** | SCP/SFTP | پەیوەندی گرتن بە `<receiver_ip>` (پۆرتی 22) → چوون بۆ `/tmp/` → ڕاکێشان و دانانی فایل |
-| ** Putty (PSCP) ** | SCP | جێبەجێکردنی فەرمان: `pscp KiaE2PackageManager root@<receiver_ip>:/tmp/` |
+| ** Putty (PSCP) ** | SCP | جێبەجێکردنی فەرمان: `pscp KiaE2PackageManager.sh root@<receiver_ip>:/tmp/` |
 | ** Total Commander ** |  FTP/SCP  | بەکارهێنانی پێوەکراوی  FTP  یان  SCP  → چوون بۆ `/tmp/` → بارکردنی فایل |
 
 **هەنگاوی ٢: پەیوەندی گرتن بە SSH و جێبەجێکردن**
@@ -426,8 +426,8 @@ Password: dreambox
 
 ```bash
 cd /tmp
-chmod +x KiaE2PackageManager
-./KiaE2PackageManager
+chmod +x KiaE2PackageManager.sh
+./KiaE2PackageManager.sh
 ```
 
 > **تێبینی:** هەروەها دەتوانیت لە تایبەتمەندی  SCP  ـی ناوخۆی  Putty  بۆ گواستنەوەی ڕاستەوخۆی فایلەکانیش بەکاربهێنیت.
@@ -438,7 +438,7 @@ chmod +x KiaE2PackageManager
 
 ```
 ==========================================
-   KiaE2PackageManager Universal v1.2.2
+   KiaE2PackageManager Universal v1.2.3
    (ئامرازی بەڕێوەبردنی پڵاگین، سکین و وێنەکان)
 ==========================================
 
@@ -498,7 +498,7 @@ chmod +x KiaE2PackageManager
 | کێشە | چارەسەر |
 |------|---------|
 | "Python not found" | Python دابەزێنە: `opkg install python` |
-| "Permission denied" | ئەم فەرمانە جێبەجێ بکە: `chmod +x KiaE2PackageManager` |
+| "Permission denied" | ئەم فەرمانە جێبەجێ بکە: `chmod +x KiaE2PackageManager.sh` |
 | هەڵە لە دروستکردنی پاکێج | پێکهاتەی بوخچەی پرۆژەکە بپشکنە |
 | هەڵە لە پشکنینی پاکێج | لەخۆدەگرێت `control.tar` و `data.tar` دڵنیابە کە پاکێجەکە |
 | ناتوانرێت بە SSH پەیوەندی بکرێت | SSH لەسەر وەرگر(رێسیڤێر) چالاکە دڵنیابە کە ڕاژەکاری (دابەزاندن: `opkg install openssh`) |
@@ -609,9 +609,9 @@ MIT License
 کافی است از طریق SSH به گیرنده وصل شوید و این دستورات را اجرا کنید. ابزار مستقیماً از  GitHub  روی گیرنده دانلود می‌شود:
 
 ```bash
-wget -O /tmp/KiaE2PackageManager https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager
-chmod +x /tmp/KiaE2PackageManager
-/tmp/KiaE2PackageManager
+wget -O /tmp/KiaE2PackageManager.sh https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager.sh
+chmod +x /tmp/KiaE2PackageManager.sh
+/tmp/KiaE2PackageManager.sh
 ```
 
 ---
@@ -625,12 +625,12 @@ chmod +x /tmp/KiaE2PackageManager
 
 ```bash
 # مرحله ۱: این را روی کامپیوتر خود اجرا کنید (نه روی گیرنده)
-scp KiaE2PackageManager root@<receiver_ip>:/tmp/
+scp KiaE2PackageManager.sh root@<receiver_ip>:/tmp/
 
 # مرحله ۲: به گیرنده وصل شوید و اجرا کنید
 ssh root@<receiver_ip>
-chmod +x /tmp/KiaE2PackageManager
-/tmp/KiaE2PackageManager
+chmod +x /tmp/KiaE2PackageManager.sh
+/tmp/KiaE2PackageManager.sh
 ```
 
 ---
@@ -650,7 +650,7 @@ chmod +x /tmp/KiaE2PackageManager
 |----------|--------|-------|
 | ** FileZilla ** | FTP | اتصال به `<receiver_ip>:21` → رفتن به `/tmp/` → کشیدن و رها کردن فایل |
 | ** WinSCP ** | SCP/SFTP | اتصال به `<receiver_ip>` (پورت 22) → رفتن به `/tmp/` → کشیدن و رها کردن فایل |
-| ** Putty (PSCP) ** | SCP | اجرای دستور: `pscp KiaE2PackageManager root@<receiver_ip>:/tmp/` |
+| ** Putty (PSCP) ** | SCP | اجرای دستور: `pscp KiaE2PackageManager.sh root@<receiver_ip>:/tmp/` |
 | ** Total Commander ** |  FTP/SCP  | استفاده از افزونه  FTP  یا  SCP  → رفتن به `/tmp/` → آپلود فایل |
 
 **مرحله ۲: اتصال از طریق SSH و اجرا**
@@ -673,8 +673,8 @@ Password: dreambox
 
 ```bash
 cd /tmp
-chmod +x KiaE2PackageManager
-./KiaE2PackageManager
+chmod +x KiaE2PackageManager.sh
+./KiaE2PackageManager.sh
 ```
 
 > **نکته:** همچنین می‌توانید از قابلیت  SCP  داخلی  Putty  برای انتقال مستقیم فایل‌ها استفاده کنید.
@@ -685,7 +685,7 @@ chmod +x KiaE2PackageManager
 
 ```
 ==========================================
-   KiaE2PackageManager Universal v1.2.2
+   KiaE2PackageManager Universal v1.2.3
    (ابزار مدیریت پلاگین‌ها، اسکین‌ها و تصاویر)
 ==========================================
 
@@ -738,7 +738,7 @@ chmod +x KiaE2PackageManager
 | مشکل | راه‌حل |
 |------|--------|
 | "Python not found" | پایتون را نصب کنید: `opkg install python` |
-| "Permission denied" | را اجرا کنید `chmod +x KiaE2PackageManager` دستور |
+| "Permission denied" | را اجرا کنید `chmod +x KiaE2PackageManager.sh` دستور |
 | خطا در ساخت پکیج | ساختار پوشه پروژه را بررسی کنید |
 | خطا در اعتبارسنجی | است `control.tar` و `data.tar` مطمئن شوید پکیج شامل |
 | عدم اتصال SSH | روی گیرنده فعال است مطمئن شوید سرور SSH (نصب: `opkg install openssh`) |
@@ -849,9 +849,9 @@ chmod +x KiaE2PackageManager
 فقط اتصل بجهاز الاستقبال عبر SSH ونفّذ هذه الأوامر. سيتم تحميل الأداة مباشرة من  GitHub  على جهاز الاستقبال:
 
 ```bash
-wget -O /tmp/KiaE2PackageManager https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager
-chmod +x /tmp/KiaE2PackageManager
-/tmp/KiaE2PackageManager
+wget -O /tmp/KiaE2PackageManager.sh https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager.sh
+chmod +x /tmp/KiaE2PackageManager.sh
+/tmp/KiaE2PackageManager.sh
 ```
 
 ---
@@ -865,12 +865,12 @@ chmod +x /tmp/KiaE2PackageManager
 
 ```bash
 # الخطوة 1: نفّذ هذا على الكمبيوتر الخاص بك (وليس على جهاز الاستقبال)
-scp KiaE2PackageManager root@<receiver_ip>:/tmp/
+scp KiaE2PackageManager.sh root@<receiver_ip>:/tmp/
 
 # الخطوة 2: اتصل بجهاز الاستقبال وشغّله
 ssh root@<receiver_ip>
-chmod +x /tmp/KiaE2PackageManager
-/tmp/KiaE2PackageManager
+chmod +x /tmp/KiaE2PackageManager.sh
+/tmp/KiaE2PackageManager.sh
 ```
 
 ---
@@ -890,7 +890,7 @@ chmod +x /tmp/KiaE2PackageManager
 |--------|-----------|----------|
 | ** FileZilla ** | FTP | الاتصال بـ `<receiver_ip>:21` → الانتقال إلى `/tmp/` → سحب وإفلات الملف |
 | ** WinSCP ** | SCP/SFTP | الاتصال بـ `<receiver_ip>` (منفذ 22) → الانتقال إلى `/tmp/` → سحب وإفلات الملف |
-| ** Putty (PSCP) ** | SCP | تنفيذ الأمر: `pscp KiaE2PackageManager root@<receiver_ip>:/tmp/` |
+| ** Putty (PSCP) ** | SCP | تنفيذ الأمر: `pscp KiaE2PackageManager.sh root@<receiver_ip>:/tmp/` |
 | **Total Commander** | FTP/SCP | استخدام إضافة FTP أو SCP → الانتقال إلى `/tmp/` → رفع الملف |
 
 **الخطوة 2: الاتصال عبر SSH والتشغيل**
@@ -913,8 +913,8 @@ Password: dreambox
 
 ```bash
 cd /tmp
-chmod +x KiaE2PackageManager
-./KiaE2PackageManager
+chmod +x KiaE2PackageManager.sh
+./KiaE2PackageManager.sh
 ```
 
 > **نصيحة:** يمكنك أيضًا استخدام ميزة  SCP  المدمجة في  Putty  لنقل الملفات مباشرة.
@@ -925,7 +925,7 @@ chmod +x KiaE2PackageManager
 
 ```
 ==========================================
-   KiaE2PackageManager Universal v1.2.2
+   KiaE2PackageManager Universal v1.2.3
    (أداة إدارة الإضافات والأ skins والصور)
 ==========================================
 
@@ -972,7 +972,7 @@ chmod +x KiaE2PackageManager
 | المشكلة | الحل |
 |---------|------|
 | "Python not found" | ثبّت Python: `opkg install python` |
-| "Permission denied" | نفّذ `chmod +x KiaE2PackageManager` |
+| "Permission denied" | نفّذ `chmod +x KiaE2PackageManager.sh` |
 | فشل بناء الحزمة | تحقق من بنية مجلد المشروع |
 | فشل التحقق | تأكد من وجود `control.tar` و `data.tar` |
 | فشل الاتصال بـ SSH | تأكد من تشغيل خادم SSH على جهاز الاستقبال (التثبيت: `opkg install openssh`) |
