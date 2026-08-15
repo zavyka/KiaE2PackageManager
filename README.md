@@ -82,7 +82,7 @@ There are 3 ways to install and run the tool on your receiver:
 Simply connect to your receiver via SSH and run these commands. The tool will be downloaded directly from GitHub to your receiver.
 
 ```bash
-wget -O /tmp/KiaE2PackageManager.sh https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager.sh
+wget -O /tmp/KiaE2PackageManager.sh https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager
 chmod +x /tmp/KiaE2PackageManager.sh
 /tmp/KiaE2PackageManager.sh
 ```
