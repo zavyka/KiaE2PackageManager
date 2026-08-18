@@ -882,7 +882,7 @@ chmod +x KiaE2PackageManager
 
 ---
 
-⬆️ [بازگشت به انتخاب زبان](#language-selection)
+⬆️ [بازگشت به ابتدای توضیحات ](#language-selection)
 
 </details>
 
