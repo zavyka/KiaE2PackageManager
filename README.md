@@ -6,7 +6,15 @@ A powerful, all-in-one tool for managing plugins, skins, firmware images, and pa
 
 ![KiaE2PackageManager Main Menu](screenshot_main.png)
 
-🇺🇸 [English](#-english) | ☀️ [کوردی سۆرانی](#kurdish) | 🇮🇷 [فارسی](#-فارسی) | 🇸🇦 [العربية](#-العربية)
+<details>
+<summary>🌐 Select Language / انتخاب زبان / هەڵبژاردنی زمان / اختيار اللغة</summary>
+
+- 🇺🇸 [English](#-english)
+- ☀️ [کوردی سۆرانی](#kurdish)
+- 🇮🇷 [فارسی](#-فارسی)
+- 🇸🇦 [العربية](#-العربية)
+
+</details>
 
 ---
 
@@ -76,10 +84,12 @@ There are 3 ways to install and run the tool on your receiver:
 
 #### Method 1: Direct Download on Receiver (Easiest)
 
-> **Best for:** Users who just want to quickly run the tool
+> **Best for:** Users who just want to quickly run the tool  
 > **Requirements:** SSH access to your receiver (Putty, terminal, etc.)
 
 Simply connect to your receiver via SSH and run these commands. The tool will be downloaded directly from GitHub to your receiver.
+
+**Primary method — `wget`:**
 
 ```bash
 wget -O /tmp/KiaE2PackageManager https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager
@@ -87,11 +97,33 @@ chmod +x /tmp/KiaE2PackageManager
 /tmp/KiaE2PackageManager
 ```
 
+> **⚠️ If Method 1 fails:** Some older Dreambox images have an outdated or broken `wget`/HTTPS environment. In that case, use the **Python fallback below**. It is still part of Method 1, so you do not need to switch to Method 2.
+
+**Fallback — Python (standard library only):**
+
+For receivers where `wget` cannot download the file, try:
+
+```bash
+python -c "import urllib; urllib.urlretrieve('https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager','/tmp/KiaE2PackageManager')"
+chmod +x /tmp/KiaE2PackageManager
+/tmp/KiaE2PackageManager
+```
+
+If the receiver uses Python 3 instead of Python 2:
+
+```bash
+python3 -c "from urllib.request import urlretrieve; urlretrieve('https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager','/tmp/KiaE2PackageManager')"
+chmod +x /tmp/KiaE2PackageManager
+/tmp/KiaE2PackageManager
+```
+
+> **Note:** The Python fallback uses only Python's standard library and does not require `pip` or any external package.
+
 ---
 
 #### Method 2: Transfer from PC via SCP (Command Line)
 
-> **Best for:** Advanced users comfortable with terminal/command line
+> **Best for:** Advanced users comfortable with terminal/command line  
 > **Requirements:** PC with terminal + SSH access to receiver
 
 First, download the file on your PC, then use the `scp` command to transfer it to your receiver:
@@ -110,7 +142,7 @@ chmod +x /tmp/KiaE2PackageManager
 
 #### Method 3: Transfer with GUI Tools (No Command Line)
 
-> **Best for:** Beginners who prefer visual interfaces (mouse click)
+> **Best for:** Beginners who prefer visual interfaces (mouse click)  
 > **Requirements:** PC with FileZilla or WinSCP
 
 If you're not comfortable with command line, use these GUI tools to transfer the file by dragging and dropping:
@@ -287,8 +319,15 @@ MIT License
 
 ---
 
-### 🌐 Switch Language
-🇺🇸 English | ☀️ [کوردی سۆرانی](#kurdish) | 🇮🇷 [فارسی](#-فارسی) | 🇸🇦 [العربية](#-العربية)
+<details>
+<summary>🌐 Switch Language</summary>
+
+- 🇺🇸 [English](#-english)
+- ☀️ [کوردی سۆرانی](#kurdish)
+- 🇮🇷 [فارسی](#-فارسی)
+- 🇸🇦 [العربية](#-العربية)
+
+</details>
 
 ---
 
@@ -358,10 +397,12 @@ MIT License
 
 #### ڕێگای ١: داگرتنی ڕاستەوخۆ لەسەر وەرگر(رێسیڤێر) (ئاسانترین)
 
-> **باشترین بۆ:** ئەوانەی دەیانەوێت خێرا ئامرازەکە جێبەجێ بکەن
+> **باشترین بۆ:** ئەوانەی دەیانەوێت خێرا ئامرازەکە جێبەجێ بکەن  
 > **پێویستە:** دەستگەیشتن بە SSH بۆ وەرگر(رێسیڤێر) ( Putty ،  Terminal  و هتد)
 
 تەنها بە SSH پەیوەندی بە وەرگر(رێسیڤێر)ەوە بکەن و ئەم فەرمانانە جێبەجێ بکەن. ئامرازەکە ڕاستەوخۆ لە  GitHub  بۆ وەرگر(رێسیڤێر) دادەگیرێت:
+
+**ڕێگای سەرەکی — `wget`:**
 
 ```bash
 wget -O /tmp/KiaE2PackageManager https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager
@@ -369,11 +410,33 @@ chmod +x /tmp/KiaE2PackageManager
 /tmp/KiaE2PackageManager
 ```
 
+> **⚠️ ئەگەر ڕێگای ١ سەرکەوتوو نەبوو:** هەندێک وێنەی کۆنی Dreambox ژینگەی `wget`/HTTPS ـی کۆن یان خراپیان هەیە. لەم حاڵەتەدا **Fallback ـی Python** ـی خوارەوە بەکاربهێنە. ئەمە هەر لە ناو **ڕێگای ١** ـدایە و پێویست ناکات بڕۆیت بۆ ڕێگای ٢.
+
+**Fallback — Python (تەنها کتێبخانەی ستاندارد):**
+
+ئەگەر `wget` نەتوانێت فایلەکە دابگریت، ئەمە تاقی بکەرەوە:
+
+```bash
+python -c "import urllib; urllib.urlretrieve('https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager','/tmp/KiaE2PackageManager')"
+chmod +x /tmp/KiaE2PackageManager
+/tmp/KiaE2PackageManager
+```
+
+ئەگەر وەرگرەکە Python 3 بەکاربهێنێت:
+
+```bash
+python3 -c "from urllib.request import urlretrieve; urlretrieve('https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager','/tmp/KiaE2PackageManager')"
+chmod +x /tmp/KiaE2PackageManager
+/tmp/KiaE2PackageManager
+```
+
+> **تێبینی:** Fallback ـی Python تەنها کتێبخانەی ستانداردی Python بەکاردهێنێت و پێویستی بە `pip` یان هیچ پاکێجی دەرەکی نییە.
+
 ---
 
 #### ڕێگای ٢: گواستنەوە لە کۆمپیوتەر بە SCP (هێڵی فەرمان)
 
-> **باشترین بۆ:** بەکارهێنەرانی پێشکەوتوو کە شارەزای  Terminal  ـن
+> **باشترین بۆ:** بەکارهێنەرانی پێشکەوتوو کە شارەزای  Terminal  ـن  
 > **پێویستە:** کۆمپیوتەر لەگەڵ  Terminal  + دەستگەیشتن بە SSH بۆ وەرگر(رێسیڤێر)
 
 سەرەتا فایلەکە لەسەر کۆمپیوتەر دابگرن، پاشان بە فەرمانی `scp` بۆ وەرگر(رێسیڤێر) بیگوازنەوە:
@@ -390,7 +453,7 @@ chmod +x /tmp/KiaE2PackageManager
 
 #### ڕێگای ٣: گواستنەوە بە نەرمەواڵە گرافیکییەکان (بێ هێڵی فەرمان)
 
-> **باشترین بۆ:** بەکارهێنەرانی سەرەتایی کە پێیان خۆشە بە ماوس کار بکەن
+> **باشترین بۆ:** بەکارهێنەرانی سەرەتایی کە پێیان خۆشە بە ماوس کار بکەن  
 > **پێویستە:** کۆمپیوتەر لەگەڵ  FileZilla  یان  WinSCP 
 
 ئەگەر شارەزا بە هێڵی فەرمان ( Command Line ) نین، ئەم نەرمەواڵانە بەکاربهێنن بۆ گواستنەوەی فایل بە ڕاکێشان و دانان ( Drag & Drop ):
@@ -498,7 +561,7 @@ chmod +x KiaE2PackageManager
 | کێشە | چارەسەر |
 |------|---------|
 | "Python not found" | Python دابەزێنە: `opkg install python` |
-| "Permission denied" | ئەم فەرمانە جێبەجێ بکە: `chmod +x KiaE2PackageManager` |
+| "Permission denied" | ئەم فەرمانە جێبەجێ بکە: `chmod +x KiaE2PackageManager` دستور |
 | هەڵە لە دروستکردنی پاکێج | پێکهاتەی بوخچەی پرۆژەکە بپشکنە |
 | هەڵە لە پشکنینی پاکێج | لەخۆدەگرێت `control.tar` و `data.tar` دڵنیابە کە پاکێجەکە |
 | ناتوانرێت بە SSH پەیوەندی بکرێت | SSH لەسەر وەرگر(رێسیڤێر) چالاکە دڵنیابە کە ڕاژەکاری (دابەزاندن: `opkg install openssh`) |
@@ -532,8 +595,15 @@ MIT License
 
 ---
 
-### 🌐 زمانەکانی تێدا بگۆڕە
-🇺🇸 [English](#-english) | ☀️ کوردی سۆرانی | 🇮🇷 [فارسی](#-فارسی) | 🇸🇦 [العربية](#-العربية)
+<details>
+<summary>🌐 زمانەکانی تێدا بگۆڕە</summary>
+
+- 🇺🇸 [English](#-english)
+- ☀️ [کوردی سۆرانی](#kurdish)
+- 🇮🇷 [فارسی](#-فارسی)
+- 🇸🇦 [العربية](#-العربية)
+
+</details>
 
 ---
 
@@ -603,10 +673,12 @@ MIT License
 
 #### روش ۱: دانلود مستقیم روی گیرنده (ساده‌ترین)
 
-> **بهترین برای:** کسانی که می‌خواهند سریع ابزار را اجرا کنند
+> **بهترین برای:** کسانی که می‌خواهند سریع ابزار را اجرا کنند  
 > **نیاز:** دسترسی SSH به گیرنده ( Putty ، ترمینال و غیره)
 
 کافی است از طریق SSH به گیرنده وصل شوید و این دستورات را اجرا کنید. ابزار مستقیماً از  GitHub  روی گیرنده دانلود می‌شود:
+
+**روش اصلی — `wget`:**
 
 ```bash
 wget -O /tmp/KiaE2PackageManager https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager
@@ -614,11 +686,33 @@ chmod +x /tmp/KiaE2PackageManager
 /tmp/KiaE2PackageManager
 ```
 
+> **⚠️ اگر روش ۱ شکست خورد:** بعضی ایمیج‌های قدیمی Dreambox دارای `wget` یا محیط HTTPS قدیمی/ناقص هستند. در این حالت **Fallback پایتون** زیر را امتحان کنید. این روش همچنان بخشی از **روش ۱** است و نیازی نیست به روش ۲ بروید.
+
+**Fallback — Python (فقط کتابخانه استاندارد):**
+
+اگر `wget` نتوانست فایل را دانلود کند، این دستور را امتحان کنید:
+
+```bash
+python -c "import urllib; urllib.urlretrieve('https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager','/tmp/KiaE2PackageManager')"
+chmod +x /tmp/KiaE2PackageManager
+/tmp/KiaE2PackageManager
+```
+
+اگر گیرنده از Python 3 استفاده می‌کند:
+
+```bash
+python3 -c "from urllib.request import urlretrieve; urlretrieve('https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager','/tmp/KiaE2PackageManager')"
+chmod +x /tmp/KiaE2PackageManager
+/tmp/KiaE2PackageManager
+```
+
+> **نکته:** Fallback پایتون فقط از کتابخانه استاندارد Python استفاده می‌کند و به `pip` یا هیچ پکیج خارجی نیاز ندارد.
+
 ---
 
 #### روش ۲: انتقال از کامپیوتر از طریق SCP (خط فرمان)
 
-> **بهترین برای:** کاربران حرفه‌ای که با ترمینال آشنا هستند
+> **بهترین برای:** کاربران حرفه‌ای که با ترمینال آشنا هستند  
 > **نیاز:** کامپیوتر با ترمینال + دسترسی SSH به گیرنده
 
 ابتدا فایل را روی کامپیوتر دانلود کنید، سپس با دستور `scp` به گیرنده منتقل کنید:
@@ -637,7 +731,7 @@ chmod +x /tmp/KiaE2PackageManager
 
 #### روش ۳: انتقال با نرم‌افزارهای گرافیکی (بدون خط فرمان)
 
-> **بهترین برای:** کاربران مبتدی که ترجیح می‌دهند با ماوس کار کنند
+> **بهترین برای:** کاربران مبتدی که ترجیح می‌دهند با ماوس کار کنند  
 > **نیاز:** کامپیوتر با  FileZilla  یا  WinSCP 
 
 اگر با خط فرمان آشنا نیستید، از این نرم‌افزارها برای انتقال فایل با کشیدن و رها کردن استفاده کنید:
@@ -708,6 +802,7 @@ chmod +x KiaE2PackageManager
 5. پوشه پروژه خود را انتخاب کنید
 
 > **⚠️ مهم:** قبل از ساخت پکیج، مطمئن شوید که تمام فایل‌های پلاگین/اسکین در مسیر درست قرار گرفته‌اند (مثلاً: `usr/lib/enigma2/python/Plugins/` برای پلاگین‌ها، `usr/share/enigma2/` برای اسکین‌ها). مسیرهای نادرست باعث عدم عملکرد صحیح پکیج بعد از نصب می‌شوند.
+
 6. فایل کنترل را در صورت نیاز ویرایش کنید
 7. منتظر اتمام ساخت باشید
 
@@ -772,8 +867,15 @@ chmod +x KiaE2PackageManager
 
 ---
 
-### 🌐 تغییر زبان
-🇺🇸 [English](#-english) | ☀️ [کوردی سۆرانی](#kurdish) | 🇮🇷 فارسی | 🇸🇦 [العربية](#-العربية)
+<details>
+<summary>🌐 تغییر زبان</summary>
+
+- 🇺🇸 [English](#-english)
+- ☀️ [کوردی سۆرانی](#kurdish)
+- 🇮🇷 [فارسی](#-فارسی)
+- 🇸🇦 [العربية](#-العربية)
+
+</details>
 
 ---
 
@@ -843,10 +945,12 @@ chmod +x KiaE2PackageManager
 
 #### الطريقة 1: التحميل المباشر على جهاز الاستقبال (أسهل طريقة)
 
-> **الأفضل لـ:** الأشخاص الذين يريدون تشغيل الأداة بسرعة
+> **الأفضل لـ:** الأشخاص الذين يريدون تشغيل الأداة بسرعة  
 > **المطلوب:** اتصال SSH بجهاز الاستقبال ( PuTTY ، موجه الأوامر، إلخ)
 
 فقط اتصل بجهاز الاستقبال عبر SSH ونفّذ هذه الأوامر. سيتم تحميل الأداة مباشرة من  GitHub  على جهاز الاستقبال:
+
+**الطريقة الأساسية — `wget`:**
 
 ```bash
 wget -O /tmp/KiaE2PackageManager https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager
@@ -854,11 +958,33 @@ chmod +x /tmp/KiaE2PackageManager
 /tmp/KiaE2PackageManager
 ```
 
+> **⚠️ إذا فشلت الطريقة 1:** بعض صور Dreambox القديمة تحتوي على `wget` أو بيئة HTTPS قديمة/غير مكتملة. في هذه الحالة استخدم **بديل Python** أدناه. يظل هذا البديل جزءًا من **الطريقة 1** ولا تحتاج إلى الانتقال إلى الطريقة 2.
+
+**بديل — Python (المكتبة القياسية فقط):**
+
+إذا لم يتمكن `wget` من تنزيل الملف، جرّب:
+
+```bash
+python -c "import urllib; urllib.urlretrieve('https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager','/tmp/KiaE2PackageManager')"
+chmod +x /tmp/KiaE2PackageManager
+/tmp/KiaE2PackageManager
+```
+
+إذا كان جهاز الاستقبال يستخدم Python 3:
+
+```bash
+python3 -c "from urllib.request import urlretrieve; urlretrieve('https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager','/tmp/KiaE2PackageManager')"
+chmod +x /tmp/KiaE2PackageManager
+/tmp/KiaE2PackageManager
+```
+
+> **ملاحظة:** يستخدم بديل Python المكتبة القياسية في Python فقط ولا يحتاج إلى `pip` أو أي حزمة خارجية.
+
 ---
 
 #### الطريقة 2: النقل من الكمبيوتر عبر SCP (موجه الأوامر)
 
-> **الأفضل لـ:** المستخدمون المتقدمون المعتادون على موجه الأوامر
+> **الأفضل لـ:** المستخدمون المتقدمون المعتادون على موجه الأوامر  
 > **المطلوب:** الكمبيوتر مع موجه الأوامر + اتصال SSH بجهاز الاستقبال
 
 قم أولاً بتنزيل الملف على الكمبيوتر، ثم انقله إلى جهاز الاستقبال باستخدام أمر `scp`:
@@ -877,7 +1003,7 @@ chmod +x /tmp/KiaE2PackageManager
 
 #### الطريقة 3: النقل بأدوات واجهة المستخدم الرسومية (بدون موجه الأوامر)
 
-> **الأفضل لـ:** المبتدئون الذين يفضلون استخدام الماوس
+> **الأفضل لـ:** المبتدئون الذين يفضلون استخدام الماوس  
 > **المطلوب:** الكمبيوتر مع  FileZilla  أو  WinSCP 
 
 إذا لم تكن معتاداً على موجه الأوامر، استخدم هذه الأدوات الرسومية لنقل الملف بالسحب والإفلات:
@@ -975,6 +1101,7 @@ chmod +x KiaE2PackageManager
 | "Permission denied" | نفّذ `chmod +x KiaE2PackageManager` |
 | فشل بناء الحزمة | تحقق من بنية مجلد المشروع |
 | فشل التحقق | تأكد من وجود `control.tar` و `data.tar` |
+| فشل استخراج الأرشيف | تحقق من أن الملف غير تالف وأن تنسيقه مدعوم |
 | فشل الاتصال بـ SSH | تأكد من تشغيل خادم SSH على جهاز الاستقبال (التثبيت: `opkg install openssh`) |
 
 ### معلومات المطور
@@ -1006,5 +1133,17 @@ chmod +x KiaE2PackageManager
 
 ---
 
-### 🌐 تبديل اللغة
-🇺🇸 [English](#-english) | ☀️ [کوردی سۆرانی](#kurdish) | 🇮🇷 [فارسی](#-فارسی) | 🇸🇦 العربية
+<details>
+<summary>🌐 تبديل اللغة</summary>
+
+- 🇺🇸 [English](#-english)
+- ☀️ [کوردی سۆرانی](#kurdish)
+- 🇮🇷 [فارسی](#-فارسی)
+- 🇸🇦 [العربية](#-العربية)
+
+</details>
+
+---
+
+## پایان README
+
