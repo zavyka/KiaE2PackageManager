@@ -104,7 +104,7 @@ chmod +x /tmp/KiaE2PackageManager
 /tmp/KiaE2PackageManager
 ```
 
-*>* **⚠️ If Method 1 fails:** *Some older Dreambox images have an outdated or broken `wget`/HTTPS environment. In that case, use the* **Python fallback below***. It is still part of Method 1, so you do not need to switch to Method 2.*
+*>* **⚠️ If Method 1 fails:** *Some older Dreambox images have an outdated or broken `wget`/HTTPS environment. In that case, use the* **Python fallback below**.
 
 **Fallback — Python (standard library only):**
 
@@ -116,7 +116,7 @@ chmod +x /tmp/KiaE2PackageManager
 /tmp/KiaE2PackageManager
 ```
 
-If the receiver uses Python 3 instead of Python 2:
+If the receiver uses Python 3:
 
 ```bash
 python3 -c "from urllib.request import urlretrieve; urlretrieve('https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager','/tmp/KiaE2PackageManager')"
@@ -332,7 +332,7 @@ MIT License
 
 ---
 
-⬆️ [Back to Language Selection / بازگشت به انتخاب زبان](#language-selection)
+⬆️ [Return to the beginning of the explanation](#language-selection)
 
 </details>
 
@@ -418,7 +418,7 @@ chmod +x /tmp/KiaE2PackageManager
 /tmp/KiaE2PackageManager
 ```
 
-*>* **⚠️ ئەگەر ڕێگای ١ سەرکەوتوو نەبوو:** *هەندێک وێنەی کۆنی Dreambox ژینگەی `wget`/HTTPS ـی کۆن یان خراپیان هەیە. لەم حاڵەتەدا* **Fallback ـی Python** *ـی خوارەوە بەکاربهێنە. ئەمە هەر لە ناو* **ڕێگای ١** *ـدایە و پێویست ناکات بڕۆیت بۆ ڕێگای ٢.*
+*>* **⚠️ ئەگەر ڕێگای ١ سەرکەوتوو نەبوو:** *هەندێک وێنەی کۆنی Dreambox ژینگەی `wget`/HTTPS ـی کۆن یان خراپیان هەیە. لەم حاڵەتەدا* **Fallback ـی Python** *ـی خوارەوە بەکاربهێنە.*
 
 **Fallback — Python (تەنها کتێبخانەی ستاندارد):**
 
@@ -609,7 +609,7 @@ MIT License
 
 ---
 
-⬆️ [Back to Language Selection / بازگشت به انتخاب زبان](#language-selection)
+⬆️ [گەڕانەوە بۆ سەرەتا](#language-selection)
 
 </details>
 
@@ -695,7 +695,7 @@ chmod +x /tmp/KiaE2PackageManager
 /tmp/KiaE2PackageManager
 ```
 
-*>* **⚠️ اگر روش ۱ شکست خورد:** *بعضی ایمیج‌های قدیمی Dreambox دارای `wget` یا محیط HTTPS قدیمی/ناقص هستند. در این حالت* **Fallback پایتون** *زیر را امتحان کنید. این روش همچنان بخشی از* **روش ۱** *است و نیازی نیست به روش ۲ بروید.*
+*>* **⚠️ اگر روش ۱ شکست خورد:** *بعضی ایمیج‌های قدیمی Dreambox دارای `wget` یا محیط HTTPS قدیمی/ناقص هستند. در این حالت* **Fallback پایتون** *زیر را امتحان کنید.*
 
 **Fallback — Python (فقط کتابخانه استاندارد):**
 
@@ -882,7 +882,7 @@ chmod +x KiaE2PackageManager
 
 ---
 
-⬆️ [Back to Language Selection / بازگشت به انتخاب زبان](#language-selection)
+⬆️ [بازگشت به انتخاب زبان](#language-selection)
 
 </details>
 
@@ -968,15 +968,7 @@ chmod +x /tmp/KiaE2PackageManager
 /tmp/KiaE2PackageManager
 ```
 
-*>* **Fallback لأجهزة الاستقبال القديمة:** *إذا لم يكن `wget` متاحًا أو تعذر عليه الاتصال بـ GitHub، استخدم Fallback الخاص بـ Python أدناه. تم وضعه داخل الطريقة 1 نفسها حتى تبقى طريقة التثبيت الأصلية كما هي.*
-
-```bash
-python -c "import urllib2; u='https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager'; open('/tmp/KiaE2PackageManager','wb').write(urllib2.urlopen(u, timeout=30).read())" 2>/dev/null || python3 -c "import urllib.request; u='https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager'; open('/tmp/KiaE2PackageManager','wb').write(urllib.request.urlopen(u, timeout=30).read())"
-chmod +x /tmp/KiaE2PackageManager
-/tmp/KiaE2PackageManager
-```
-
-*>* **⚠️ إذا فشلت الطريقة 1:** *بعض صور Dreambox القديمة تحتوي على `wget` أو بيئة HTTPS قديمة/غير مكتملة. في هذه الحالة استخدم* **بديل Python** *أدناه. يظل هذا البديل جزءًا من* **الطريقة 1** *ولا تحتاج إلى الانتقال إلى الطريقة 2.*
+*>* **⚠️ إذا فشلت الطريقة 1:** *بعض صور Dreambox القديمة تحتوي على `wget` أو بيئة HTTPS قديمة/غير مكتملة. في هذه الحالة استخدم* **بديل Python** *أدناه*.
 
 **بديل — Python (المكتبة القياسية فقط):**
 
@@ -1157,6 +1149,6 @@ chmod +x KiaE2PackageManager
 
 ---
 
-⬆️ [Back to Language Selection / بازگشت به انتخاب زبان](#language-selection)
+⬆️ [عُد إلى بداية الشرح](#language-selection)
 
 </details>
