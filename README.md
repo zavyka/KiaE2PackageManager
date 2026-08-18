@@ -6,15 +6,6 @@ A powerful, all-in-one tool for managing plugins, skins, firmware images, and pa
 
 ![KiaE2PackageManager Main Menu](screenshot_main.png)
 
-<details>
-<summary>🌐 Select Language / انتخاب زبان / هەڵبژاردنی زمان / اختيار اللغة</summary>
-
-- 🇺🇸 [English](#-english)
-- ☀️ [کوردی سۆرانی](#kurdish)
-- 🇮🇷 [فارسی](#-فارسی)
-- 🇸🇦 [العربية](#-العربية)
-
-</details>
 
 ---
 
