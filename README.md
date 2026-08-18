@@ -8,15 +8,6 @@ A powerful, all-in-one tool for managing plugins, skins, firmware images, and pa
 
 <a id="top"></a>
 
-<details>
-<summary>🌐 Select Language / انتخاب زبان / هەڵبژاردنی زمان / اختيار اللغة</summary>
-
-- 🇺🇸 [English](#english)
-- ☀️ [کوردی سۆرانی](#kurdish)
-- 🇮🇷 [فارسی](#persian)
-- 🇸🇦 [العربية](#arabic)
-
-</details>
 
 ---
 
