@@ -332,7 +332,7 @@ MIT License
 
 ---
 
-⬆️ [Return to the beginning of the explanation](#language-selection)
+⬆️ [Return to the beginning of the guide](#language-selection)
 
 </details>
 
@@ -609,7 +609,7 @@ MIT License
 
 ---
 
-⬆️ [گەڕانەوە بۆ سەرەتا](#language-selection)
+⬆️ [گەڕانەوە بۆ سەرەتای ڕێنمایی](#language-selection)
 
 </details>
 
@@ -882,7 +882,7 @@ chmod +x KiaE2PackageManager
 
 ---
 
-⬆️ [بازگشت به ابتدای توضیحات ](#language-selection)
+⬆️ [بازگشت به ابتدای راهنما ](#language-selection)
 
 </details>
 
@@ -1149,6 +1149,6 @@ chmod +x KiaE2PackageManager
 
 ---
 
-⬆️ [عُد إلى بداية الشرح](#language-selection)
+⬆️ [عُد إلى بداية الدليل](#language-selection)
 
 </details>
