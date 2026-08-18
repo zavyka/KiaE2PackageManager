@@ -6,9 +6,21 @@ A powerful, all-in-one tool for managing plugins, skins, firmware images, and pa
 
 ![KiaE2PackageManager Main Menu](screenshot_main.png)
 
+<a id="top"></a>
+
+<details>
+<summary>🌐 Select Language / انتخاب زبان / هەڵبژاردنی زمان / اختيار اللغة</summary>
+
+- 🇺🇸 [English](#english)
+- ☀️ [کوردی سۆرانی](#kurdish)
+- 🇮🇷 [فارسی](#persian)
+- 🇸🇦 [العربية](#arabic)
+
+</details>
 
 ---
 
+<a id="language-selection"></a>
 ## 🌐 Language / زبان / زمان / اللغة
 
 **Please choose your preferred language to see the complete description and installation guide:**
@@ -18,6 +30,8 @@ A powerful, all-in-one tool for managing plugins, skins, firmware images, and pa
 **لطفاً زبان مورد نظر خود را برای مشاهده توضیحات کامل و راهنمای نصب انتخاب کنید:**
 
 **يرجى اختيار لغتك المفضلة لعرض الوصف الكامل ودليل التثبيت:**
+
+<a id="english"></a>
 
 <details>
 <summary><b>🇺🇸 English — Click to expand</b></summary>
@@ -86,8 +100,8 @@ There are 3 ways to install and run the tool on your receiver:
 
 #### Method 1: Direct Download on Receiver (Easiest)
 
-> **Best for:** Users who just want to quickly run the tool  
-> **Requirements:** SSH access to your receiver (Putty, terminal, etc.)
+*>* **Best for:** *Users who just want to quickly run the tool  *
+*>* **Requirements:** *SSH access to your receiver (Putty, terminal, etc.)*
 
 Simply connect to your receiver via SSH and run these commands. The tool will be downloaded directly from GitHub to your receiver.
 
@@ -99,7 +113,7 @@ chmod +x /tmp/KiaE2PackageManager
 /tmp/KiaE2PackageManager
 ```
 
-> **⚠️ If Method 1 fails:** Some older Dreambox images have an outdated or broken `wget`/HTTPS environment. In that case, use the **Python fallback below**. It is still part of Method 1, so you do not need to switch to Method 2.
+*>* **⚠️ If Method 1 fails:** *Some older Dreambox images have an outdated or broken `wget`/HTTPS environment. In that case, use the* **Python fallback below***. It is still part of Method 1, so you do not need to switch to Method 2.*
 
 **Fallback — Python (standard library only):**
 
@@ -119,22 +133,22 @@ chmod +x /tmp/KiaE2PackageManager
 /tmp/KiaE2PackageManager
 ```
 
-> **Note:** The Python fallback uses only Python's standard library and does not require `pip` or any external package.
+*>* **Note:** *The Python fallback uses only Python's standard library and does not require `pip` or any external package.*
 
 ---
 
 #### Method 2: Transfer from PC via SCP (Command Line)
 
-> **Best for:** Advanced users comfortable with terminal/command line  
-> **Requirements:** PC with terminal + SSH access to receiver
+*>* **Best for:** *Advanced users comfortable with terminal/command line  *
+*>* **Requirements:** *PC with terminal + SSH access to receiver*
 
 First, download the file on your PC, then use the `scp` command to transfer it to your receiver:
 
 ```bash
-# Step 1: Run this on your PC (not on receiver)
+*# Step 1: Run this on your PC (not on receiver)*
 scp KiaE2PackageManager root@<receiver_ip>:/tmp/
 
-# Step 2: Connect to receiver and run
+*# Step 2: Connect to receiver and run*
 ssh root@<receiver_ip>
 chmod +x /tmp/KiaE2PackageManager
 /tmp/KiaE2PackageManager
@@ -144,8 +158,8 @@ chmod +x /tmp/KiaE2PackageManager
 
 #### Method 3: Transfer with GUI Tools (No Command Line)
 
-> **Best for:** Beginners who prefer visual interfaces (mouse click)  
-> **Requirements:** PC with FileZilla or WinSCP
+*>* **Best for:** *Beginners who prefer visual interfaces (mouse click)  *
+*>* **Requirements:** *PC with FileZilla or WinSCP*
 
 If you're not comfortable with command line, use these GUI tools to transfer the file by dragging and dropping:
 
@@ -184,7 +198,7 @@ chmod +x KiaE2PackageManager
 ./KiaE2PackageManager
 ```
 
-> **Tip:** You can also use Putty's built-in SCP feature to transfer files directly.
+*>* **Tip:** *You can also use Putty's built-in SCP feature to transfer files directly.*
 
 ### Usage Guide
 
@@ -194,14 +208,14 @@ When you run the tool, you'll see the main menu:
 
 ```
 ==========================================
-   KiaE2PackageManager Universal v1.2.3
-   (Plugins, Skins & Images Utility)
+   KiaE2PackageManager Universal v1.2.3
+   (Plugins, Skins & Images Utility)
 ==========================================
 
 Select Main Section:
-  1) Plugins & Skins Manager (.ipk / .deb - /tmp based)
-  2) Firmware & Images Manager (.nfi, .tar.xz, .tar.gz - Storage based)
-  3) Exit Program
+  1) Plugins & Skins Manager (.ipk / .deb - /tmp based)
+  2) Firmware & Images Manager (.nfi, .tar.xz, .tar.gz - Storage based)
+  3) Exit Program
 ```
 
 #### Option 1: Plugins & Skins Manager
@@ -211,9 +225,9 @@ Select Main Section:
 1. Select `1` from the main menu
 2. Select `1` (Build / Recompile Package)
 3. Choose your output format:
-   - `1` — `.deb` (for Dreambox / DreamOS)
-   - `2` — `.ipk` (for OpenATV / OpenPLi / OE2.0)
-   - `3` — Both formats
+   - `1` — `.deb` (for Dreambox / DreamOS)
+   - `2` — `.ipk` (for OpenATV / OpenPLi / OE2.0)
+   - `3` — Both formats
 4. The tool will scan `/tmp/` for project folders containing `usr` directory
 5. Select your project folder or enter a custom path
 6. Edit the control file if needed (package name, version, architecture, etc.)
@@ -221,7 +235,7 @@ Select Main Section:
 8. Wait for the build to complete
 9. Optionally run validation test
 
-> **⚠️ Important:** Before building, make sure all plugin/skin files are placed in the correct directory structure (e.g., `usr/lib/enigma2/python/Plugins/` for plugins, `usr/share/enigma2/` for skins). Incorrect file paths will cause the package to malfunction after installation.
+*>* **⚠️ Important:** *Before building, make sure all plugin/skin files are placed in the correct directory structure (e.g., `usr/lib/enigma2/python/Plugins/` for plugins, `usr/share/enigma2/` for skins). Incorrect file paths will cause the package to malfunction after installation.*
 
 **Extracting a Package:**
 
@@ -242,7 +256,7 @@ Select Main Section:
 5. Choose extraction destination
 6. Wait for extraction to complete
 
-> **⚠️ Important:** Extracted firmware images can be very large (several GB). It is recommended to save them on a **micro SD card**, **external hard drive**, or **USB flash memory** instead of the receiver's internal storage to avoid running out of space.
+*>* **⚠️ Important:** *Extracted firmware images can be very large (several GB). It is recommended to save them on a* **micro SD card***,* **external hard drive***, or* **USB flash memory** *instead of the receiver's internal storage to avoid running out of space.*
 
 **Creating an Archive:**
 
@@ -258,13 +272,13 @@ When building `.deb` or `.ipk` packages, your project folder should have this st
 
 ```
 your_project/
-├── DEBIAN/           # or CONTROL/
-│   └── control       # Package metadata
+├── DEBIAN/           # or CONTROL/
+│   └── control       # Package metadata
 ├── usr/
-│   ├── bin/          # Executables
-│   ├── lib/          # Libraries
-│   ├── share/        # Data files
-│   └── ...
+│   ├── bin/          # Executables
+│   ├── lib/          # Libraries
+│   ├── share/        # Data files
+│   └── ...
 └── ...
 ```
 
@@ -277,7 +291,7 @@ Section: base
 Priority: optional
 Maintainer: Your Name <your@email.com>
 Description: My Awesome Skin for Enigma2
- This is a beautiful skin for Enigma2 receivers.
+ This is a beautiful skin for Enigma2 receivers.
 Depends: enigma2
 ```
 
@@ -305,12 +319,12 @@ If you found this tool helpful, please:
 
 - ⭐ **Star** the project on [GitHub](https://github.com/zavyka)
 - 📢 **Share** it on:
-  - [Telegram](https://t.me/Rayan_Ku)
-  - [Facebook](https://www.facebook.com/)
-  - [X (Twitter)](https://x.com/)
-  - Enigma2 Forums
-  - Satellite Receiver Groups
-  - Any other platform
+  - [Telegram](https://t.me/Rayan_Ku)
+  - [Facebook](https://www.facebook.com/)
+  - [X (Twitter)](https://x.com/)
+  - Enigma2 Forums
+  - Satellite Receiver Groups
+  - Any other platform
 - 🐛 **Report issues** if you find any bugs at [Issues](https://github.com/zavyka/KiaE2PackageManager/issues)
 
 By sharing this tool, you help other Enigma2 users discover it!
@@ -321,21 +335,17 @@ MIT License
 
 ---
 
-<details>
-<summary>🌐 Switch Language</summary>
 
-- 🇺🇸 [English](#-english)
-- ☀️ [کوردی سۆرانی](#kurdish)
-- 🇮🇷 [فارسی](#-فارسی)
-- 🇸🇦 [العربية](#-العربية)
-
-</details>
 
 ---
 
+---
+
+⬆️ [Back to Language Selection / بازگشت به انتخاب زبان](#language-selection)
+
 </details>
 
----
+<a id="kurdish"></a>
 
 <details>
 <summary><b>☀️ کوردی سۆرانی — بۆ کردنەوە کلیک بکە</b></summary>
@@ -347,7 +357,7 @@ MIT License
 - **بەڕێوەبردنی فیرموێر** — کردنەوە و پێچانەوەی وێنەکانی فیرموێر (`.nfi`, `.tar.xz`, `.tar.gz`, `.tar.bz2`)
 - **کارکردن لەگەڵ ئەرشیف** — دروستکردنی ئەرشیفی گوشراو بە فۆڕماتە جیاوازەکان (`.zip`, `.tar`, `.tar.gz`, `.tar.xz`, `.tar.bz2`)
 - **ناسینەوەی خۆکار** — ناسینەوەی خۆکاری مێعماری وەرگر(رێسیڤێر) (ARM, ARM64, MIPS, x86/x64)
-- **سازگاری جیهانی** — کاردەکات لەسەر  Python 2.7+  و  Python 3.x 
+- **سازگاری جیهانی** — کاردەکات لەسەر  Python 2.7+  و  Python 3.x 
 - **بێ پێویستی بە پاڵپشتی** — تەنها ئامرازە ستانداردەکانی سیستەم بەکاردەهێنێت
 - **پشکنینی پاکێج** — پشکنینی ناوخۆیی بۆ دڵنیابوون لە دروستی پاکێج پێش دابەزاندن
 
@@ -355,40 +365,40 @@ MIT License
 
 | براند | مۆدێلەکان |
 |-------|-----------|
-|  Dreambox  |  DM800, DM8000, DM900, DM920, DM520, DM500HD  |
-|  VU+  |  Duo, Duo2, Duo4K, Solo, Solo2, Solo4K, Ultimo, Ultimo4K  |
-|  GigaBlue  | هەموو مۆدێلەکانی بنەمای  Enigma2  |
-| ئیتر | هەر وەرگرێک بە سیستەمی کارپێکردنی  Enigma2  |
+|  Dreambox  |  DM800, DM8000, DM900, DM920, DM520, DM500HD  |
+|  VU+  |  Duo, Duo2, Duo4K, Solo, Solo2, Solo4K, Ultimo, Ultimo4K  |
+|  GigaBlue  | هەموو مۆدێلەکانی بنەمای  Enigma2  |
+| ئیتر | هەر وەرگرێک بە سیستەمی کارپێکردنی  Enigma2  |
 
 ### سیستەمەکانی کارپێکردنی پاڵپشتیکراوەکان
 
 | سیستەم | نوێنەرەکان |
 |--------|------------|
-|  DreamOS  |  OE 2.2, OE 2.5, OE 2.6  |
-|  OE2.0  |  Open Embedded  |
+|  DreamOS  |  OE 2.2, OE 2.5, OE 2.6  |
+|  OE2.0  |  Open Embedded  |
 
 ### وێنەکانی پاڵپشتیکراوەکان
 
 | وێنە | وەسف |
 |------|------|
-|  CVS  | وێنەی سەرەتایی پاڕاستراو (بێ دەستکاری) |
-|  AIO  |  All-In-One  |
-| نێوانە | وێنەکانی سەربنەمای  CVS  و  AIO  |
-|  OpenATV  | مەڵتی-کەیی |
-|  OpenPLi  | مەڵتی-کەیی |
-| ئیتر | هەر وێنەیەکی  Enigma2  |
+|  CVS  | وێنەی سەرەتایی پاڕاستراو (بێ دەستکاری) |
+|  AIO  |  All-In-One  |
+| نێوانە | وێنەکانی سەربنەمای  CVS  و  AIO  |
+|  OpenATV  | مەڵتی-کەیی |
+|  OpenPLi  | مەڵتی-کەیی |
+| ئیتر | هەر وێنەیەکی  Enigma2  |
 
 ### فۆرماتە پاڵپشتیکراوەکانی پاکێج
 
 | فۆرمات | وەسف | بەکارهێنان |
 |--------|------|-----------|
-|  `.deb`  | پاکێجی  Debian  | وەرگر(رێسیڤێر)ەکانی  Dreambox  /  DreamOS  |
-|  `.ipk`  | پاکێجی  IPK  | وەرگر(رێسیڤێر)ەکانی  OpenATV  /  OpenPLi  /  OE2.0  |
-|  `.tar.xz`  | ئەرشیفی گوشراوی  tar  | فیرموێر/نەرمەواڵە گشتییەکان |
-|  `.tar.gz`  |  tar  گوشراو بە  gzip  | فیرموێر/نەرمەواڵە گشتییەکان |
-|  `.tar.bz2`  |  tar  گوشراو بە  bzip2  | فیرموێر/نەرمەواڵە گشتییەکان |
-|  `.nfi`  | وێنەی فیرموێری  NFI  | نوێکردنەوەی فیرموێری  Dreambox  |
-|  `.zip`  | ئەرشیفی  ZIP  | گوشینی فایلە گشتییەکان |
+|  `.deb`  | پاکێجی  Debian  | وەرگر(رێسیڤێر)ەکانی  Dreambox  /  DreamOS  |
+|  `.ipk`  | پاکێجی  IPK  | وەرگر(رێسیڤێر)ەکانی  OpenATV  /  OpenPLi  /  OE2.0  |
+|  `.tar.xz`  | ئەرشیفی گوشراوی  tar  | فیرموێر/نەرمەواڵە گشتییەکان |
+|  `.tar.gz`  |  tar  گوشراو بە  gzip  | فیرموێر/نەرمەواڵە گشتییەکان |
+|  `.tar.bz2`  |  tar  گوشراو بە  bzip2  | فیرموێر/نەرمەواڵە گشتییەکان |
+|  `.nfi`  | وێنەی فیرموێری  NFI  | نوێکردنەوەی فیرموێری  Dreambox  |
+|  `.zip`  | ئەرشیفی  ZIP  | گوشینی فایلە گشتییەکان |
 
 ### دابەزاندن و بەکارهێنان
 
@@ -396,18 +406,18 @@ MIT License
 
 | ڕێگا | بۆ کێیە؟ | چی پێویستە؟ |
 |------|---------|-------------|
-| **ڕێگای ١** | هەموو کەس | تەنها دەستگەیشتن بە  SSH  بۆ وەرگر(رێسیڤێر) |
-| **ڕێگای ٢** | بەکارهێنەرانی پێشکەوتوو | کۆمپیوتەر +  Terminal  |
+| **ڕێگای ١** | هەموو کەس | تەنها دەستگەیشتن بە  SSH  بۆ وەرگر(رێسیڤێر) |
+| **ڕێگای ٢** | بەکارهێنەرانی پێشکەوتوو | کۆمپیوتەر +  Terminal  |
 | **ڕێگای ٣** | بەکارهێنەرانی سەرەتایی | کۆمپیوتەر + نەرمەواڵی گرافیکی ( FileZilla / WinSCP ) |
 
 ---
 
 #### ڕێگای ١: داگرتنی ڕاستەوخۆ لەسەر وەرگر(رێسیڤێر) (ئاسانترین)
 
-> **باشترین بۆ:** ئەوانەی دەیانەوێت خێرا ئامرازەکە جێبەجێ بکەن  
-> **پێویستە:** دەستگەیشتن بە SSH بۆ وەرگر(رێسیڤێر) ( Putty ،  Terminal  و هتد)
+*>* **باشترین بۆ:** *ئەوانەی دەیانەوێت خێرا ئامرازەکە جێبەجێ بکەن  *
+*>* **پێویستە:** *دەستگەیشتن بە SSH بۆ وەرگر(رێسیڤێر) ( Putty ،  Terminal  و هتد)*
 
-تەنها بە SSH پەیوەندی بە وەرگر(رێسیڤێر)ەوە بکەن و ئەم فەرمانانە جێبەجێ بکەن. ئامرازەکە ڕاستەوخۆ لە  GitHub  بۆ وەرگر(رێسیڤێر) دادەگیرێت:
+تەنها بە SSH پەیوەندی بە وەرگر(رێسیڤێر)ەوە بکەن و ئەم فەرمانانە جێبەجێ بکەن. ئامرازەکە ڕاستەوخۆ لە  GitHub  بۆ وەرگر(رێسیڤێر) دادەگیرێت:
 
 **ڕێگای سەرەکی — `wget`:**
 
@@ -417,7 +427,7 @@ chmod +x /tmp/KiaE2PackageManager
 /tmp/KiaE2PackageManager
 ```
 
-> **⚠️ ئەگەر ڕێگای ١ سەرکەوتوو نەبوو:** هەندێک وێنەی کۆنی Dreambox ژینگەی `wget`/HTTPS ـی کۆن یان خراپیان هەیە. لەم حاڵەتەدا **Fallback ـی Python** ـی خوارەوە بەکاربهێنە. ئەمە هەر لە ناو **ڕێگای ١** ـدایە و پێویست ناکات بڕۆیت بۆ ڕێگای ٢.
+*>* **⚠️ ئەگەر ڕێگای ١ سەرکەوتوو نەبوو:** *هەندێک وێنەی کۆنی Dreambox ژینگەی `wget`/HTTPS ـی کۆن یان خراپیان هەیە. لەم حاڵەتەدا* **Fallback ـی Python** *ـی خوارەوە بەکاربهێنە. ئەمە هەر لە ناو* **ڕێگای ١** *ـدایە و پێویست ناکات بڕۆیت بۆ ڕێگای ٢.*
 
 **Fallback — Python (تەنها کتێبخانەی ستاندارد):**
 
@@ -437,14 +447,14 @@ chmod +x /tmp/KiaE2PackageManager
 /tmp/KiaE2PackageManager
 ```
 
-> **تێبینی:** Fallback ـی Python تەنها کتێبخانەی ستانداردی Python بەکاردهێنێت و پێویستی بە `pip` یان هیچ پاکێجی دەرەکی نییە.
+*>* **تێبینی:** *Fallback ـی Python تەنها کتێبخانەی ستانداردی Python بەکاردهێنێت و پێویستی بە `pip` یان هیچ پاکێجی دەرەکی نییە.*
 
 ---
 
 #### ڕێگای ٢: گواستنەوە لە کۆمپیوتەر بە SCP (هێڵی فەرمان)
 
-> **باشترین بۆ:** بەکارهێنەرانی پێشکەوتوو کە شارەزای  Terminal  ـن  
-> **پێویستە:** کۆمپیوتەر لەگەڵ  Terminal  + دەستگەیشتن بە SSH بۆ وەرگر(رێسیڤێر)
+*>* **باشترین بۆ:** *بەکارهێنەرانی پێشکەوتوو کە شارەزای  Terminal  ـن  *
+*>* **پێویستە:** *کۆمپیوتەر لەگەڵ  Terminal  + دەستگەیشتن بە SSH بۆ وەرگر(رێسیڤێر)*
 
 سەرەتا فایلەکە لەسەر کۆمپیوتەر دابگرن، پاشان بە فەرمانی `scp` بۆ وەرگر(رێسیڤێر) بیگوازنەوە:
 
@@ -460,8 +470,8 @@ chmod +x /tmp/KiaE2PackageManager
 
 #### ڕێگای ٣: گواستنەوە بە نەرمەواڵە گرافیکییەکان (بێ هێڵی فەرمان)
 
-> **باشترین بۆ:** بەکارهێنەرانی سەرەتایی کە پێیان خۆشە بە ماوس کار بکەن  
-> **پێویستە:** کۆمپیوتەر لەگەڵ  FileZilla  یان  WinSCP 
+*>* **باشترین بۆ:** *بەکارهێنەرانی سەرەتایی کە پێیان خۆشە بە ماوس کار بکەن  *
+*>* **پێویستە:** *کۆمپیوتەر لەگەڵ  FileZilla  یان  WinSCP* 
 
 ئەگەر شارەزا بە هێڵی فەرمان ( Command Line ) نین، ئەم نەرمەواڵانە بەکاربهێنن بۆ گواستنەوەی فایل بە ڕاکێشان و دانان ( Drag & Drop ):
 
@@ -474,11 +484,11 @@ chmod +x /tmp/KiaE2PackageManager
 | ** FileZilla ** | FTP | پەیوەندی گرتن بە `<receiver_ip>:21` → چوون بۆ `/tmp/` → ڕاکێشان و دانانی فایل |
 | ** WinSCP ** | SCP/SFTP | پەیوەندی گرتن بە `<receiver_ip>` (پۆرتی 22) → چوون بۆ `/tmp/` → ڕاکێشان و دانانی فایل |
 | ** Putty (PSCP) ** | SCP | جێبەجێکردنی فەرمان: `pscp KiaE2PackageManager root@<receiver_ip>:/tmp/` |
-| ** Total Commander ** |  FTP/SCP  | بەکارهێنانی پێوەکراوی  FTP  یان  SCP  → چوون بۆ `/tmp/` → بارکردنی فایل |
+| ** Total Commander ** |  FTP/SCP  | بەکارهێنانی پێوەکراوی  FTP  یان  SCP  → چوون بۆ `/tmp/` → بارکردنی فایل |
 
 **هەنگاوی ٢: پەیوەندی گرتن بە SSH و جێبەجێکردن**
 
- Putty  (یان هەر  SSH Client  ـێکی تر) بکەرەوە و بە وەرگر(رێسیڤێر) پەیوەست ببە:
+ Putty  (یان هەر  SSH Client  ـێکی تر) بکەرەوە و بە وەرگر(رێسیڤێر) پەیوەست ببە:
 
 ```
 Host Name: <receiver_ip>
@@ -500,7 +510,7 @@ chmod +x KiaE2PackageManager
 ./KiaE2PackageManager
 ```
 
-> **تێبینی:** هەروەها دەتوانیت لە تایبەتمەندی  SCP  ـی ناوخۆی  Putty  بۆ گواستنەوەی ڕاستەوخۆی فایلەکانیش بەکاربهێنیت.
+*>* **تێبینی:** *هەروەها دەتوانیت لە تایبەتمەندی  SCP  ـی ناوخۆی  Putty  بۆ گواستنەوەی ڕاستەوخۆی فایلەکانیش بەکاربهێنیت.*
 
 ### ڕێنمایی بەکارهێنان
 
@@ -508,14 +518,14 @@ chmod +x KiaE2PackageManager
 
 ```
 ==========================================
-   KiaE2PackageManager Universal v1.2.3
-   (ئامرازی بەڕێوەبردنی پڵاگین، سکین و وێنەکان)
+   KiaE2PackageManager Universal v1.2.3
+   (ئامرازی بەڕێوەبردنی پڵاگین، سکین و وێنەکان)
 ==========================================
 
 هەڵبژاردنی بەشی سەرەکی:
-  1) بەڕێوەبردنی پڵاگین و سکین (.ipk / .deb)
-  2) بەڕێوەبردنی فیرموێر و وێنەکان (.nfi, .tar.xz, .tar.gz)
-  3) دەرچوون لە بەرنامە
+  1) بەڕێوەبردنی پڵاگین و سکین (.ipk / .deb)
+  2) بەڕێوەبردنی فیرموێر و وێنەکان (.nfi, .tar.xz, .tar.gz)
+  3) دەرچوون لە بەرنامە
 ```
 
 #### هەڵبژاردەی ١: بەڕێوەبردنی پڵاگین و سکین
@@ -525,13 +535,13 @@ chmod +x KiaE2PackageManager
 1. هەڵبژاردەی `1` لە پێڕستی سەرەکی هەڵبژێرە.
 2. هەڵبژاردەی `1` (دروستکردن / دروست کردنەوەی پاکێج) هەڵبژێرە.
 3. فۆڕماتی دەرچوون هەڵبژێرە:
-   - `1` — `.deb` (بۆ Dreambox / DreamOS)
-   - `2` — `.ipk` (بۆ OpenATV / OpenPLi / OE2.0)
-   - `3` — هەردوو فۆڕمات
+   - `1` — `.deb` (بۆ Dreambox / DreamOS)
+   - `2` — `.ipk` (بۆ OpenATV / OpenPLi / OE2.0)
+   - `3` — هەردوو فۆڕمات
 4. ئامرازەکە بوخچەکانی پرۆژە لە `/tmp/` دەپشکنێ.
 5. بوخچەی پرۆژەکەت هەڵبژێرە.
 
-> **⚠️ گرنگ:** پێش دروستکردنی پاکێج، دڵنیابە کە هەموو فایلەکانی پڵاگین/سکین لە شوێنی دروست دانراون (بۆ نموونە: `usr/lib/enigma2/python/Plugins/` بۆ پڵاگینەکان و `usr/share/enigma2/` بۆ سکینەکان). ڕێڕەوی هەڵە دەبێتە هۆی ئەوەی پاکێجەکە دوای دابەزاندن بە دروستی کار نەکات.
+*>* **⚠️ گرنگ:** *پێش دروستکردنی پاکێج، دڵنیابە کە هەموو فایلەکانی پڵاگین/سکین لە شوێنی دروست دانراون (بۆ نموونە: `usr/lib/enigma2/python/Plugins/` بۆ پڵاگینەکان و `usr/share/enigma2/` بۆ سکینەکان). ڕێڕەوی هەڵە دەبێتە هۆی ئەوەی پاکێجەکە دوای دابەزاندن بە دروستی کار نەکات.*
 
 6. ئەگەر پێویست بوو، فایلەکەی `control` دەستکاری بکە.
 7. چاوەڕوانی تەواوبوونی دروستکردن بکە.
@@ -554,7 +564,7 @@ chmod +x KiaE2PackageManager
 3. فایلە وێنەکە هەڵبژێرە.
 4. شوێنی دەرهێنان هەڵبژێرە.
 
-> **⚠️ گرنگ:** فایلەکانی فیرموێر دوای دەرهێنان قەبارەیەکی زۆر گەورەیان دەبێت (چەندین گیگابایت). پێشنیار دەکرێت لەسەر کارتی Micro SD یان هارد دیسکی دەرەکی یان Flash Memory پاشەکەوتیان بکەن، بۆ ئەوەی بۆشایی ناوخۆیی وەرگر(رێسیڤێر) پڕ نەبێتەوە.
+*>* **⚠️ گرنگ:** *فایلەکانی فیرموێر دوای دەرهێنان قەبارەیەکی زۆر گەورەیان دەبێت (چەندین گیگابایت). پێشنیار دەکرێت لەسەر کارتی Micro SD یان هارد دیسکی دەرەکی یان Flash Memory پاشەکەوتیان بکەن، بۆ ئەوەی بۆشایی ناوخۆیی وەرگر(رێسیڤێر) پڕ نەبێتەوە.*
 
 **دروستکردنی ئەرشیف:**
 
@@ -576,25 +586,25 @@ chmod +x KiaE2PackageManager
 ### زانیارییەکانی پەرەپێدەر
 
 - **پەرەپێدەر:** KiaKu_1982
-- **GitHub:**  [github.com/zavyka](https://github.com/zavyka) 
-- **Telegram:**  [@Rayan_Ku](https://t.me/Rayan_Ku) 
-- **کەناڵ:**  [@Enigma2_Tutorials](https://t.me/Enigma2_Tutorials) 
+- **GitHub:**  [github.com/zavyka](https://github.com/zavyka) 
+- **Telegram:**  [@Rayan_Ku](https://t.me/Rayan_Ku) 
+- **کەناڵ:**  [@Enigma2_Tutorials](https://t.me/Enigma2_Tutorials) 
 
 ### 🌟 پاڵپشتی و ئەستێرەدان
 
 ئەگەر ئەم ئامرازە بۆت بەسوود بوو، تکایە:
 
-- ⭐ **ئەستێرەی پێبدە** لەسەر پرۆژەکە لە  [GitHub](https://github.com/zavyka/KiaE2PackageManager) 
+- ⭐ **ئەستێرەی پێبدە** لەسەر پرۆژەکە لە  [GitHub](https://github.com/zavyka/KiaE2PackageManager) 
 - 📢 **هاوبەشی بکە** لە:
-  -  [Telegram](https://t.me/Rayan_Ku) 
-  -  [Facebook](https://www.facebook.com/) 
-  -  [X (Twitter)](https://x.com/) 
-  - مەڵبەند و ماڵپەڕەکانی  Enigma2 
-  - گرووپەکانی وەرگری مانگی دەستکرد (ڕێسیڤێر)
-  - هەر پلاتفۆرمێکی تریش
-- 🐛 **کێشەکان ڕاپۆرت بکە** ئەگەر هەر باگێکت دۆزییەوە، لە  [Issues](https://github.com/zavyka/KiaE2PackageManager/issues)  ڕایبگەیەنە.
+  -  [Telegram](https://t.me/Rayan_Ku) 
+  -  [Facebook](https://www.facebook.com/) 
+  -  [X (Twitter)](https://x.com/) 
+  - مەڵبەند و ماڵپەڕەکانی  Enigma2 
+  - گرووپەکانی وەرگری مانگی دەستکرد (ڕێسیڤێر)
+  - هەر پلاتفۆرمێکی تریش
+- 🐛 **کێشەکان ڕاپۆرت بکە** ئەگەر هەر باگێکت دۆزییەوە، لە  [Issues](https://github.com/zavyka/KiaE2PackageManager/issues)  ڕایبگەیەنە.
 
-بە هاوبەشکردنی ئەم ئامرازە، یارمەتی بە بەکارهێنەرانی دیکەی  Enigma2  دەدەیت تا بتوانن بە ئاسانی بیدۆزنەوە.
+بە هاوبەشکردنی ئەم ئامرازە، یارمەتی بە بەکارهێنەرانی دیکەی  Enigma2  دەدەیت تا بتوانن بە ئاسانی بیدۆزنەوە.
 
 ### مۆڵەت
 
@@ -602,21 +612,17 @@ MIT License
 
 ---
 
-<details>
-<summary>🌐 زمانەکانی تێدا بگۆڕە</summary>
 
-- 🇺🇸 [English](#-english)
-- ☀️ [کوردی سۆرانی](#kurdish)
-- 🇮🇷 [فارسی](#-فارسی)
-- 🇸🇦 [العربية](#-العربية)
-
-</details>
 
 ---
 
+---
+
+⬆️ [Back to Language Selection / بازگشت به انتخاب زبان](#language-selection)
+
 </details>
 
----
+<a id="persian"></a>
 
 <details>
 <summary><b>🇮🇷 فارسی — برای باز کردن کلیک کنید</b></summary>
@@ -628,7 +634,7 @@ MIT License
 - **مدیریت فریمور** — بازکردن و بسته تصاویر فریمور (`.nfi`, `.tar.xz`, `.tar.gz`, `.tar.bz2`)
 - **عملیات آرشیو** — ایجاد آرشیوهای فشرده در فرمت‌های مختلف (`.zip`, `.tar`, `.tar.gz`, `.tar.xz`, `.tar.bz2`)
 - **تشخیص خودکار** — تشخیص خودکار معماری گیرنده (ARM, ARM64, MIPS, x86/x64)
-- **سازگاری جهانی** — کار با  Python 2.7+  و  Python 3.x 
+- **سازگاری جهانی** — کار با  Python 2.7+  و  Python 3.x 
 - **بدون وابستگی** — فقط از ابزارهای استاندارد سیستم استفاده می‌کند
 - **اعتبارسنجی پکیج** — اعتبارسنجی داخلی برای بررسی صحت پکیج قبل از نصب
 
@@ -636,40 +642,40 @@ MIT License
 
 | برند | مدل‌ها |
 |------|--------|
-|  Dreambox  |  DM800, DM8000, DM900, DM920, DM520, DM500HD  |
-|  VU+  |  Duo, Duo2, Duo4K, Solo, Solo2, Solo4K, Ultimo, Ultimo4K  |
-|  GigaBlue  | تمام مدل‌های مبتنی بر  Enigma2  |
-| سایر | هر گیرنده‌ای با سیستم‌عامل  Enigma2  |
+|  Dreambox  |  DM800, DM8000, DM900, DM920, DM520, DM500HD  |
+|  VU+  |  Duo, Duo2, Duo4K, Solo, Solo2, Solo4K, Ultimo, Ultimo4K  |
+|  GigaBlue  | تمام مدل‌های مبتنی بر  Enigma2  |
+| سایر | هر گیرنده‌ای با سیستم‌عامل  Enigma2  |
 
 ### سیستم‌عامل‌های پشتیبانی شده
 
 | سیستم‌عامل | نسخه‌ها |
 |-----------|---------|
-|  DreamOS  |  OE 2.2, OE 2.5, OE 2.6  |
-|  OE2.0  |  Open Embedded  |
+|  DreamOS  |  OE 2.2, OE 2.5, OE 2.6  |
+|  OE2.0  |  Open Embedded  |
 
 ### ایمیج‌های پشتیبانی شده
 
 | ایمیج | توضیح |
 |-------|-------|
-|  CVS  | نسخه پایه خام و رسمی (بدون دستکاری) |
-|  AIO  |  All-In-One  |
-| سایر | ایمیج‌هایی بر پایه  CVS  و  AIO  |
-|  OpenATV  | متن‌باز |
-|  OpenPLi  | متن‌باز |
-| سایر | هر ایمیج  Enigma2  |
+|  CVS  | نسخه پایه خام و رسمی (بدون دستکاری) |
+|  AIO  |  All-In-One  |
+| سایر | ایمیج‌هایی بر پایه  CVS  و  AIO  |
+|  OpenATV  | متن‌باز |
+|  OpenPLi  | متن‌باز |
+| سایر | هر ایمیج  Enigma2  |
 
 ### فرمت‌های پکیج پشتیبانی شده
 
 | فرمت | توضیح | کاربرد |
 |------|-------|--------|
-|  `.deb`  | پکیج  Debian  | گیرنده‌های  Dreambox  /  DreamOS  |
-|  `.ipk`  | پکیج  IPK  | گیرنده‌های  OpenATV  /  OpenPLi  /  OE2.0  |
-|  `.tar.xz`  | آرشیو فشرده  tar  | فریمور/نرم‌افزار عمومی |
-|  `.tar.gz`  |  tar  فشرده با  gzip  | فریمور/نرم‌افزار عمومی |
-|  `.tar.bz2`  |  tar  فشرده با  bzip2  | فریمور/نرم‌افزار عمومی |
-|  `.nfi`  | تصویر فریمور  NFI  | بروزرسانی فریمور  Dreambox  |
-|  `.zip`  | آرشیو  ZIP  | فشرده‌سازی فایل عمومی |
+|  `.deb`  | پکیج  Debian  | گیرنده‌های  Dreambox  /  DreamOS  |
+|  `.ipk`  | پکیج  IPK  | گیرنده‌های  OpenATV  /  OpenPLi  /  OE2.0  |
+|  `.tar.xz`  | آرشیو فشرده  tar  | فریمور/نرم‌افزار عمومی |
+|  `.tar.gz`  |  tar  فشرده با  gzip  | فریمور/نرم‌افزار عمومی |
+|  `.tar.bz2`  |  tar  فشرده با  bzip2  | فریمور/نرم‌افزار عمومی |
+|  `.nfi`  | تصویر فریمور  NFI  | بروزرسانی فریمور  Dreambox  |
+|  `.zip`  | آرشیو  ZIP  | فشرده‌سازی فایل عمومی |
 
 ### نصب و استفاده
 
@@ -685,10 +691,10 @@ MIT License
 
 #### روش ۱: دانلود مستقیم روی گیرنده (ساده‌ترین)
 
-> **بهترین برای:** کسانی که می‌خواهند سریع ابزار را اجرا کنند  
-> **نیاز:** دسترسی SSH به گیرنده ( Putty ، ترمینال و غیره)
+*>* **بهترین برای:** *کسانی که می‌خواهند سریع ابزار را اجرا کنند  *
+*>* **نیاز:** *دسترسی SSH به گیرنده ( Putty ، ترمینال و غیره)*
 
-کافی است از طریق SSH به گیرنده وصل شوید و این دستورات را اجرا کنید. ابزار مستقیماً از  GitHub  روی گیرنده دانلود می‌شود:
+کافی است از طریق SSH به گیرنده وصل شوید و این دستورات را اجرا کنید. ابزار مستقیماً از  GitHub  روی گیرنده دانلود می‌شود:
 
 **روش اصلی — `wget`:**
 
@@ -698,7 +704,7 @@ chmod +x /tmp/KiaE2PackageManager
 /tmp/KiaE2PackageManager
 ```
 
-> **⚠️ اگر روش ۱ شکست خورد:** بعضی ایمیج‌های قدیمی Dreambox دارای `wget` یا محیط HTTPS قدیمی/ناقص هستند. در این حالت **Fallback پایتون** زیر را امتحان کنید. این روش همچنان بخشی از **روش ۱** است و نیازی نیست به روش ۲ بروید.
+*>* **⚠️ اگر روش ۱ شکست خورد:** *بعضی ایمیج‌های قدیمی Dreambox دارای `wget` یا محیط HTTPS قدیمی/ناقص هستند. در این حالت* **Fallback پایتون** *زیر را امتحان کنید. این روش همچنان بخشی از* **روش ۱** *است و نیازی نیست به روش ۲ بروید.*
 
 **Fallback — Python (فقط کتابخانه استاندارد):**
 
@@ -718,22 +724,22 @@ chmod +x /tmp/KiaE2PackageManager
 /tmp/KiaE2PackageManager
 ```
 
-> **نکته:** Fallback پایتون فقط از کتابخانه استاندارد Python استفاده می‌کند و به `pip` یا هیچ پکیج خارجی نیاز ندارد.
+*>* **نکته:** *Fallback پایتون فقط از کتابخانه استاندارد Python استفاده می‌کند و به `pip` یا هیچ پکیج خارجی نیاز ندارد.*
 
 ---
 
 #### روش ۲: انتقال از کامپیوتر از طریق SCP (خط فرمان)
 
-> **بهترین برای:** کاربران حرفه‌ای که با ترمینال آشنا هستند  
-> **نیاز:** کامپیوتر با ترمینال + دسترسی SSH به گیرنده
+*>* **بهترین برای:** *کاربران حرفه‌ای که با ترمینال آشنا هستند  *
+*>* **نیاز:** *کامپیوتر با ترمینال + دسترسی SSH به گیرنده*
 
 ابتدا فایل را روی کامپیوتر دانلود کنید، سپس با دستور `scp` به گیرنده منتقل کنید:
 
 ```bash
-# مرحله ۱: این را روی کامپیوتر خود اجرا کنید (نه روی گیرنده)
+*# مرحله ۱: این را روی کامپیوتر خود اجرا کنید (نه روی گیرنده)*
 scp KiaE2PackageManager root@<receiver_ip>:/tmp/
 
-# مرحله ۲: به گیرنده وصل شوید و اجرا کنید
+*# مرحله ۲: به گیرنده وصل شوید و اجرا کنید*
 ssh root@<receiver_ip>
 chmod +x /tmp/KiaE2PackageManager
 /tmp/KiaE2PackageManager
@@ -743,8 +749,8 @@ chmod +x /tmp/KiaE2PackageManager
 
 #### روش ۳: انتقال با نرم‌افزارهای گرافیکی (بدون خط فرمان)
 
-> **بهترین برای:** کاربران مبتدی که ترجیح می‌دهند با ماوس کار کنند  
-> **نیاز:** کامپیوتر با  FileZilla  یا  WinSCP 
+*>* **بهترین برای:** *کاربران مبتدی که ترجیح می‌دهند با ماوس کار کنند  *
+*>* **نیاز:** *کامپیوتر با  FileZilla  یا  WinSCP* 
 
 اگر با خط فرمان آشنا نیستید، از این نرم‌افزارها برای انتقال فایل با کشیدن و رها کردن استفاده کنید:
 
@@ -757,11 +763,11 @@ chmod +x /tmp/KiaE2PackageManager
 | ** FileZilla ** | FTP | اتصال به `<receiver_ip>:21` → رفتن به `/tmp/` → کشیدن و رها کردن فایل |
 | ** WinSCP ** | SCP/SFTP | اتصال به `<receiver_ip>` (پورت 22) → رفتن به `/tmp/` → کشیدن و رها کردن فایل |
 | ** Putty (PSCP) ** | SCP | اجرای دستور: `pscp KiaE2PackageManager root@<receiver_ip>:/tmp/` |
-| ** Total Commander ** |  FTP/SCP  | استفاده از افزونه  FTP  یا  SCP  → رفتن به `/tmp/` → آپلود فایل |
+| ** Total Commander ** |  FTP/SCP  | استفاده از افزونه  FTP  یا  SCP  → رفتن به `/tmp/` → آپلود فایل |
 
 **مرحله ۲: اتصال از طریق SSH و اجرا**
 
- Putty  (یا هر کلاینت  SSH  دیگر) را باز کنید و به گیرنده متصل شوید:
+ Putty  (یا هر کلاینت  SSH  دیگر) را باز کنید و به گیرنده متصل شوید:
 
 ```
 Host Name: <receiver_ip>
@@ -783,7 +789,7 @@ chmod +x KiaE2PackageManager
 ./KiaE2PackageManager
 ```
 
-> **نکته:** همچنین می‌توانید از قابلیت  SCP  داخلی  Putty  برای انتقال مستقیم فایل‌ها استفاده کنید.
+*>* **نکته:** *همچنین می‌توانید از قابلیت  SCP  داخلی  Putty  برای انتقال مستقیم فایل‌ها استفاده کنید.*
 
 ### راهنمای استفاده
 
@@ -791,14 +797,14 @@ chmod +x KiaE2PackageManager
 
 ```
 ==========================================
-   KiaE2PackageManager Universal v1.2.3
-   (ابزار مدیریت پلاگین‌ها، اسکین‌ها و تصاویر)
+   KiaE2PackageManager Universal v1.2.3
+   (ابزار مدیریت پلاگین‌ها، اسکین‌ها و تصاویر)
 ==========================================
 
 انتخاب بخش اصلی:
-  1) مدیریت پلاگین‌ها و اسکین‌ها (.ipk / .deb)
-  2) مدیریت فریمور و تصاویر (.nfi, .tar.xz, .tar.gz)
-  3) خروج از برنامه
+  1) مدیریت پلاگین‌ها و اسکین‌ها (.ipk / .deb)
+  2) مدیریت فریمور و تصاویر (.nfi, .tar.xz, .tar.gz)
+  3) خروج از برنامه
 ```
 
 #### گزینه ۱: مدیریت پلاگین‌ها و اسکین‌ها
@@ -807,13 +813,13 @@ chmod +x KiaE2PackageManager
 1. گزینه `1` را از منوی اصلی انتخاب کنید
 2. گزینه `1` (ساخت / بازسازی پکیج) را انتخاب کنید
 3. فرمت خروجی را انتخاب کنید:
-   - `1` — `.deb` (برای Dreambox / DreamOS)
-   - `2` — `.ipk` (برای OpenATV / OpenPLi / OE2.0)
-   - `3` — هر دو فرمت
+   - `1` — `.deb` (برای Dreambox / DreamOS)
+   - `2` — `.ipk` (برای OpenATV / OpenPLi / OE2.0)
+   - `3` — هر دو فرمت
 4. ابزار پوشه‌های پروژه در `/tmp/` را اسکن می‌کند
 5. پوشه پروژه خود را انتخاب کنید
 
-> **⚠️ مهم:** قبل از ساخت پکیج، مطمئن شوید که تمام فایل‌های پلاگین/اسکین در مسیر درست قرار گرفته‌اند (مثلاً: `usr/lib/enigma2/python/Plugins/` برای پلاگین‌ها، `usr/share/enigma2/` برای اسکین‌ها). مسیرهای نادرست باعث عدم عملکرد صحیح پکیج بعد از نصب می‌شوند.
+*>* **⚠️ مهم:** *قبل از ساخت پکیج، مطمئن شوید که تمام فایل‌های پلاگین/اسکین در مسیر درست قرار گرفته‌اند (مثلاً: `usr/lib/enigma2/python/Plugins/` برای پلاگین‌ها، `usr/share/enigma2/` برای اسکین‌ها). مسیرهای نادرست باعث عدم عملکرد صحیح پکیج بعد از نصب می‌شوند.*
 
 6. فایل کنترل را در صورت نیاز ویرایش کنید
 7. منتظر اتمام ساخت باشید
@@ -832,7 +838,7 @@ chmod +x KiaE2PackageManager
 3. فایل تصویر را انتخاب کنید
 4. مقصد استخراج را انتخاب کنید
 
-> **⚠️ مهم:** فایل‌های فریمور بعد از استخراج حجم بسیار بالایی دارند (چندین گیگابایت). توصیه می‌شود آنها را روی **کارت مایکرو SD** یا **هارد دیسک خارجی** یا **فلش مموری** ذخیره کنید تا فضای داخلی گیرنده تمام نشود.
+*>* **⚠️ مهم:** *فایل‌های فریمور بعد از استخراج حجم بسیار بالایی دارند (چندین گیگابایت). توصیه می‌شود آنها را روی* **کارت مایکرو SD** *یا* **هارد دیسک خارجی** *یا* **فلش مموری** *ذخیره کنید تا فضای داخلی گیرنده تمام نشود.*
 
 **ایجاد آرشیو:**
 1. گزینه `2` را از منوی اصلی انتخاب کنید
@@ -853,25 +859,25 @@ chmod +x KiaE2PackageManager
 ### اطلاعات توسعه‌دهنده
 
 - **توسعه‌دهنده:** KiaKu_1982
-- **گیت‌هاب:**  [github.com/zavyka](https://github.com/zavyka) 
-- **تلگرام:**  [@Rayan_Ku](https://t.me/Rayan_Ku) 
-- **کانال:**  [@Enigma2_Tutorials](https://t.me/Enigma2_Tutorials) 
+- **گیت‌هاب:**  [github.com/zavyka](https://github.com/zavyka) 
+- **تلگرام:**  [@Rayan_Ku](https://t.me/Rayan_Ku) 
+- **کانال:**  [@Enigma2_Tutorials](https://t.me/Enigma2_Tutorials) 
 
 ### 🌟 حمایت و ستاره دان
 
 اگر این ابزار برایتان مفید بود، لطفاً:
 
-- ⭐ **ستاره بدهید** به پروژه در  [GitHub](https://github.com/zavyka) 
+- ⭐ **ستاره بدهید** به پروژه در  [GitHub](https://github.com/zavyka) 
 - 📢 **اشتراک بگذارید** در:
-  -  [تلگرام](https://t.me/Rayan_Ku) 
-  -  [فیسبوک](https://www.facebook.com/) 
-  -  [X (توییتر)](https://x.com/) 
-  - انجمن‌های  Enigma2 
-  - گروه‌های گیرنده ماهواره
-  - هر پلتفرم دیگری
+  -  [تلگرام](https://t.me/Rayan_Ku) 
+  -  [فیسبوک](https://www.facebook.com/) 
+  -  [X (توییتر)](https://x.com/) 
+  - انجمن‌های  Enigma2 
+  - گروه‌های گیرنده ماهواره
+  - هر پلتفرم دیگری
 - 🐛 **مشکلات را گزارش کنید** اگر باگی پیدا کردید در [Issues](https://github.com/zavyka/KiaE2PackageManager/issues)
 
-با اشتراک‌گذاری این ابزار، به کاربران دیگر  Enigma2  کمک کنید تا آن را پیدا کنند!
+با اشتراک‌گذاری این ابزار، به کاربران دیگر  Enigma2  کمک کنید تا آن را پیدا کنند!
 
 ### مجوز
 
@@ -879,21 +885,17 @@ chmod +x KiaE2PackageManager
 
 ---
 
-<details>
-<summary>🌐 تغییر زبان</summary>
 
-- 🇺🇸 [English](#-english)
-- ☀️ [کوردی سۆرانی](#kurdish)
-- 🇮🇷 [فارسی](#-فارسی)
-- 🇸🇦 [العربية](#-العربية)
-
-</details>
 
 ---
 
+---
+
+⬆️ [Back to Language Selection / بازگشت به انتخاب زبان](#language-selection)
+
 </details>
 
----
+<a id="arabic"></a>
 
 <details>
 <summary><b>🇸🇦 العربية — اضغط للتوسيع</b></summary>
@@ -913,40 +915,40 @@ chmod +x KiaE2PackageManager
 
 | العلامات التجارية | الطرازات |
 |-----------------|----------|
-|  Dreambox  |  DM800, DM8000, DM900, DM920, DM520, DM500HD  |
-|  VU+  |  Duo, Duo2, Duo4K, Solo, Solo2, Solo4K, Ultimo, Ultimo4K  |
-|  GigaBlue  | جميع الطرازات المبنية على  Enigma2  |
-| أخرى | أي جهاز استقبال يعمل بنظام  Enigma2  |
+|  Dreambox  |  DM800, DM8000, DM900, DM920, DM520, DM500HD  |
+|  VU+  |  Duo, Duo2, Duo4K, Solo, Solo2, Solo4K, Ultimo, Ultimo4K  |
+|  GigaBlue  | جميع الطرازات المبنية على  Enigma2  |
+| أخرى | أي جهاز استقبال يعمل بنظام  Enigma2  |
 
 ### أنظمة التشغيل المدعومة
 
 | نظام التشغيل | الإصدارات |
 |-------------|-----------|
-|  DreamOS  |  OE 2.2, OE 2.5, OE 2.6  |
-|  OE2.0  |  Open Embedded  |
+|  DreamOS  |  OE 2.2, OE 2.5, OE 2.6  |
+|  OE2.0  |  Open Embedded  |
 
 ### الصور المدعومة
 
 | الصورة | الوصف |
 |--------|-------|
-|  CVS  | النسخة الأساسية النقية (بدون تعديلات) |
-|  AIO  |  All-In-One  |
-| مخصص | صور مبنية على  CVS  و  AIO  |
-|  OpenATV  | مفتوح المصدر |
-|  OpenPLi  | مفتوح المصدر |
-| أخرى | أي صورة  Enigma2  |
+|  CVS  | النسخة الأساسية النقية (بدون تعديلات) |
+|  AIO  |  All-In-One  |
+| مخصص | صور مبنية على  CVS  و  AIO  |
+|  OpenATV  | مفتوح المصدر |
+|  OpenPLi  | مفتوح المصدر |
+| أخرى | أي صورة  Enigma2  |
 
 ### تنسيقات الحزم المدعومة
 
 | التنسيق | الوصف | الاستخدام |
 |---------|-------|----------|
-|  `.deb`  | حزمة  Debian  | أجهزة  Dreambox  /  DreamOS  |
-|  `.ipk`  | حزمة  IPK  | أجهزة  OpenATV  /  OpenPLi  /  OE2.0  |
-|  `.tar.xz`  | أرشيف  tar  مضغوط | البرامج الثابتة العامة |
-|  `.tar.gz`  |  tar  مضغوط بـ  gzip  | البرامج الثابتة العامة |
-|  `.tar.bz2`  |  tar  مضغوط بـ  bzip2  | البرامج الثابتة العامة |
-|  `.nfi`  | صورة برنامج ثابت  NFI  | تحديثات برنامج  Dreambox  |
-|  `.zip`  | أرشيف  ZIP  | ضغط الملفات العامة |
+|  `.deb`  | حزمة  Debian  | أجهزة  Dreambox  /  DreamOS  |
+|  `.ipk`  | حزمة  IPK  | أجهزة  OpenATV  /  OpenPLi  /  OE2.0  |
+|  `.tar.xz`  | أرشيف  tar  مضغوط | البرامج الثابتة العامة |
+|  `.tar.gz`  |  tar  مضغوط بـ  gzip  | البرامج الثابتة العامة |
+|  `.tar.bz2`  |  tar  مضغوط بـ  bzip2  | البرامج الثابتة العامة |
+|  `.nfi`  | صورة برنامج ثابت  NFI  | تحديثات برنامج  Dreambox  |
+|  `.zip`  | أرشيف  ZIP  | ضغط الملفات العامة |
 
 ### التثبيت والاستخدام
 
@@ -962,10 +964,10 @@ chmod +x KiaE2PackageManager
 
 #### الطريقة 1: التحميل المباشر على جهاز الاستقبال (أسهل طريقة)
 
-> **الأفضل لـ:** الأشخاص الذين يريدون تشغيل الأداة بسرعة  
-> **المطلوب:** اتصال SSH بجهاز الاستقبال ( PuTTY ، موجه الأوامر، إلخ)
+*>* **الأفضل لـ:** *الأشخاص الذين يريدون تشغيل الأداة بسرعة  *
+*>* **المطلوب:** *اتصال SSH بجهاز الاستقبال ( PuTTY ، موجه الأوامر، إلخ)*
 
-فقط اتصل بجهاز الاستقبال عبر SSH ونفّذ هذه الأوامر. سيتم تحميل الأداة مباشرة من  GitHub  على جهاز الاستقبال:
+فقط اتصل بجهاز الاستقبال عبر SSH ونفّذ هذه الأوامر. سيتم تحميل الأداة مباشرة من  GitHub  على جهاز الاستقبال:
 
 **الطريقة الأساسية — `wget`:**
 
@@ -975,7 +977,7 @@ chmod +x /tmp/KiaE2PackageManager
 /tmp/KiaE2PackageManager
 ```
 
-> **Fallback لأجهزة الاستقبال القديمة:** إذا لم يكن `wget` متاحًا أو تعذر عليه الاتصال بـ GitHub، استخدم Fallback الخاص بـ Python أدناه. تم وضعه داخل الطريقة 1 نفسها حتى تبقى طريقة التثبيت الأصلية كما هي.
+*>* **Fallback لأجهزة الاستقبال القديمة:** *إذا لم يكن `wget` متاحًا أو تعذر عليه الاتصال بـ GitHub، استخدم Fallback الخاص بـ Python أدناه. تم وضعه داخل الطريقة 1 نفسها حتى تبقى طريقة التثبيت الأصلية كما هي.*
 
 ```bash
 python -c "import urllib2; u='https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager'; open('/tmp/KiaE2PackageManager','wb').write(urllib2.urlopen(u, timeout=30).read())" 2>/dev/null || python3 -c "import urllib.request; u='https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager'; open('/tmp/KiaE2PackageManager','wb').write(urllib.request.urlopen(u, timeout=30).read())"
@@ -983,7 +985,7 @@ chmod +x /tmp/KiaE2PackageManager
 /tmp/KiaE2PackageManager
 ```
 
-> **⚠️ إذا فشلت الطريقة 1:** بعض صور Dreambox القديمة تحتوي على `wget` أو بيئة HTTPS قديمة/غير مكتملة. في هذه الحالة استخدم **بديل Python** أدناه. يظل هذا البديل جزءًا من **الطريقة 1** ولا تحتاج إلى الانتقال إلى الطريقة 2.
+*>* **⚠️ إذا فشلت الطريقة 1:** *بعض صور Dreambox القديمة تحتوي على `wget` أو بيئة HTTPS قديمة/غير مكتملة. في هذه الحالة استخدم* **بديل Python** *أدناه. يظل هذا البديل جزءًا من* **الطريقة 1** *ولا تحتاج إلى الانتقال إلى الطريقة 2.*
 
 **بديل — Python (المكتبة القياسية فقط):**
 
@@ -1003,22 +1005,22 @@ chmod +x /tmp/KiaE2PackageManager
 /tmp/KiaE2PackageManager
 ```
 
-> **ملاحظة:** يستخدم بديل Python المكتبة القياسية في Python فقط ولا يحتاج إلى `pip` أو أي حزمة خارجية.
+*>* **ملاحظة:** *يستخدم بديل Python المكتبة القياسية في Python فقط ولا يحتاج إلى `pip` أو أي حزمة خارجية.*
 
 ---
 
 #### الطريقة 2: النقل من الكمبيوتر عبر SCP (موجه الأوامر)
 
-> **الأفضل لـ:** المستخدمون المتقدمون المعتادون على موجه الأوامر  
-> **المطلوب:** الكمبيوتر مع موجه الأوامر + اتصال SSH بجهاز الاستقبال
+*>* **الأفضل لـ:** *المستخدمون المتقدمون المعتادون على موجه الأوامر  *
+*>* **المطلوب:** *الكمبيوتر مع موجه الأوامر + اتصال SSH بجهاز الاستقبال*
 
 قم أولاً بتنزيل الملف على الكمبيوتر، ثم انقله إلى جهاز الاستقبال باستخدام أمر `scp`:
 
 ```bash
-# الخطوة 1: نفّذ هذا على الكمبيوتر الخاص بك (وليس على جهاز الاستقبال)
+*# الخطوة 1: نفّذ هذا على الكمبيوتر الخاص بك (وليس على جهاز الاستقبال)*
 scp KiaE2PackageManager root@<receiver_ip>:/tmp/
 
-# الخطوة 2: اتصل بجهاز الاستقبال وشغّله
+*# الخطوة 2: اتصل بجهاز الاستقبال وشغّله*
 ssh root@<receiver_ip>
 chmod +x /tmp/KiaE2PackageManager
 /tmp/KiaE2PackageManager
@@ -1028,8 +1030,8 @@ chmod +x /tmp/KiaE2PackageManager
 
 #### الطريقة 3: النقل بأدوات واجهة المستخدم الرسومية (بدون موجه الأوامر)
 
-> **الأفضل لـ:** المبتدئون الذين يفضلون استخدام الماوس  
-> **المطلوب:** الكمبيوتر مع  FileZilla  أو  WinSCP 
+*>* **الأفضل لـ:** *المبتدئون الذين يفضلون استخدام الماوس  *
+*>* **المطلوب:** *الكمبيوتر مع  FileZilla  أو  WinSCP* 
 
 إذا لم تكن معتاداً على موجه الأوامر، استخدم هذه الأدوات الرسومية لنقل الملف بالسحب والإفلات:
 
@@ -1046,7 +1048,7 @@ chmod +x /tmp/KiaE2PackageManager
 
 **الخطوة 2: الاتصال عبر SSH والتشغيل**
 
-افتح  Putty  (أي عميل  SSH  آخر) واتصل بجهاز الاستقبال:
+افتح  Putty  (أي عميل  SSH  آخر) واتصل بجهاز الاستقبال:
 
 ```
 Host Name: <receiver_ip>
@@ -1068,7 +1070,7 @@ chmod +x KiaE2PackageManager
 ./KiaE2PackageManager
 ```
 
-> **نصيحة:** يمكنك أيضًا استخدام ميزة  SCP  المدمجة في  Putty  لنقل الملفات مباشرة.
+*>* **نصيحة:** *يمكنك أيضًا استخدام ميزة  SCP  المدمجة في  Putty  لنقل الملفات مباشرة.*
 
 ### دليل الاستخدام
 
@@ -1076,14 +1078,14 @@ chmod +x KiaE2PackageManager
 
 ```
 ==========================================
-   KiaE2PackageManager Universal v1.2.3
-   (أداة إدارة الإضافات والأ skins والصور)
+   KiaE2PackageManager Universal v1.2.3
+   (أداة إدارة الإضافات والأ skins والصور)
 ==========================================
 
 اختر القسم الرئيسي:
-  1) مدير الإضافات والأ skins (.ipk / .deb)
-  2) مدير البرامج الثابتة والصور (.nfi, .tar.xz, .tar.gz)
-  3) خروج من البرنامج
+  1) مدير الإضافات والأ skins (.ipk / .deb)
+  2) مدير البرامج الثابتة والصور (.nfi, .tar.xz, .tar.gz)
+  3) خروج من البرنامج
 ```
 
 #### الخيار 1: مدير الإضافات والأ skins
@@ -1094,7 +1096,7 @@ chmod +x KiaE2PackageManager
 3. اختر صيغة الإخراج
 4. انتظر اكتمال البناء
 
-> **⚠️ مهم:** قبل بناء الحزمة، تأكد من أن جميع ملفات الإضافات/A skins موجودة في المسار الصحيح (على سبيل المثال: `usr/lib/enigma2/python/Plugins/` للإضافات، `usr/share/enigma2/` للأ skins). المسارات الخاطئة ستجعل الحزمة لا تعمل بعد التثبيت.
+*>* **⚠️ مهم:** *قبل بناء الحزمة، تأكد من أن جميع ملفات الإضافات/A skins موجودة في المسار الصحيح (على سبيل المثال: `usr/lib/enigma2/python/Plugins/` للإضافات، `usr/share/enigma2/` للأ skins). المسارات الخاطئة ستجعل الحزمة لا تعمل بعد التثبيت.*
 
 **استخراج حزمة:**
 1. اختر `1` من القائمة الرئيسية
@@ -1110,7 +1112,7 @@ chmod +x KiaE2PackageManager
 3. اختر ملف الصورة
 4. اختر وجهة الاستخراج
 
-> **⚠️ مهم:** ملفات البرامج الثابتة بعد الفك تكون كبيرة الحجم (عدة جيجابايت). يُنصح بحفظها على **بطاقة micro SD** أو **قرص خارجي** أو **ذاكرة USB** لتجنب نفاد مساحة التخزين الداخلية لجهاز الاستقبال.
+*>* **⚠️ مهم:** *ملفات البرامج الثابتة بعد الفك تكون كبيرة الحجم (عدة جيجابايت). يُنصح بحفظها على* **بطاقة micro SD** *أو* **قرص خارجي** *أو* **ذاكرة USB** *لتجنب نفاد مساحة التخزين الداخلية لجهاز الاستقبال.*
 
 **إنشاء أرشيف:**
 1. اختر `2` من القائمة الرئيسية
@@ -1132,25 +1134,25 @@ chmod +x KiaE2PackageManager
 ### معلومات المطور
 
 - **المطور:** KiaKu_1982
-- **GitHub:**  [github.com/zavyka](https://github.com/zavyka) 
-- **Telegram:**  [@Rayan_Ku](https://t.me/Rayan_Ku) 
-- **القناة:**  [@Enigma2_Tutorials](https://t.me/Enigma2_Tutorials) 
+- **GitHub:**  [github.com/zavyka](https://github.com/zavyka) 
+- **Telegram:**  [@Rayan_Ku](https://t.me/Rayan_Ku) 
+- **القناة:**  [@Enigma2_Tutorials](https://t.me/Enigma2_Tutorials) 
 
 ### 🌟 الدعم والتقييم
 
 إذا وجدت هذه الأداة مفيدة، يرجى:
 
-- ⭐ **تقييم** المشروع على  [GitHub](https://github.com/zavyka) 
+- ⭐ **تقييم** المشروع على  [GitHub](https://github.com/zavyka) 
 - 📢 **مشاركة** الأداة على:
-  -  [تيليجرام](https://t.me/Rayan_Ku) 
-  -  [فيسبوك](https://www.facebook.com/) 
-  -  [X (تويتر)](https://x.com/) 
-  - منتديات  Enigma2 
-  - مجموعات أجهزة الاستقبال الفضائية
-  - أي منصة أخرى
+  -  [تيليجرام](https://t.me/Rayan_Ku) 
+  -  [فيسبوك](https://www.facebook.com/) 
+  -  [X (تويتر)](https://x.com/) 
+  - منتديات  Enigma2 
+  - مجموعات أجهزة الاستقبال الفضائية
+  - أي منصة أخرى
 - 🐛 **الإبلاغ عن المشاكل** إذا وجدت أي أخطاء في [Issues](https://github.com/zavyka/KiaE2PackageManager/issues)
 
-بمشاركة هذه الأداة، تساعد مستخدمي  Enigma2  الآخرين في اكتشافها!
+بمشاركة هذه الأداة، تساعد مستخدمي  Enigma2  الآخرين في اكتشافها!
 
 ### الترخيص
 
@@ -1158,18 +1160,12 @@ chmod +x KiaE2PackageManager
 
 ---
 
-<details>
-<summary>🌐 تبديل اللغة</summary>
 
-- 🇺🇸 [English](#-english)
-- ☀️ [کوردی سۆرانی](#kurdish)
-- 🇮🇷 [فارسی](#-فارسی)
-- 🇸🇦 [العربية](#-العربية)
-
-</details>
 
 ---
 
-## پایان README
+---
+
+⬆️ [Back to Language Selection / بازگشت به انتخاب زبان](#language-selection)
 
 </details>
