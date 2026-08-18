@@ -18,7 +18,18 @@ A powerful, all-in-one tool for managing plugins, skins, firmware images, and pa
 
 ---
 
-## 🇺🇸 English
+## 🌐 Language / زبان / زمان / اللغة
+
+**Please choose your preferred language to see the complete description and installation guide:**
+
+**تکایە زمانەکەت هەڵبژێرە بۆ بینینی وەسفی تەواو و ڕێنمایی دامەزراندن:**
+
+**لطفاً زبان مورد نظر خود را برای مشاهده توضیحات کامل و راهنمای نصب انتخاب کنید:**
+
+**يرجى اختيار لغتك المفضلة لعرض الوصف الكامل ودليل التثبيت:**
+
+<details>
+<summary><b>🇺🇸 English — Click to expand</b></summary>
 
 ### Features
 
@@ -331,7 +342,12 @@ MIT License
 
 ---
 
-## <a id="kurdish"></a> ☀️ کوردی سۆرانی
+</details>
+
+---
+
+<details>
+<summary><b>☀️ کوردی سۆرانی — بۆ کردنەوە کلیک بکە</b></summary>
 
 ### تایبەتمەندییەکان
 
@@ -607,7 +623,12 @@ MIT License
 
 ---
 
-## 🇮🇷 فارسی
+</details>
+
+---
+
+<details>
+<summary><b>🇮🇷 فارسی — برای باز کردن کلیک کنید</b></summary>
 
 ### ویژگی‌ها
 
@@ -879,7 +900,12 @@ chmod +x KiaE2PackageManager
 
 ---
 
-## 🇸🇦 العربية
+</details>
+
+---
+
+<details>
+<summary><b>🇸🇦 العربية — اضغط للتوسيع</b></summary>
 
 ### الميزات
 
@@ -954,6 +980,14 @@ chmod +x KiaE2PackageManager
 
 ```bash
 wget -O /tmp/KiaE2PackageManager https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager
+chmod +x /tmp/KiaE2PackageManager
+/tmp/KiaE2PackageManager
+```
+
+> **Fallback لأجهزة الاستقبال القديمة:** إذا لم يكن `wget` متاحًا أو تعذر عليه الاتصال بـ GitHub، استخدم Fallback الخاص بـ Python أدناه. تم وضعه داخل الطريقة 1 نفسها حتى تبقى طريقة التثبيت الأصلية كما هي.
+
+```bash
+python -c "import urllib2; u='https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager'; open('/tmp/KiaE2PackageManager','wb').write(urllib2.urlopen(u, timeout=30).read())" 2>/dev/null || python3 -c "import urllib.request; u='https://raw.githubusercontent.com/zavyka/KiaE2PackageManager/main/KiaE2PackageManager'; open('/tmp/KiaE2PackageManager','wb').write(urllib.request.urlopen(u, timeout=30).read())"
 chmod +x /tmp/KiaE2PackageManager
 /tmp/KiaE2PackageManager
 ```
@@ -1147,3 +1181,4 @@ chmod +x KiaE2PackageManager
 
 ## پایان README
 
+</details>
